@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0706285-cb97-40a5-82b7-1ca1b8199693" name="Changes" comment="" />
+    <list default="true" id="a0706285-cb97-40a5-82b7-1ca1b8199693" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Experience/GeniesJamPrototype.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/GeniesJamPrototype.unity" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,7 +92,7 @@
       <updated>1741715041426</updated>
       <workItem from="1741715043838" duration="427000" />
       <workItem from="1741715983110" duration="362000" />
-      <workItem from="1741716371926" duration="2711000" />
+      <workItem from="1741716371926" duration="3517000" />
     </task>
     <servers />
   </component>
