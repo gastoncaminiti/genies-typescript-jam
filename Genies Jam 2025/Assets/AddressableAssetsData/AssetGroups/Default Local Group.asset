@@ -16,7 +16,12 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: 29ed8547725d7ec4d8386faca07c8a09
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 6d7907ce07927cf48883b626d4d61390
+    m_Address: Assets/Experience/GeniesJamPrototype.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 689528eea071b8b4bac093e75c795d4b, type: 2}
   m_SchemaSet:

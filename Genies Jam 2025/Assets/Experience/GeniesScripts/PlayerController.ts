@@ -61,9 +61,11 @@ export default class PlayerController extends MonoBehaviour {
                 //Change target lane based on swipe direction
                 if (direction.x > 0 && this.targetLane < 1) {
                     this.targetLane = this.targetLane + 1;
+                    this.userAvatar.Animator.SetTrigger("isRight");
                 }
                 if (direction.x < 0 && this.targetLane > -1) {
                     this.targetLane = this.targetLane - 1;
+                    this.userAvatar.Animator.SetTrigger("isLeft");
                 }
             }
         }
