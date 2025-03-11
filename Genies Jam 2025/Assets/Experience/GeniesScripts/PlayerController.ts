@@ -83,7 +83,7 @@ export default class PlayerController extends MonoBehaviour {
         this.canMove = true;
         this.transform.position = Vector3.zero;
         this.targetLane = 0;
-        //this.userAvatar.Animator.SetFloat("idle_run_walk", 1);
+        console.log("LOAD AVATAR");
     }
 
 }
