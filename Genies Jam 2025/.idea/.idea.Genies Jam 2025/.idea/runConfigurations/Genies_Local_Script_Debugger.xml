@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Genies Local Script Debugger" type="ChromiumRemoteDebugType" factoryName="Chromium Remote" host="127.0.0.1" port="49152" restartOnDisconnect="true" />
+</component>
