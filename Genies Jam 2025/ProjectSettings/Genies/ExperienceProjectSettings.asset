@@ -18,11 +18,11 @@ MonoBehaviour:
     - ProfileID: 3af7e185-9232-4d5c-bf1f-1462ee880db2
       ProfileName: New Profile
       BuildSettings:
-        experienceSku: 
+        experienceSku: eyJleHBlcmllbmNlSUQiOiI0NmI1N2Y4MS02MjkyLTQ2MDQtOTZlYi0yYjNhYTAzYmY5ZWQiLCJDbGllbnRJZCI6IjRqUC9zcVQrNzV3SFdJVHpIdFVSNVE9PSIsIkNsaWVudFNlY3JldCI6Im0rZm5TalIzSFNHRklXQUpaWmwybUNJYmFlRUlYZ1crbWg5MW9yMVVtbGc9In0=
         experienceManifestInfo:
-          experienceID: 
-          ClientId: 
-          ClientSecret: 
+          experienceID: 46b57f81-6292-4604-96eb-2b3aa03bf9ed
+          ClientId: 4jP/sqT+75wHWITzHtUR5Q==
+          ClientSecret: m+fnSjR3HSGFIWAJZZl2mCIbaeEIXgW+mh91or1Umlg=
         mainScene:
           sceneReference: {fileID: 0}
           sceneName: 
