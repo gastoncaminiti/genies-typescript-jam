@@ -1,0 +1,33 @@
+fileFormatVersion: 2
+guid: c310c70a5453e944b90b61822e74bdb7
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 22604dd76f55453daccee3ed9e7b94b5, type: 3}
+  SerializedAsset: '{"IsCompiled":true,"CompilerVersion":"2.0.9","ReferencedSpecifiers":["@assets/Experience/GeniesScripts/GameManager"],"Source":"\"use
+    strict\";\nObject.defineProperty(exports, \"__esModule\", { value: true });\nconst
+    UnityEngine_1 = require(\"UnityEngine\");\nconst Genies_Avatars_Sdk_1 = require(\"Genies.Avatars.Sdk\");\nconst
+    GameManager_1 = require(\"@assets/Experience/GeniesScripts/GameManager\");\nconst
+    Cysharp_Threading_Tasks_1 = require(\"Cysharp.Threading.Tasks\");\nconst _UniTask_1_GeniesAvatar
+    = $generic(Cysharp_Threading_Tasks_1.UniTask$1, $typeof(\"Genies.Avatars.Sdk.GeniesAvatar\"));\nclass
+    PlayerController extends UnityEngine_1.MonoBehaviour {\n    async Start() {\n       
+    //Get GameManager singleton and add a listener to OnGameStateChange event\n       
+    this.gameManager = GameManager_1.default.Instance;\n        this.gameManager.OnGameStateChange.addListener(this.CheckGameState,
+    //@ts-ignore\n        this);\n        //Initialize the SDK\n        await $promise(Genies_Avatars_Sdk_1.GeniesAvatarsSdk.InitializeAsync());\n       
+    //Load the user Avatar\n        this.userAvatar = await $promise(Genies_Avatars_Sdk_1.GeniesAvatarsSdk.LoadUserAvatarAsync(\"UserAvatar\",
+    this.transform, this.playerAnimator));\n        //send message to GameManager
+    that the Avatar has been loaded\n        this.gameManager.ChangeGameState(GameManager_1.GameState.GAME_PLAY);\n   
+    }\n    //Update is called every frame, if the MonoBehaviour is enabled.\n   
+    Update() { }\n    /** Manages the player logic when the game state changes. @param
+    newState */\n    CheckGameState(newState) {\n        switch (newState) {\n           
+    case GameManager_1.GameState.GAME_PLAY:\n                this.OnGamePlay();\n               
+    break;\n        }\n    }\n    /** This will manage the player once the game starts.
+    */\n    OnGamePlay() {\n        this.transform.position = UnityEngine_1.Vector3.zero;\n       
+    // @ts-ignore\n        this.userAvatar.Animator.SetFloat_EBB7509C_H45FF9778((\"idle_run_walk\"),
+    (1));\n    }\n}\nexports.default = PlayerController;\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUGxheWVyQ29udHJvbGxlci5qcyIsIm1hcHBpbmdzIjoiOztBQUFBLDZDQUF1SDtBQUV2SCwyREFBbUU7QUFDbkUsOEVBQXNEOzs7QUFDdEQsTUFBcUIsZ0JBQWlCLFNBQVEsMkJBQWE7SUFRdkQsS0FBSyxDQUFDLEtBQUs7UUFDUCx5RUFBd0U7UUFDeEUsSUFBSSxDQUFDLFdBQVcsR0FBRyxxQkFBVyxDQUFDLFFBQVE7UUFDdkMsSUFBSSxDQUFDLFdBQVcsQ0FBQyxpQkFBaUIsQ0FBQyxXQUFXLENBQUMsSUFBSSxDQUFDLGNBQWE7WUFBQyxDQUFDO1FBQ25FLG9CQUFtQjtRQUNuQixNQUFLLFNBQUMscUNBQWdCLENBQUMsZUFBZSxFQUFDLENBQUM7UUFDeEMsc0JBQXFCO1FBQ3JCLElBQUksQ0FBQyxVQUFVLEdBQUcsTUFBSyxTQUFDLHFDQUFnQixDQUFDLG1CQUFtQixDQUFDLFlBQVksRUFBRSxJQUFJLENBQUMsU0FBUyxFQUFFLElBQUksQ0FBQyxjQUFhLENBQUMsQ0FBQztRQUMvRyw2REFBNEQ7UUFDNUQsSUFBSSxDQUFDLFdBQVcsQ0FBQyxlQUFlLENBQUMsdUJBQVMsQ0FBQyxTQUFTLENBQUM7SUFDekQ7SUFFQSxnRUFBK0Q7SUFDdkQsTUFBTSxLQUFXO0lBRXpCLDRFQUEyRTtJQUNuRSxjQUFjLENBQUMsUUFBbUI7UUFDdEMsUUFBTyxRQUFRLEVBQUU7WUFDYixLQUFLLHVCQUFTLENBQUMsU0FBUztnQkFDcEIsSUFBSSxDQUFDLFVBQVUsRUFBRTtnQkFDakIsTUFBSztRQUNiO0lBQ0o7SUFFQSx3REFBdUQ7SUFDL0MsVUFBVTtRQUNkLElBQUksQ0FBQyxTQUFTLENBQUMsUUFBUSxHQUFHLHFCQUFPLENBQUMsSUFBSTtRQUN2QztRQUFDLElBQUksQ0FBQyxVQUFVLENBQUMsUUFBUSxDQUFDLDJCQUFPLENBQUMsQ0FBQyxlQUFjLENBQUMsR0FBRSxFQUFDLENBQUM7SUFDekQ7Q0FFSjtBQXRDQSxtQ0FzQ0EiLCJuYW1lcyI6W10sImlnbm9yZUxpc3QiOltdLCJzb3VyY2VzIjpbIlBsYXllckNvbnRyb2xsZXIudHMiXSwic291cmNlc0NvbnRlbnQiOltudWxsXX0=","ScriptHash":"5d05d9c7daad16afb21a3c4968cfcc00","Specifier":"@assets/Experience/GeniesScripts/PlayerController","DefaultTypeName":"@assets/Experience/GeniesScripts/PlayerController.PlayerController","IsMonobehaviour":true,"IsScriptableObj":false,"InheritanceChain":["@assets/Experience/GeniesScripts/PlayerController.PlayerController","UnityEngine.MonoBehaviour","UnityEngine.Behaviour","UnityEngine.Component","UnityEngine.Object","@com.genies.scripting@1.6.0\\Runtime\\Typing\\index.d.System.Object"],"Properties":[{"Path":"playerAnimator","Name":"playerAnimator","TypeName":"UnityEngine.RuntimeAnimatorController","AssemblyName":null,"EnumKeys":[],"EnumValues":[],"IsGeniesBehaviourRef":false,"IsGeniesScriptableObjectRef":false,"Decorators":[{"Type":"Header","Args":["\"Player
+    Settings\""]},{"Type":"SerializeField","Args":[]}],"Initializers":[],"ArrayDimension":-1,"IsArray":false,"IsEnum":false,"ArrayElementInitializer":null,"ChildProperties":[],"PrettyName":"Player
+    Animator"}],"SupportedUiEvents":0,"DisplayName":"PlayerController","name":"PlayerController","hideFlags":8}'
