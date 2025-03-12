@@ -1,14 +1,20 @@
 
-import { MonoBehaviour } from "UnityEngine";
+import {MonoBehaviour, Time, Vector3} from "UnityEngine";
+
 export default class EnemyManager extends MonoBehaviour {
-    
-    //Called when script instance is loaded
-    private Awake() : void {}
 
-    //Start is called on the frame when a script is enabled just 
-    //before any of the Update methods are called the first time.
-    private Start() : void {}
+    @SerializeField private enemySpeed: float = 20;
+    private canMove: bool = false;
+    private Update() : void {
+        if(this.canMove) {
+            this.MoveEnemy();
+        }
+    }
 
-    //Update is called every frame, if the MonoBehaviour is enabled.
-    private Update() : void {}
+    private MoveEnemy() {
+        let enemyPos = this.transform.position;
+        let targetPos = new Vector3(enemyPos.x, enemyPos.y - 1, enemyPos.z);
+        let newPos = Vector3.MoveTowards(enemyPos, targetPos, this.enemySpeed * Time.deltaTime);
+        this.transform.position = newPos;
+    }
 }
