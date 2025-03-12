@@ -5,6 +5,7 @@ import EnemyManager from "./EnemyManager";
 import {EnemyState} from "./Enums/EnemyState";
 import PlayerController from "./PlayerController";
 
+
 export default class EnemySpawner extends MonoBehaviour {
 
     @SerializeField private playerController: PlayerController;
@@ -18,9 +19,10 @@ export default class EnemySpawner extends MonoBehaviour {
     private gameManager: GameManager;
     private nextEnemy: EnemyManager;
 
-
+    
     private coroutine: Coroutine;
 
+    private enemyQueue: EnemyManager[] = [];
     private Start() : void {
         //Get GameManager singleton and add a listener to OnGameStateChange event
         this.gameManager = GameManager.Instance;
@@ -54,17 +56,18 @@ export default class EnemySpawner extends MonoBehaviour {
 
             let x = Mathf.Floor(Random.Range(-this.xRange, this.xRange));
             myEnemyManager.InitialConfigEnemy(this.globalSpeed,x);
-            
-            if(this.nextEnemy == null){
-                this.nextEnemy = myEnemyManager;    
-            }
+
+            this.enemyQueue.push(myEnemyManager);
         }
     }
 
     private CheckMoveState(newState: EnemyState) {
-        if(this.nextEnemy.IsState(newState)){
-            Object.DestroyImmediate(this.nextEnemy.gameObject);
-            this.nextEnemy = null;
+        
+        let peekFirstEnemy:EnemyManager = this.enemyQueue[0];
+        
+        if(peekFirstEnemy.IsState(newState)){
+            let dequeuedEnemy = this.enemyQueue.shift();
+            Object.DestroyImmediate(dequeuedEnemy.gameObject);
             console.log("EL ESTADO COINCIDE HAY QUE MATARLO");
         }
     }
