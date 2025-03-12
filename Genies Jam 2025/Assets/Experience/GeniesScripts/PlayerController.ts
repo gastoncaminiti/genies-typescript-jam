@@ -2,8 +2,12 @@ import { MonoBehaviour, Input, Vector3, Mathf, Time, Animator, Collider, Runtime
 
 import { GeniesAvatar, GeniesAvatarsSdk } from 'Genies.Avatars.Sdk';
 import GameManager, { GameState } from './GameManager';
+import {EnemyState} from "./Enums/EnemyState";
 export default class PlayerController extends MonoBehaviour {
 
+    /** This is an event that is triggered when the current GameState changes. */
+    @NonSerialized public OnMoveStateChange: GeniesEvent<[EnemyState]> = new GeniesEvent<[EnemyState]>();
+    
     @Header("Player Settings")
     @SerializeField private playerSpeed: float = 2;
     @SerializeField private playerAnimator: RuntimeAnimatorController;
@@ -62,10 +66,12 @@ export default class PlayerController extends MonoBehaviour {
                 if (direction.x > 0 && this.targetLane < 1) {
                     this.targetLane = this.targetLane + 1;
                     this.userAvatar.Animator.SetTrigger("isRight");
+                    this.OnMoveStateChange.trigger(EnemyState.RIGHT);
                 }
                 if (direction.x < 0 && this.targetLane > -1) {
                     this.targetLane = this.targetLane - 1;
                     this.userAvatar.Animator.SetTrigger("isLeft");
+                    this.OnMoveStateChange.trigger(EnemyState.LEFT);
                 }
             }
         }

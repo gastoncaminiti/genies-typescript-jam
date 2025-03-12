@@ -2,15 +2,21 @@
 import { MonoBehaviour,GameObject,Coroutine, WaitForSeconds, Object, Random, Mathf } from "UnityEngine";
 import GameManager, { GameState } from "./GameManager";
 import EnemyManager from "./EnemyManager";
+import {EnemyState} from "./Enums/EnemyState";
+import PlayerController from "./PlayerController";
+
 export default class EnemySpawner extends MonoBehaviour {
 
+    @SerializeField private playerController: PlayerController;
+    
     @Header("Enemies Spawner Settings")
     @SerializeField private enemyPrefab: GameObject;
     @SerializeField private globalSpeed: float = 20;
     @SerializeField private xRange: float = 3;
     @SerializeField private enemySpawnDelay: float = 1;
-
+    
     private gameManager: GameManager;
+
 
     private coroutine: Coroutine;
 
@@ -18,6 +24,7 @@ export default class EnemySpawner extends MonoBehaviour {
         //Get GameManager singleton and add a listener to OnGameStateChange event
         this.gameManager = GameManager.Instance;
         this.gameManager.OnGameStateChange.addListener(this.CheckGameState);
+        this.playerController.OnMoveStateChange.addListener(this.CheckMoveState);
         //Spawn the pool of enemies
         //this.SpawnPool();
     }
@@ -48,5 +55,9 @@ export default class EnemySpawner extends MonoBehaviour {
             myEnemyManager.InitialConfigEnemy(this.globalSpeed,x);
                        
         }
+    }
+
+    private CheckMoveState(newState: EnemyState) {
+        console.log(newState);
     }
 }

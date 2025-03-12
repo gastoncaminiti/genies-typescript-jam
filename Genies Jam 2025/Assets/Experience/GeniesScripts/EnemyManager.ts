@@ -1,7 +1,10 @@
 
 import {MonoBehaviour, Time, Vector3} from "UnityEngine";
-export default class EnemyManager extends MonoBehaviour {
+import {EnemyState} from "./Enums/EnemyState";
 
+export default class EnemyManager extends MonoBehaviour {
+    @SerializeField private enemyState: EnemyState;
+    
     private enemySpeed: float = 2;
     private canMove: bool = false;
     private Update() : void {
@@ -21,5 +24,9 @@ export default class EnemyManager extends MonoBehaviour {
         this.transform.position = new Vector3(xRange, enemyPos.y, enemyPos.z);
         this.enemySpeed = globalSpeed;
         this.canMove = true;
+    }
+    
+    public IsState(moveState:EnemyState): bool{
+        return  this.enemyState == moveState; 
     }
 }
