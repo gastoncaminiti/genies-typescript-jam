@@ -4,7 +4,7 @@ import {MonoBehaviour, Time, Vector3} from "UnityEngine";
 export default class EnemyManager extends MonoBehaviour {
 
     @SerializeField private enemySpeed: float = 20;
-    private canMove: bool = false;
+    public canMove: bool = false;
     private Update() : void {
         if(this.canMove) {
             this.MoveEnemy();

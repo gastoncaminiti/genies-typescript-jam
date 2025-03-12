@@ -1,0 +1,32 @@
+fileFormatVersion: 2
+guid: 409fee7ed8c54894490c33f3f86f34ca
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 22604dd76f55453daccee3ed9e7b94b5, type: 3}
+  SerializedAsset: '{"IsCompiled":true,"CompilerVersion":"2.0.9","ReferencedSpecifiers":["@assets/Experience/GeniesScripts/GameManager","@assets/Experience/GeniesScripts/EnemyManager"],"Source":"\"use
+    strict\";\nObject.defineProperty(exports, \"__esModule\", { value: true });\nconst
+    UnityEngine_1 = require(\"UnityEngine\");\nconst GameManager_1 = require(\"@assets/Experience/GeniesScripts/GameManager\");\nclass
+    EnemySpawner extends UnityEngine_1.MonoBehaviour {\n    constructor() {\n       
+    super(...arguments);\n        //@SerializeField private enemySpeed: float = 20;\n       
+    this.enemySpawnDelay = 1;\n    }\n    Start() {\n        //Get GameManager singleton
+    and add a listener to OnGameStateChange event\n        this.gameManager = GameManager_1.default.Instance;\n       
+    this.gameManager.OnGameStateChange.addListener(this.CheckGameState, //@ts-ignore\n       
+    this);\n        //Spawn the pool of enemies\n        //this.SpawnPool();\n   
+    }\n    /** Manages the enemy logic when the game state changes. @param newState
+    */\n    CheckGameState(newState) {\n        switch (newState) {\n           
+    case GameManager_1.GameState.GAME_PLAY:\n                this.OnGamePlay();\n               
+    break;\n        }\n    }\n    /** This will manage the enemies once the game
+    starts. */\n    OnGamePlay() {\n        this.coroutine = this.StartCoroutine(this.SpawnEnemies());\n   
+    }\n    *SpawnEnemies() {\n        while (true) {\n            yield new UnityEngine_1.WaitForSeconds(this.enemySpawnDelay);\n           
+    let enemy = UnityEngine_1.Object.Instantiate(this.enemyPrefab);\n           
+    const myEnemyManager = // @ts-ignore\n             enemy.GetComponent(\"@assets/Experience/GeniesScripts/EnemyManager.EnemyManager\");\n           
+    myEnemyManager.canMove = true;\n            console.log(\"INSTANCIADO\" + enemy.name);\n       
+    }\n    }\n}\nexports.default = EnemySpawner;\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRW5lbXlTcGF3bmVyLmpzIiwibWFwcGluZ3MiOiI7O0FBQ0EsNkNBQXdGO0FBQ3hGLDhFQUFzRDtBQUV0RCxNQUFxQixZQUFhLFNBQVEsMkJBQWE7SUFBdkQ7O1FBSUksaURBQWdEO1FBQ3hDLG9CQUFlLEdBQVUsQ0FBQyxDQUFDO0lBd0N2QztJQWxDWSxLQUFLO1FBQ1QseUVBQXdFO1FBQ3hFLElBQUksQ0FBQyxXQUFXLEdBQUcscUJBQVcsQ0FBQyxRQUFRO1FBQ3ZDLElBQUksQ0FBQyxXQUFXLENBQUMsaUJBQWlCLENBQUMsV0FBVyxDQUFDLElBQUksQ0FBQyxjQUFhO1lBQUMsQ0FBQztRQUNuRSwyQkFBMEI7UUFDMUIsbUJBQWtCO0lBQ3RCO0lBRUEsMkVBQTBFO0lBQ2xFLGNBQWMsQ0FBQyxRQUFtQjtRQUN0QyxRQUFPLFFBQVEsRUFBRTtZQUNiLEtBQUssdUJBQVMsQ0FBQyxTQUFTO2dCQUNwQixJQUFJLENBQUMsVUFBVSxFQUFFO2dCQUNqQixNQUFLO1FBQ2I7SUFDSjtJQUVBLHlEQUF3RDtJQUNoRCxVQUFVO1FBQ2QsSUFBSSxDQUFDLFNBQVMsR0FBRyxJQUFJLENBQUMsY0FBYyxDQUFDLElBQUksQ0FBQyxZQUFZLEVBQUUsQ0FBQztJQUM3RDtJQUVRLENBQUMsWUFBWTtRQUNqQixPQUFNLElBQUksRUFBRTtZQUNSLE1BQU0sSUFBSSw0QkFBYyxDQUFDLElBQUksQ0FBQyxlQUFlLENBQUM7WUFFOUMsSUFBSSxLQUFLLEdBQUksb0JBQU0sQ0FBQyxXQUFXLENBQUMsSUFBSSxDQUFDLFdBQVcsQ0FBZTtZQUUvRCxNQUFNLGNBQWMsR0FBRTthQUFDLEtBQUssQ0FBQyxZQUFXLDZEQUFhLENBQUk7WUFDekQsY0FBYyxDQUFDLE9BQU8sR0FBRyxJQUFJO1lBRTdCLE9BQU8sQ0FBQyxHQUFHLENBQUMsYUFBYSxHQUFFLEtBQUssQ0FBQyxJQUFJLENBQUM7UUFDMUM7SUFDSjtDQUNKO0FBN0NBLCtCQTZDQSIsIm5hbWVzIjpbXSwiaWdub3JlTGlzdCI6W10sInNvdXJjZXMiOlsiRW5lbXlTcGF3bmVyLnRzIl0sInNvdXJjZXNDb250ZW50IjpbbnVsbF19","ScriptHash":"1592e537b4ead922d65c41669a911411","Specifier":"@assets/Experience/GeniesScripts/EnemySpawner","DefaultTypeName":"@assets/Experience/GeniesScripts/EnemySpawner.EnemySpawner","IsMonobehaviour":true,"IsScriptableObj":false,"InheritanceChain":["@assets/Experience/GeniesScripts/EnemySpawner.EnemySpawner","UnityEngine.MonoBehaviour","UnityEngine.Behaviour","UnityEngine.Component","UnityEngine.Object","@com.genies.scripting@1.6.0\\Runtime\\Typing\\index.d.System.Object"],"Properties":[{"Path":"enemyPrefab","Name":"enemyPrefab","TypeName":"UnityEngine.GameObject","AssemblyName":null,"EnumKeys":[],"EnumValues":[],"IsGeniesBehaviourRef":false,"IsGeniesScriptableObjectRef":false,"Decorators":[{"Type":"Header","Args":["\"Enemy
+    Settings\""]},{"Type":"SerializeField","Args":[]}],"Initializers":[],"ArrayDimension":-1,"IsArray":false,"IsEnum":false,"ArrayElementInitializer":null,"ChildProperties":[],"PrettyName":"Enemy
+    Prefab"},{"Path":"enemySpawnDelay","Name":"enemySpawnDelay","TypeName":"System.Single","AssemblyName":null,"EnumKeys":[],"EnumValues":[],"IsGeniesBehaviourRef":false,"IsGeniesScriptableObjectRef":false,"Decorators":[{"Type":"SerializeField","Args":[]}],"Initializers":["1"],"ArrayDimension":-1,"IsArray":false,"IsEnum":false,"ArrayElementInitializer":null,"ChildProperties":[],"PrettyName":"Enemy
+    Spawn Delay"}],"SupportedUiEvents":0,"DisplayName":"EnemySpawner","name":"EnemySpawner","hideFlags":8}'
