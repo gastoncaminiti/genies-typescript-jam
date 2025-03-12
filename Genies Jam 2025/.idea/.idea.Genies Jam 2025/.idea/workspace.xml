@@ -7,8 +7,7 @@
     <list default="true" id="a0706285-cb97-40a5-82b7-1ca1b8199693" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Genies Jam 2025/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Genies Jam 2025/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Experience/GeniesJamPrototype.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/GeniesJamPrototype.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/PlayerController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/PlayerController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/PlayerController.ts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/PlayerController.ts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Experience/Materials/Background Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/Materials/Background Material.mat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +95,7 @@
       <workItem from="1741715043838" duration="427000" />
       <workItem from="1741715983110" duration="362000" />
       <workItem from="1741716371926" duration="3517000" />
+      <workItem from="1741800003083" duration="713000" />
     </task>
     <servers />
   </component>

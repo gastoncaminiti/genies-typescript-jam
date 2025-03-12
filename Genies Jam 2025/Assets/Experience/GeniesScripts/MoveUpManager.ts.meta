@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: 72ef5de7df0b3f940a3944a2ee504bd1
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 22604dd76f55453daccee3ed9e7b94b5, type: 3}
+  SerializedAsset: '{"IsCompiled":true,"CompilerVersion":"2.0.9","ReferencedSpecifiers":["@assets/Experience/GeniesScripts/GameManager"],"Source":"\"use
+    strict\";\nObject.defineProperty(exports, \"__esModule\", { value: true });\nconst
+    UnityEngine_1 = require(\"UnityEngine\");\nconst GameManager_1 = require(\"@assets/Experience/GeniesScripts/GameManager\");\nclass
+    MoveUpManager extends UnityEngine_1.MonoBehaviour {\n    constructor() {\n       
+    super(...arguments);\n        this.upValue = 2;\n        this.upDelay = 2;\n   
+    }\n    Start() {\n        this.gameManager = GameManager_1.default.Instance;\n       
+    this.gameManager.OnGameStateChange.addListener(this.CheckGameState, //@ts-ignore\n       
+    this);\n    }\n    //Update is called every frame, if the MonoBehaviour is enabled.\n   
+    CheckGameState(newState) {\n        switch (newState) {\n            case GameManager_1.GameState.GAME_PLAY:\n               
+    this.OnGamePlay();\n                break;\n        }\n    }\n    OnGamePlay()
+    {\n        this.coroutine = this.StartCoroutine(this.MoveUp());\n    }\n    *MoveUp()
+    {\n        while (true) {\n            yield new UnityEngine_1.WaitForSeconds(this.upDelay);\n           
+    console.log(\"SUBIENDO TORRE Y PERSONAJE\");\n            let playerPos = this.player.position;\n           
+    let towerPos = this.tower.position;\n            let newPlayerPos = new UnityEngine_1.Vector3(playerPos.x,
+    playerPos.y + this.upValue, playerPos.z);\n            let newTowerPos = new
+    UnityEngine_1.Vector3(towerPos.x, towerPos.y + this.upValue, towerPos.z);\n           
+    this.player.position = newPlayerPos;\n            this.tower.position = newTowerPos;\n       
+    }\n    }\n}\nexports.default = MoveUpManager;\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTW92ZVVwTWFuYWdlci5qcyIsIm1hcHBpbmdzIjoiOztBQUNBLDZDQUF3RjtBQUN4Riw4RUFBc0Q7QUFDdEQsTUFBcUIsYUFBYyxTQUFRLDJCQUFhO0lBQXhEOztRQUtZLFlBQU8sR0FBVSxDQUFDLENBQUM7UUFDbkIsWUFBTyxHQUFVLENBQUMsQ0FBQztJQW9DL0I7SUEvQlksS0FBSztRQUNULElBQUksQ0FBQyxXQUFXLEdBQUcscUJBQVcsQ0FBQyxRQUFRO1FBQ3ZDLElBQUksQ0FBQyxXQUFXLENBQUMsaUJBQWlCLENBQUMsV0FBVyxDQUFDLElBQUksQ0FBQyxjQUFhO1lBQUMsQ0FBQztJQUN2RTtJQUVBLGdFQUErRDtJQUN2RCxjQUFjLENBQUMsUUFBbUI7UUFDdEMsUUFBTyxRQUFRLEVBQUU7WUFDYixLQUFLLHVCQUFTLENBQUMsU0FBUztnQkFDcEIsSUFBSSxDQUFDLFVBQVUsRUFBRTtnQkFDakIsTUFBSztRQUNiO0lBQ0o7SUFDUSxVQUFVO1FBQ2QsSUFBSSxDQUFDLFNBQVMsR0FBRyxJQUFJLENBQUMsY0FBYyxDQUFDLElBQUksQ0FBQyxNQUFNLEVBQUUsQ0FBQztJQUN2RDtJQUVRLENBQUMsTUFBTTtRQUNYLE9BQU0sSUFBSSxFQUFFO1lBQ1IsTUFBTSxJQUFJLDRCQUFjLENBQUMsSUFBSSxDQUFDLE9BQU8sQ0FBQztZQUN0QyxPQUFPLENBQUMsR0FBRyxDQUFDLDRCQUE0QixDQUFDO1lBQ3pDLElBQUksU0FBUyxHQUFHLElBQUksQ0FBQyxNQUFNLENBQUMsUUFBUTtZQUNwQyxJQUFJLFFBQVEsR0FBRyxJQUFJLENBQUMsS0FBSyxDQUFDLFFBQVE7WUFDbEMsSUFBSSxZQUFZLEdBQUksSUFBSSxxQkFBTyxDQUFDLFNBQVMsQ0FBQyxDQUFDLEVBQUUsU0FBUyxDQUFDLENBQUMsR0FBRyxJQUFJLENBQUMsT0FBTyxFQUFFLFNBQVMsQ0FBQyxDQUFDLENBQUM7WUFDckYsSUFBSSxXQUFXLEdBQUksSUFBSSxxQkFBTyxDQUFDLFFBQVEsQ0FBQyxDQUFDLEVBQUUsUUFBUSxDQUFDLENBQUMsR0FBRyxJQUFJLENBQUMsT0FBTyxFQUFFLFFBQVEsQ0FBQyxDQUFDLENBQUM7WUFFakYsSUFBSSxDQUFDLE1BQU0sQ0FBQyxRQUFRLEdBQUksWUFBWTtZQUNwQyxJQUFJLENBQUMsS0FBSyxDQUFDLFFBQVEsR0FBRyxXQUFXO1FBRXJDO0lBQ0o7Q0FDSjtBQTFDQSxnQ0EwQ0EiLCJuYW1lcyI6W10sImlnbm9yZUxpc3QiOltdLCJzb3VyY2VzIjpbIk1vdmVVcE1hbmFnZXIudHMiXSwic291cmNlc0NvbnRlbnQiOltudWxsXX0=","ScriptHash":"a7237085dfe0d473f2f8f48698157078","Specifier":"@assets/Experience/GeniesScripts/MoveUpManager","DefaultTypeName":"@assets/Experience/GeniesScripts/MoveUpManager.MoveUpManager","IsMonobehaviour":true,"IsScriptableObj":false,"InheritanceChain":["@assets/Experience/GeniesScripts/MoveUpManager.MoveUpManager","UnityEngine.MonoBehaviour","UnityEngine.Behaviour","UnityEngine.Component","UnityEngine.Object","@com.genies.scripting@1.6.0\\Runtime\\Typing\\index.d.System.Object"],"Properties":[{"Path":"player","Name":"player","TypeName":"UnityEngine.Transform","AssemblyName":null,"EnumKeys":[],"EnumValues":[],"IsGeniesBehaviourRef":false,"IsGeniesScriptableObjectRef":false,"Decorators":[{"Type":"SerializeField","Args":[]}],"Initializers":[],"ArrayDimension":-1,"IsArray":false,"IsEnum":false,"ArrayElementInitializer":null,"ChildProperties":[],"PrettyName":"Player"},{"Path":"tower","Name":"tower","TypeName":"UnityEngine.Transform","AssemblyName":null,"EnumKeys":[],"EnumValues":[],"IsGeniesBehaviourRef":false,"IsGeniesScriptableObjectRef":false,"Decorators":[{"Type":"SerializeField","Args":[]}],"Initializers":[],"ArrayDimension":-1,"IsArray":false,"IsEnum":false,"ArrayElementInitializer":null,"ChildProperties":[],"PrettyName":"Tower"},{"Path":"upValue","Name":"upValue","TypeName":"System.Single","AssemblyName":null,"EnumKeys":[],"EnumValues":[],"IsGeniesBehaviourRef":false,"IsGeniesScriptableObjectRef":false,"Decorators":[{"Type":"SerializeField","Args":[]}],"Initializers":["2"],"ArrayDimension":-1,"IsArray":false,"IsEnum":false,"ArrayElementInitializer":null,"ChildProperties":[],"PrettyName":"Up
+    Value"},{"Path":"upDelay","Name":"upDelay","TypeName":"System.Single","AssemblyName":null,"EnumKeys":[],"EnumValues":[],"IsGeniesBehaviourRef":false,"IsGeniesScriptableObjectRef":false,"Decorators":[{"Type":"SerializeField","Args":[]}],"Initializers":["2"],"ArrayDimension":-1,"IsArray":false,"IsEnum":false,"ArrayElementInitializer":null,"ChildProperties":[],"PrettyName":"Up
+    Delay"},{"Path":"uc","Name":"uc","TypeName":"any","AssemblyName":null,"EnumKeys":[],"EnumValues":[],"IsGeniesBehaviourRef":false,"IsGeniesScriptableObjectRef":false,"Decorators":[],"Initializers":[],"ArrayDimension":-1,"IsArray":false,"IsEnum":false,"ArrayElementInitializer":null,"ChildProperties":[],"PrettyName":"Uc"}],"SupportedUiEvents":0,"DisplayName":"MoveUpManager","name":"MoveUpManager","hideFlags":8}'
