@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: eb797c5a41f9cde4da79c2d25412754c
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 22604dd76f55453daccee3ed9e7b94b5, type: 3}
+  SerializedAsset: '{"IsCompiled":true,"CompilerVersion":"2.0.9","ReferencedSpecifiers":[],"Source":"\"use
+    strict\";\nObject.defineProperty(exports, \"__esModule\", { value: true });\nconst
+    UnityEngine_1 = require(\"UnityEngine\");\nclass EnemyManager extends UnityEngine_1.MonoBehaviour
+    {\n    //Called when script instance is loaded\n    Awake() { }\n    //Start
+    is called on the frame when a script is enabled just \n    //before any of the
+    Update methods are called the first time.\n    Start() { }\n    //Update is called
+    every frame, if the MonoBehaviour is enabled.\n    Update() { }\n}\nexports.default
+    = EnemyManager;\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRW5lbXlNYW5hZ2VyLmpzIiwibWFwcGluZ3MiOiI7O0FBQ0EsNkNBQTJDO0FBQzNDLE1BQXFCLFlBQWEsU0FBUSwyQkFBYTtJQUVuRCx1Q0FBc0M7SUFDOUIsS0FBSyxLQUFXO0lBRXhCLDZEQUE0RDtJQUM1RCw2REFBNEQ7SUFDcEQsS0FBSyxLQUFXO0lBRXhCLGdFQUErRDtJQUN2RCxNQUFNLEtBQVc7Q0FDN0I7QUFYQSwrQkFXQSIsIm5hbWVzIjpbXSwiaWdub3JlTGlzdCI6W10sInNvdXJjZXMiOlsiRW5lbXlNYW5hZ2VyLnRzIl0sInNvdXJjZXNDb250ZW50IjpbbnVsbF19","ScriptHash":"391ccc071783e3a4fb030335bc8f95a1","Specifier":"@assets/Experience/GeniesScripts/EnemyManager","DefaultTypeName":"@assets/Experience/GeniesScripts/EnemyManager.EnemyManager","IsMonobehaviour":true,"IsScriptableObj":false,"InheritanceChain":["@assets/Experience/GeniesScripts/EnemyManager.EnemyManager","UnityEngine.MonoBehaviour","UnityEngine.Behaviour","UnityEngine.Component","UnityEngine.Object","@com.genies.scripting@1.6.0\\Runtime\\Typing\\index.d.System.Object"],"Properties":[],"SupportedUiEvents":0,"DisplayName":"EnemyManager","name":"EnemyManager","hideFlags":8}'
