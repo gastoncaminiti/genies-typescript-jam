@@ -16,6 +16,7 @@ export default class EnemySpawner extends MonoBehaviour {
     @SerializeField private enemySpawnDelay: float = 1;
     
     private gameManager: GameManager;
+    private nextEnemy: EnemyManager;
 
 
     private coroutine: Coroutine;
@@ -53,11 +54,18 @@ export default class EnemySpawner extends MonoBehaviour {
 
             let x = Mathf.Floor(Random.Range(-this.xRange, this.xRange));
             myEnemyManager.InitialConfigEnemy(this.globalSpeed,x);
-                       
+            
+            if(this.nextEnemy == null){
+                this.nextEnemy = myEnemyManager;    
+            }
         }
     }
 
     private CheckMoveState(newState: EnemyState) {
-        console.log(newState);
+        if(this.nextEnemy.IsState(newState)){
+            Object.DestroyImmediate(this.nextEnemy.gameObject);
+            this.nextEnemy = null;
+            console.log("EL ESTADO COINCIDE HAY QUE MATARLO");
+        }
     }
 }

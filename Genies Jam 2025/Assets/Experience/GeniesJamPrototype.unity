@@ -1399,7 +1399,7 @@ MonoBehaviour:
   - IntValue: 0
     LongValue: 0
     DoubleValue: 0
-    FloatValue: 1.5
+    FloatValue: 0.75
     BoolValue: 0
     StringValue: 
     ColorValue: {r: 0, g: 0, b: 0, a: 0}
@@ -1556,7 +1556,7 @@ MonoBehaviour:
     PropKey: playerController
     BasePath: playerController
   _script: {fileID: 4458252877524076426, guid: 409fee7ed8c54894490c33f3f86f34ca, type: 3}
-  _scriptAssetHash: a3ac7a5c9be6d8c4e7a5f2b0cb6f563d
+  _scriptAssetHash: 6a067d7a777ef8e9d97325f697d268a9
   UiEventForwarders: []
 --- !u!1 &2026821584
 GameObject:
