@@ -1,12 +1,13 @@
 
-import { MonoBehaviour,GameObject,Coroutine, WaitForSeconds, Object } from "UnityEngine";
+import { MonoBehaviour,GameObject,Coroutine, WaitForSeconds, Object, Random, Mathf } from "UnityEngine";
 import GameManager, { GameState } from "./GameManager";
 import EnemyManager from "./EnemyManager";
 export default class EnemySpawner extends MonoBehaviour {
 
-    @Header("Enemy Settings")
+    @Header("Enemies Spawner Settings")
     @SerializeField private enemyPrefab: GameObject;
-    //@SerializeField private enemySpeed: float = 20;
+    @SerializeField private globalSpeed: float = 20;
+    @SerializeField private xRange: float = 3;
     @SerializeField private enemySpawnDelay: float = 1;
 
     private gameManager: GameManager;
@@ -40,11 +41,12 @@ export default class EnemySpawner extends MonoBehaviour {
             yield new WaitForSeconds(this.enemySpawnDelay);
             
             let enemy =  Object.Instantiate(this.enemyPrefab) as GameObject;
-            
+                        
             const myEnemyManager = enemy.GetComponent<EnemyManager>();
-            myEnemyManager.canMove = true;
-            
-            console.log("INSTANCIADO"+ enemy.name);
+
+            let x = Mathf.Floor(Random.Range(-this.xRange, this.xRange));
+            myEnemyManager.InitialConfigEnemy(this.globalSpeed,x);
+                       
         }
     }
 }
