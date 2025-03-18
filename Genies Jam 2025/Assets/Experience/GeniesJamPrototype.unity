@@ -1556,7 +1556,7 @@ MonoBehaviour:
     PropKey: playerController
     BasePath: playerController
   _script: {fileID: 4458252877524076426, guid: 409fee7ed8c54894490c33f3f86f34ca, type: 3}
-  _scriptAssetHash: 6a067d7a777ef8e9d97325f697d268a9
+  _scriptAssetHash: 7bfbddc2218a118a662784cbefa23594
   UiEventForwarders: []
 --- !u!1 &2026821584
 GameObject:
