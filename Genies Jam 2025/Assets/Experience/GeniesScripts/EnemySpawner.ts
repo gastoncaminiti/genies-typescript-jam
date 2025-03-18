@@ -55,7 +55,7 @@ export default class EnemySpawner extends MonoBehaviour {
             const myEnemyManager = enemy.GetComponent<EnemyManager>();
 
             let x = Mathf.Floor(Random.Range(-this.xRange, this.xRange));
-            myEnemyManager.InitialConfigEnemy(this.globalSpeed,x);
+            myEnemyManager.InitialConfigEnemy(this.globalSpeed,x, this.transform.position.y);
 
             this.enemyQueue.push(myEnemyManager);
         }

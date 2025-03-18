@@ -58,18 +58,18 @@ export default class PlayerController extends MonoBehaviour {
         }
 
         if (Input.GetMouseButtonUp(0)) {
-            let direction = Input.mousePosition - this.mouseStartPos;
+            let direction: Vector3 = Input.mousePosition - this.mouseStartPos;
 
             // Determine if the swipe was more horizontal than vertical
             if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y)) {
                 //Change target lane based on swipe direction
                 if (direction.x > 0 && this.targetLane < 1) {
-                    this.targetLane = this.targetLane + 1;
+                    this.targetLane = this.targetLane + 1.2;
                     this.userAvatar.Animator.SetTrigger("isRight");
                     this.OnMoveStateChange.trigger(EnemyState.RIGHT);
                 }
                 if (direction.x < 0 && this.targetLane > -1) {
-                    this.targetLane = this.targetLane - 1;
+                    this.targetLane = this.targetLane - 1.2;
                     this.userAvatar.Animator.SetTrigger("isLeft");
                     this.OnMoveStateChange.trigger(EnemyState.LEFT);
                 }
@@ -87,7 +87,7 @@ export default class PlayerController extends MonoBehaviour {
     /** This will manage the player once the game starts. */
     private OnGamePlay(): void {
         this.canMove = true;
-        this.transform.position = Vector3.zero;
+        //this.transform.position = Vector3.zero;
         this.targetLane = 0;
         console.log("LOAD AVATAR");
     }

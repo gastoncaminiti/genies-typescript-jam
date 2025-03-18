@@ -8,7 +8,7 @@ export default class MoveUpManager extends MonoBehaviour {
 
     @SerializeField private upValue: float = 2;
     @SerializeField private upDelay: float = 2;
-uc
+
     private gameManager: GameManager;
     private coroutine: Coroutine;
 

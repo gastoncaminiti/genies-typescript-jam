@@ -19,9 +19,9 @@ export default class EnemyManager extends MonoBehaviour {
         this.transform.position = Vector3.MoveTowards(enemyPos, targetPos, this.enemySpeed * Time.deltaTime);
     }
     
-    public InitialConfigEnemy(globalSpeed:float, xRange: float): void{
+    public InitialConfigEnemy(globalSpeed:float, xRange: float , yRange: float): void{
         let enemyPos = this.transform.position;
-        this.transform.position = new Vector3(xRange, enemyPos.y, enemyPos.z);
+        this.transform.position = new Vector3(xRange, yRange, enemyPos.z);
         this.enemySpeed = globalSpeed;
         this.canMove = true;
     }

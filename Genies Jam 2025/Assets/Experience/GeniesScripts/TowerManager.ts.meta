@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: b19f16a91887da149816133368394b8f
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 22604dd76f55453daccee3ed9e7b94b5, type: 3}
+  SerializedAsset: '{"IsCompiled":true,"CompilerVersion":"2.0.63","ReferencedSpecifiers":["@assets/Experience/GeniesScripts/GameManager"],"Source":"\"use
+    strict\";\nObject.defineProperty(exports, \"__esModule\", { value: true });\nconst
+    UnityEngine_1 = require(\"UnityEngine\");\nconst GameManager_1 = require(\"@assets/Experience/GeniesScripts/GameManager\");\nclass
+    TowerManager extends UnityEngine_1.MonoBehaviour {\n    //Called when script
+    instance is loaded\n    Start() {\n        this.gameManager = GameManager_1.default.Instance;\n       
+    this.gameManager.OnGameStateChange.addListener(this.CheckGameState, //@ts-ignore\n       
+    this);\n    }\n    //Update is called every frame, if the MonoBehaviour is enabled.\n   
+    CheckGameState(newState) {\n        switch (newState) {\n            case GameManager_1.GameState.GAME_PLAY:\n               
+    this.OnGamePlay();\n                break;\n        }\n    }\n    OnGamePlay()
+    {\n        //PLAY BEHAVIOR\n    }\n    OnTriggerEnter(coll) {\n        if (coll.gameObject.tag
+    == \"Enemy\") {\n            console.log(\"ENEMY HIT TRIGGER\");\n        }\n   
+    }\n}\nexports.default = TowerManager;\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVG93ZXJNYW5hZ2VyLmpzIiwibWFwcGluZ3MiOiI7O0FBQ0EsNkNBQW1EO0FBQ25ELDhFQUFzRDtBQUN0RCxNQUFxQixZQUFhLFNBQVEsMkJBQWE7SUFHbkQsdUNBQXNDO0lBQzlCLEtBQUs7UUFDVCxJQUFJLENBQUMsV0FBVyxHQUFHLHFCQUFXLENBQUMsUUFBUTtRQUN2QyxJQUFJLENBQUMsV0FBVyxDQUFDLGlCQUFpQixDQUFDLFdBQVcsQ0FBQyxJQUFJLENBQUMsY0FBYTtZQUFDLENBQUM7SUFDdkU7SUFFQSxnRUFBK0Q7SUFDdkQsY0FBYyxDQUFDLFFBQW1CO1FBQ3RDLFFBQU8sUUFBUSxFQUFFO1lBQ2IsS0FBSyx1QkFBUyxDQUFDLFNBQVM7Z0JBQ3BCLElBQUksQ0FBQyxVQUFVLEVBQUU7Z0JBQ2pCLE1BQUs7UUFDYjtJQUNKO0lBQ1EsVUFBVTtRQUNkLGVBQWM7SUFDbEI7SUFFUSxjQUFjLENBQUMsSUFBYTtRQUVoQyxJQUFJLElBQUksQ0FBQyxVQUFVLENBQUMsR0FBRyxJQUFJLE9BQU8sRUFBRTtZQUNoQyxPQUFPLENBQUMsR0FBRyxDQUFDLG1CQUFtQixDQUFDO1FBQ3BDO0lBQ0o7Q0FDSjtBQTNCQSwrQkEyQkEiLCJuYW1lcyI6W10sImlnbm9yZUxpc3QiOltdLCJzb3VyY2VzIjpbIlRvd2VyTWFuYWdlci50cyJdLCJzb3VyY2VzQ29udGVudCI6W251bGxdfQ==","ScriptHash":"3783934ac672a23eebe1bf3fd8540cf5","Specifier":"@assets/Experience/GeniesScripts/TowerManager","DefaultTypeName":"@assets/Experience/GeniesScripts/TowerManager.TowerManager","IsMonobehaviour":true,"IsScriptableObj":false,"InheritanceChain":["@assets/Experience/GeniesScripts/TowerManager.TowerManager","UnityEngine.MonoBehaviour","UnityEngine.Behaviour","UnityEngine.Component","UnityEngine.Object","@com.genies.scripting@1.11.0\\Runtime\\Typing\\index.d.System.Object"],"Properties":[],"SupportedUiEvents":"None","DisplayName":"TowerManager","name":"TowerManager","hideFlags":"NotEditable"}'
