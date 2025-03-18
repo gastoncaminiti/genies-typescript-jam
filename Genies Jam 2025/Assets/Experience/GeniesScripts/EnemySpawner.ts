@@ -11,7 +11,7 @@ export default class EnemySpawner extends MonoBehaviour {
     @SerializeField private playerController: PlayerController;
     
     @Header("Enemies Spawner Settings")
-    @SerializeField private enemyPrefab: GameObject;
+    @SerializeField private enemyPrefabs: GameObject[];
     @SerializeField private globalSpeed: float = 20;
     @SerializeField private xRange: float = 3;
     @SerializeField private enemySpawnDelay: float = 1;
@@ -49,8 +49,12 @@ export default class EnemySpawner extends MonoBehaviour {
     private *SpawnEnemies() {
         while(true) {
             yield new WaitForSeconds(this.enemySpawnDelay);
+
+            // Selecciona un prefab aleatorio
+            let randomIndex = Mathf.Floor(Random.Range(0, this.enemyPrefabs.length));
+            let selectedPrefab = this.enemyPrefabs[randomIndex];
             
-            let enemy =  Object.Instantiate(this.enemyPrefab) as GameObject;
+            let enemy =  Object.Instantiate(selectedPrefab) as GameObject;
                         
             const myEnemyManager = enemy.GetComponent<EnemyManager>();
 
@@ -64,6 +68,7 @@ export default class EnemySpawner extends MonoBehaviour {
     private CheckMoveState(newState: EnemyState) {
         
         let peekFirstEnemy:EnemyManager = this.enemyQueue[0];
+        console.log("ESTADO ACTIVADO "+ newState);
         
         if(peekFirstEnemy.IsState(newState)){
             let dequeuedEnemy = this.enemyQueue.shift();
