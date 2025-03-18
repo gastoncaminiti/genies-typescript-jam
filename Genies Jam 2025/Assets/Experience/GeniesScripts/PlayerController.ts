@@ -79,12 +79,12 @@ export default class PlayerController extends MonoBehaviour {
                 if (direction.y > 0 && this.targetLaneY < 1) {
                     this.targetLaneY = this.targetLaneY + this.playerStep;
                     //this.userAvatar.Animator.SetTrigger("isUp");
-                    //this.OnMoveStateChange.trigger(EnemyState.UP);
+                    this.OnMoveStateChange.trigger(EnemyState.UP);
                 }
                 if (direction.y < 0 && this.targetLaneY > -1) {
                     this.targetLaneY = this.targetLaneY - this.playerStep;
                     //this.userAvatar.Animator.SetTrigger("isDown");
-                    //this.OnMoveStateChange.trigger(EnemyState.DOWN);
+                    this.OnMoveStateChange.trigger(EnemyState.DOWN);
                 }
             }
         }
