@@ -77,16 +77,35 @@ export default class EnemySpawner extends MonoBehaviour {
 
     // 🔹 Inicializa el pool de enemigos al comenzar el juego
     private InitializePool(): void {
-        for (let i = 0; i < this.poolSize; i++) {
-            let randomIndex = Mathf.Floor(Random.Range(0, this.enemyPrefabs.length));
-            let enemyObj = Object.Instantiate(this.enemyPrefabs[randomIndex]) as GameObject;
-            let enemy = enemyObj.GetComponent<EnemyManager>();
 
-            enemyObj.SetActive(false);  // Lo desactiva hasta que sea necesario
-            this.enemyPool.push(enemy);
+        let enemyTypes: number = this.enemyPrefabs.length;
+        let enemiesPerType: float = Mathf.Floor(this.poolSize / enemyTypes);
+        let extraEnemies:number = this.poolSize % enemyTypes;  // Si no es divisible exacto, agrega extras
+
+        for (let i: number = 0; i < enemyTypes; i++) {
+            let count: number = enemiesPerType + (i < extraEnemies ? 1 : 0); // Distribuye extra si es necesario
+            
+            for (let j:number = 0; j < count; j++) {
+                
+                let enemyObj = Object.Instantiate(this.enemyPrefabs[i]) as GameObject;
+                let enemy = enemyObj.GetComponent<EnemyManager>();
+
+                enemyObj.SetActive(false);  // Lo desactiva hasta que sea necesario
+                this.enemyPool.push(enemy);
+            }
         }
+        
+        // Mezcla el pool para evitar que siempre salgan en el mismo orden
+        this.ShufflePool();
     }
 
+    // 🔹 Mezcla el pool para una mejor distribución aleatoria
+    private ShufflePool(): void {
+        for (let i = this.enemyPool.length - 1; i > 0; i--) {
+            let j = Mathf.Floor(Random.Range(0, i + 1));
+            [this.enemyPool[i], this.enemyPool[j]] = [this.enemyPool[j], this.enemyPool[i]];
+        }
+    }
 
     // 🔹 Obtiene un enemigo del pool (si hay disponibles) o retorna null si el pool está vacío
     private GetPooledEnemy(): EnemyManager {

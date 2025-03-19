@@ -969,7 +969,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961739749}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.25340098, y: -0.00006465292, z: 0.000016935877, w: 0.96736133}
+  m_LocalRotation: {x: 0.25340098, y: -0.00006642838, z: 0.000017400962, w: 0.96736133}
   m_LocalPosition: {x: 0, y: 6, z: -8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1540,7 +1540,7 @@ MonoBehaviour:
     PropType: 4
     PropKey: enemyPrefabs.[1]
     BasePath: enemyPrefabs_D1
-  - IntValue: 10
+  - IntValue: 14
     LongValue: 0
     DoubleValue: 0
     FloatValue: 0
@@ -1645,7 +1645,7 @@ MonoBehaviour:
     PropKey: towerManager
     BasePath: towerManager
   _script: {fileID: 4458252877524076426, guid: 409fee7ed8c54894490c33f3f86f34ca, type: 3}
-  _scriptAssetHash: f76e53aa68d2f817016e52ff8410fbd5
+  _scriptAssetHash: c2a03979b56d1a77f4cff769b3586d9d
   UiEventForwarders: []
 --- !u!1 &1835909010
 GameObject:
@@ -1672,7 +1672,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1835909010}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.000000030173396, z: 0.000000016976628, w: 1}
+  m_LocalRotation: {x: -0, y: -0.000000030180672, z: 0.000000016971171, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
