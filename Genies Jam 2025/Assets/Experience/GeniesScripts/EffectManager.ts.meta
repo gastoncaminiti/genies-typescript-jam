@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 6832e5d9a6aeba0438808de8a5a231be
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 22604dd76f55453daccee3ed9e7b94b5, type: 3}
+  SerializedAsset: '{"IsCompiled":true,"CompilerVersion":"2.0.63","ReferencedSpecifiers":[],"Source":"\"use
+    strict\";\nObject.defineProperty(exports, \"__esModule\", { value: true });\nconst
+    UnityEngine_1 = require(\"UnityEngine\");\nclass EffectManager extends UnityEngine_1.MonoBehaviour
+    {\n    Awake() {\n        //Establishes the GameManager singleton instance\n       
+    if (EffectManager.Instance == null) {\n            EffectManager.Instance = this;\n       
+    }\n        else {\n            EffectManager.Destroy(this.gameObject);\n       
+    }\n    }\n    DestroyEffect(newPosition) {\n        this.destroyEffectObject.transform.position
+    = newPosition;\n        this.destroyEffectObject.SetActive(true);\n    }\n   
+    DisableDestroyEffect() {\n        this.destroyEffectObject.SetActive(false);\n   
+    }\n}\nexports.default = EffectManager;\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRWZmZWN0TWFuYWdlci5qcyIsIm1hcHBpbmdzIjoiOztBQUNBLDZDQUE4RDtBQUM5RCxNQUFxQixhQUFjLFNBQVEsMkJBQWE7SUFTNUMsS0FBSztRQUNULGdEQUErQztRQUMvQyxJQUFHLGFBQWEsQ0FBQyxRQUFRLElBQUksSUFBSSxFQUFFO1lBQy9CLGFBQWEsQ0FBQyxRQUFRLEdBQUcsSUFBSTtRQUNqQyxDQUFDO2FBQUk7WUFDRCxhQUFhLENBQUMsT0FBTyxDQUFDLElBQUksQ0FBQyxVQUFVLENBQUM7UUFDMUM7SUFDSjtJQUVPLGFBQWEsQ0FBQyxXQUFvQjtRQUNyQyxJQUFJLENBQUMsbUJBQW1CLENBQUMsU0FBUyxDQUFDLFFBQVEsR0FBRyxXQUFXO1FBQ3pELElBQUksQ0FBQyxtQkFBbUIsQ0FBQyxTQUFTLENBQUMsSUFBSSxDQUFDO0lBQzVDO0lBRVEsb0JBQW9CO1FBQ3hCLElBQUksQ0FBQyxtQkFBbUIsQ0FBQyxTQUFTLENBQUMsS0FBSyxDQUFDO0lBQzdDO0NBQ0o7QUExQkEsZ0NBMEJBIiwibmFtZXMiOltdLCJpZ25vcmVMaXN0IjpbXSwic291cmNlcyI6WyJFZmZlY3RNYW5hZ2VyLnRzIl0sInNvdXJjZXNDb250ZW50IjpbbnVsbF19","ScriptHash":"4aef132c774095d6a784d22865630738","Specifier":"@assets/Experience/GeniesScripts/EffectManager","DefaultTypeName":"@assets/Experience/GeniesScripts/EffectManager.EffectManager","IsMonobehaviour":true,"IsScriptableObj":false,"InheritanceChain":["@assets/Experience/GeniesScripts/EffectManager.EffectManager","UnityEngine.MonoBehaviour","UnityEngine.Behaviour","UnityEngine.Component","UnityEngine.Object","@com.genies.scripting@1.11.0\\Runtime\\Typing\\index.d.System.Object"],"Properties":[{"Path":"hitEffectObject","Name":"hitEffectObject","TypeName":"UnityEngine.GameObject","AssemblyName":null,"EnumKeys":[],"EnumValues":[],"IsGeniesBehaviourRef":false,"IsGeniesScriptableObjectRef":false,"Decorators":[{"Type":"Header","Args":["\"Hit
+    Effect Settings\""]},{"Type":"SerializeField","Args":[]}],"Initializers":[],"ArrayDimension":-1,"IsArray":false,"IsEnum":false,"ArrayElementInitializer":null,"ChildProperties":[],"PrettyName":"Hit
+    Effect Object","_arrayElementInitializerJson":null,"_childPropertiesJson":"[]","_prettyName":null},{"Path":"destroyEffectObject","Name":"destroyEffectObject","TypeName":"UnityEngine.GameObject","AssemblyName":null,"EnumKeys":[],"EnumValues":[],"IsGeniesBehaviourRef":false,"IsGeniesScriptableObjectRef":false,"Decorators":[{"Type":"Header","Args":["\"Destroy
+    Effect Settings\""]},{"Type":"SerializeField","Args":[]}],"Initializers":[],"ArrayDimension":-1,"IsArray":false,"IsEnum":false,"ArrayElementInitializer":null,"ChildProperties":[],"PrettyName":"Destroy
+    Effect Object","_arrayElementInitializerJson":null,"_childPropertiesJson":"[]","_prettyName":null}],"SupportedUiEvents":"None","DisplayName":"EffectManager","name":"EffectManager","hideFlags":"NotEditable"}'

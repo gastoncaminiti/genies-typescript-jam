@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0706285-cb97-40a5-82b7-1ca1b8199693" name="Changes" comment="" />
+    <list default="true" id="a0706285-cb97-40a5-82b7-1ca1b8199693" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Genies Jam 2025/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Genies Jam 2025/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Experience/GeniesJamPrototype.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/GeniesJamPrototype.unity" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,7 +100,7 @@
       <workItem from="1741800003083" duration="1105000" />
       <workItem from="1741807638965" duration="8226000" />
       <workItem from="1742320143163" duration="8325000" />
-      <workItem from="1742402080962" duration="3117000" />
+      <workItem from="1742402080962" duration="4734000" />
     </task>
     <servers />
   </component>
