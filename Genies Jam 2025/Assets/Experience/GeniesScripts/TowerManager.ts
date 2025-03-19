@@ -1,8 +1,12 @@
 
 import {Collider, MonoBehaviour} from "UnityEngine";
 import GameManager, { GameState } from './GameManager';
+import EnemyManager from "./EnemyManager";
+import {EnemyState} from "@assets/Experience/GeniesScripts/Enums/EnemyState";
 export default class TowerManager extends MonoBehaviour {
 
+    @NonSerialized public OnHitTower: GeniesEvent<[EnemyManager]> = new GeniesEvent<[EnemyManager]>();
+    
     private gameManager: GameManager;
     //Called when script instance is loaded
     private Start() : void {
@@ -25,7 +29,11 @@ export default class TowerManager extends MonoBehaviour {
     private OnTriggerEnter(coll:Collider): void
     {
         if (coll.gameObject.tag == "Enemy") {
+            
             console.log("ENEMY HIT TRIGGER");
+            let enemy = coll.gameObject.GetComponent<EnemyManager>();
+            this.OnHitTower.trigger(enemy);
+            
         }
     }
 }
