@@ -5,6 +5,7 @@ import EnemyManager from "./EnemyManager";
 import {EnemyState} from "./Enums/EnemyState";
 import PlayerController from "./PlayerController";
 import TowerManager from "./TowerManager";
+import EffectManager from "./EffectManager";
 
 
 export default class EnemySpawner extends MonoBehaviour {
@@ -70,8 +71,10 @@ export default class EnemySpawner extends MonoBehaviour {
         
         if(peekFirstEnemy.IsState(newState)){
             let dequeuedEnemy = this.enemyQueue.shift();
-            console.log("EL ESTADO COINCIDE HAY QUE MATARLO");
+            EffectManager.Instance.DestroyEffect(dequeuedEnemy.transform.position);
+            
             this.ReturnToPool(dequeuedEnemy);
+            console.log("EL ESTADO COINCIDE HAY QUE MATARLO");
         }
     }
 
@@ -120,6 +123,7 @@ export default class EnemySpawner extends MonoBehaviour {
     // 🔹 Devuelve un enemigo al pool en lugar de destruirlo
     private ReturnToPool(enemy: EnemyManager): void {
         enemy.gameObject.SetActive(false);
+        EffectManager.Instance.HitEffect(enemy.transform.position);
         this.enemyPool.push(enemy);
     }
 }
