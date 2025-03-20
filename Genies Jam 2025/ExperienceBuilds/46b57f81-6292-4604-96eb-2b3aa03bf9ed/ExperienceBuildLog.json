@@ -1,0 +1,309 @@
+{
+    "Items": [
+        {
+            "TimestampUtc": 1742421469,
+            "Message": "",
+            "EventType": "Build Start"
+        },
+        {
+            "TimestampUtc": 1742421469,
+            "Message": "[Preprocess Assets] Running ExperienceScriptingBuildStep",
+            "EventType": "Info"
+        },
+        {
+            "TimestampUtc": 1742421469,
+            "Message": "[Preprocess Assets] Running ExperienceScenesBuildStep",
+            "EventType": "Info"
+        },
+        {
+            "TimestampUtc": 1742421469,
+            "Message": "[PreBuild Step] Running PreExperienceBuildStep",
+            "EventType": "Info"
+        },
+        {
+            "TimestampUtc": 1742421469,
+            "Message": "[PreBuild Step] Running ExperienceScriptingBuildStep",
+            "EventType": "Info"
+        },
+        {
+            "TimestampUtc": 1742421470,
+            "Message": "[PreBuild Step] Running ExperienceLayersBuildStep",
+            "EventType": "Info"
+        },
+        {
+            "TimestampUtc": 1742421470,
+            "Message": "[PreBuild Step] Running ExperienceQualityLevelBuildStep",
+            "EventType": "Info"
+        },
+        {
+            "TimestampUtc": 1742421470,
+            "Message": "[PreBuild Step] Running TraitsBuildStep",
+            "EventType": "Info"
+        },
+        {
+            "TimestampUtc": 1742421470,
+            "Message": "[PreBuild Step] Running SetupAddressablesBuildStep",
+            "EventType": "Info"
+        },
+        {
+            "TimestampUtc": 1742421472,
+            "Message": "Assets/Experience/GeniesJamPrototype.unity",
+            "EventType": "Asset Bundled"
+        },
+        {
+            "TimestampUtc": 1742421472,
+            "Message": "Assets/Experience/Animation/PlayerAnimator.controller",
+            "EventType": "Asset Bundled"
+        },
+        {
+            "TimestampUtc": 1742421472,
+            "Message": "Assets/Experience/Audio/Phat Phrog Studios Eternal Flame.ogg",
+            "EventType": "Asset Bundled"
+        },
+        {
+            "TimestampUtc": 1742421472,
+            "Message": "Assets/Experience/GeniesScripts/EffectManager.ts",
+            "EventType": "Asset Bundled"
+        },
+        {
+            "TimestampUtc": 1742421472,
+            "Message": "Assets/Experience/GeniesScripts/EnemyManager.ts",
+            "EventType": "Asset Bundled"
+        },
+        {
+            "TimestampUtc": 1742421472,
+            "Message": "Assets/Experience/GeniesScripts/EnemySpawner.ts",
+            "EventType": "Asset Bundled"
+        },
+        {
+            "TimestampUtc": 1742421472,
+            "Message": "Assets/Experience/GeniesScripts/GameManager.ts",
+            "EventType": "Asset Bundled"
+        },
+        {
+            "TimestampUtc": 1742421472,
+            "Message": "Assets/Experience/GeniesScripts/MoveUpManager.ts",
+            "EventType": "Asset Bundled"
+        },
+        {
+            "TimestampUtc": 1742421472,
+            "Message": "Assets/Experience/GeniesScripts/MusicManager.ts",
+            "EventType": "Asset Bundled"
+        },
+        {
+            "TimestampUtc": 1742421472,
+            "Message": "Assets/Experience/GeniesScripts/PlayerController.ts",
+            "EventType": "Asset Bundled"
+        },
+        {
+            "TimestampUtc": 1742421472,
+            "Message": "Assets/Experience/GeniesScripts/TowerManager.ts",
+            "EventType": "Asset Bundled"
+        },
+        {
+            "TimestampUtc": 1742421472,
+            "Message": "Assets/Experience/Materials/Background Material.mat",
+            "EventType": "Asset Bundled"
+        },
+        {
+            "TimestampUtc": 1742421472,
+            "Message": "Assets/Experience/Materials/Cube Material.mat",
+            "EventType": "Asset Bundled"
+        },
+        {
+            "TimestampUtc": 1742421472,
+            "Message": "Assets/Experience/Materials/Icon Material.mat",
+            "EventType": "Asset Bundled"
+        },
+        {
+            "TimestampUtc": 1742421472,
+            "Message": "Assets/Experience/Prefabs/Tower.prefab",
+            "EventType": "Asset Bundled"
+        },
+        {
+            "TimestampUtc": 1742421472,
+            "Message": "Assets/Experience/Sprites/25-1-100 Sci-Fi Flat icons-53.png",
+            "EventType": "Asset Bundled"
+        },
+        {
+            "TimestampUtc": 1742421472,
+            "Message": "Assets/Experience/Sprites/base.png",
+            "EventType": "Asset Bundled"
+        },
+        {
+            "TimestampUtc": 1742421472,
+            "Message": "Assets/Experience/Sprites/columna.png",
+            "EventType": "Asset Bundled"
+        },
+        {
+            "TimestampUtc": 1742421472,
+            "Message": "Assets/Experience/Sprites/columna2.png",
+            "EventType": "Asset Bundled"
+        },
+        {
+            "TimestampUtc": 1742421472,
+            "Message": "Assets/Experience/Sprites/Normal Map Background.png",
+            "EventType": "Asset Bundled"
+        },
+        {
+            "TimestampUtc": 1742421472,
+            "Message": "Assets/Experience/Animation/Clips/Dancing Idle.fbx",
+            "EventType": "Asset Bundled"
+        },
+        {
+            "TimestampUtc": 1742421472,
+            "Message": "Assets/Experience/Animation/Clips/Dancing Left.fbx",
+            "EventType": "Asset Bundled"
+        },
+        {
+            "TimestampUtc": 1742421472,
+            "Message": "Assets/Experience/Animation/Clips/Dancing Right.fbx",
+            "EventType": "Asset Bundled"
+        },
+        {
+            "TimestampUtc": 1742421472,
+            "Message": "Assets/Experience/Animation/DestroyVFX/Destroy Animation.anim",
+            "EventType": "Asset Bundled"
+        },
+        {
+            "TimestampUtc": 1742421472,
+            "Message": "Assets/Experience/Animation/DestroyVFX/DestroyAnimationController.controller",
+            "EventType": "Asset Bundled"
+        },
+        {
+            "TimestampUtc": 1742421472,
+            "Message": "Assets/Experience/Animation/DestroyVFX/spritesheet.png",
+            "EventType": "Asset Bundled"
+        },
+        {
+            "TimestampUtc": 1742421472,
+            "Message": "Assets/Experience/Animation/HitVFX/Hit Animation.anim",
+            "EventType": "Asset Bundled"
+        },
+        {
+            "TimestampUtc": 1742421472,
+            "Message": "Assets/Experience/Animation/HitVFX/HitAnimationController.controller",
+            "EventType": "Asset Bundled"
+        },
+        {
+            "TimestampUtc": 1742421472,
+            "Message": "Assets/Experience/Animation/HitVFX/spritesheet.png",
+            "EventType": "Asset Bundled"
+        },
+        {
+            "TimestampUtc": 1742421472,
+            "Message": "Assets/Experience/GeniesScripts/Enums/EnemyState.ts",
+            "EventType": "Asset Bundled"
+        },
+        {
+            "TimestampUtc": 1742421472,
+            "Message": "Assets/Experience/Prefabs/Enemies/Enemy Base Right.prefab",
+            "EventType": "Asset Bundled"
+        },
+        {
+            "TimestampUtc": 1742421472,
+            "Message": "Assets/Experience/Prefabs/Enemies/Enemy Down.prefab",
+            "EventType": "Asset Bundled"
+        },
+        {
+            "TimestampUtc": 1742421472,
+            "Message": "Assets/Experience/Prefabs/Enemies/Enemy Left.prefab",
+            "EventType": "Asset Bundled"
+        },
+        {
+            "TimestampUtc": 1742421472,
+            "Message": "Assets/Experience/Prefabs/Enemies/Enemy Up.prefab",
+            "EventType": "Asset Bundled"
+        },
+        {
+            "TimestampUtc": 1742421472,
+            "Message": "Assets/Experience/Sprites/Materials/base.mat",
+            "EventType": "Asset Bundled"
+        },
+        {
+            "TimestampUtc": 1742421472,
+            "Message": "Assets/Experience/Sprites/Materials/columna.mat",
+            "EventType": "Asset Bundled"
+        },
+        {
+            "TimestampUtc": 1742421472,
+            "Message": "Assets/Experience/Sprites/Materials/columna2.mat",
+            "EventType": "Asset Bundled"
+        },
+        {
+            "TimestampUtc": 1742421702,
+            "Message": "[PostBuild Step] Running ExperienceLayersBuildStep",
+            "EventType": "Info"
+        },
+        {
+            "TimestampUtc": 1742421702,
+            "Message": "[PostBuild Step] Running ExperienceQualityLevelBuildStep",
+            "EventType": "Info"
+        },
+        {
+            "TimestampUtc": 1742421702,
+            "Message": "[PostBuild Step] Running TraitsBuildStep",
+            "EventType": "Info"
+        },
+        {
+            "TimestampUtc": 1742421702,
+            "Message": "[PostBuild Step] Running ExperienceScenesBuildStep",
+            "EventType": "Info"
+        },
+        {
+            "TimestampUtc": 1742421702,
+            "Message": "[PostBuild Step] Running BundleExperienceImagesBuildStep",
+            "EventType": "Info"
+        },
+        {
+            "TimestampUtc": 1742421702,
+            "Message": "[PostBuild Step] Running WriteModuleManifestBuildStep",
+            "EventType": "Info"
+        },
+        {
+            "TimestampUtc": 1742421702,
+            "Message": "Starting to write moduleManifest to path",
+            "EventType": "Info"
+        },
+        {
+            "TimestampUtc": 1742421702,
+            "Message": "Writing moduleManifest to path: C:/Users/gasto/Desktop/genies-typescript-jam/Genies Jam 2025/Assets\\../ExperienceBuilds\\46b57f81-6292-4604-96eb-2b3aa03bf9ed\\ExperienceBuildManifest.json",
+            "EventType": "Info"
+        },
+        {
+            "TimestampUtc": 1742421702,
+            "Message": "Successfully wrote moduleManifest to path: C:/Users/gasto/Desktop/genies-typescript-jam/Genies Jam 2025/Assets\\../ExperienceBuilds\\46b57f81-6292-4604-96eb-2b3aa03bf9ed\\ExperienceBuildManifest.json",
+            "EventType": "Info"
+        },
+        {
+            "TimestampUtc": 1742421702,
+            "Message": "[PostBuild Step] Running MultiplayerBuildStep",
+            "EventType": "Info"
+        },
+        {
+            "TimestampUtc": 1742421702,
+            "Message": "Multiplayer is disabled, skip uploading multiplayer code.",
+            "EventType": "Info"
+        },
+        {
+            "TimestampUtc": 1742421702,
+            "Message": "[PostBuild Step] Running ExperienceScriptingBuildStep",
+            "EventType": "Info"
+        },
+        {
+            "TimestampUtc": 1742421704,
+            "Message": "starting to zip build.genies file",
+            "EventType": "Info"
+        },
+        {
+            "TimestampUtc": 1742421704,
+            "Message": "finished zipping build.genies file",
+            "EventType": "Info"
+        },
+        {
+            "TimestampUtc": 1742421704,
+            "Message": "Build took 235 seconds to complete.",
+            "EventType": "Build End"
+        }
+    ]
+}

@@ -10,9 +10,11 @@ export default class PlayerController extends MonoBehaviour {
     
     @Header("Player Settings")
     @SerializeField private playerSpeed: float = 2;
+    @SerializeField private playerStep: float = 1.2;
     @SerializeField private playerAnimator: RuntimeAnimatorController;
 
-    private targetLane: int = 0;
+    private targetLaneX: int = 0;
+    private targetLaneY: int = 0;
     private mouseStartPos: Vector3;
     
     private userAvatar: GeniesAvatar;
@@ -58,20 +60,31 @@ export default class PlayerController extends MonoBehaviour {
         }
 
         if (Input.GetMouseButtonUp(0)) {
-            let direction = Input.mousePosition - this.mouseStartPos;
+            let direction: Vector3 = Input.mousePosition - this.mouseStartPos;
 
             // Determine if the swipe was more horizontal than vertical
             if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y)) {
                 //Change target lane based on swipe direction
-                if (direction.x > 0 && this.targetLane < 1) {
-                    this.targetLane = this.targetLane + 1;
+                if (direction.x > 0 && this.targetLaneX < 1) {
+                    this.targetLaneX = this.targetLaneX + this.playerStep;
                     this.userAvatar.Animator.SetTrigger("isRight");
                     this.OnMoveStateChange.trigger(EnemyState.RIGHT);
                 }
-                if (direction.x < 0 && this.targetLane > -1) {
-                    this.targetLane = this.targetLane - 1;
+                if (direction.x < 0 && this.targetLaneX > -1) {
+                    this.targetLaneX = this.targetLaneX - this.playerStep;
                     this.userAvatar.Animator.SetTrigger("isLeft");
                     this.OnMoveStateChange.trigger(EnemyState.LEFT);
+                }
+            }else{
+                if (direction.y > 0 && this.targetLaneY < 1) {
+                    this.targetLaneY = this.targetLaneY + this.playerStep;
+                    //this.userAvatar.Animator.SetTrigger("isUp");
+                    this.OnMoveStateChange.trigger(EnemyState.UP);
+                }
+                if (direction.y < 0 && this.targetLaneY > -1) {
+                    this.targetLaneY = this.targetLaneY - this.playerStep;
+                    //this.userAvatar.Animator.SetTrigger("isDown");
+                    this.OnMoveStateChange.trigger(EnemyState.DOWN);
                 }
             }
         }
@@ -79,7 +92,7 @@ export default class PlayerController extends MonoBehaviour {
 
     private MovePlayer() {
         let playerPos = this.transform.position;
-        let targetPos = new Vector3(this.targetLane, playerPos.y, playerPos.z);
+        let targetPos = new Vector3(this.targetLaneX, playerPos.y, this.targetLaneY);
         let newPos = Vector3.MoveTowards(playerPos, targetPos, this.playerSpeed * Time.deltaTime);
         this.transform.position = newPos;
     }
@@ -87,8 +100,9 @@ export default class PlayerController extends MonoBehaviour {
     /** This will manage the player once the game starts. */
     private OnGamePlay(): void {
         this.canMove = true;
-        this.transform.position = Vector3.zero;
-        this.targetLane = 0;
+        //this.transform.position = Vector3.zero;
+        this.targetLaneX = 0;
+        this.targetLaneY = 0;
         console.log("LOAD AVATAR");
     }
 

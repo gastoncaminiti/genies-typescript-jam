@@ -11,7 +11,7 @@
       "url": "https://npm.genies.com"
     },
     "com.genies.addressables": {
-      "version": "1.0.6",
+      "version": "1.0.8",
       "depth": 3,
       "source": "registry",
       "dependencies": {
@@ -20,10 +20,10 @@
         "com.genies.abtesting": "1.0.0",
         "com.genies.crashreporting": "1.0.0",
         "com.genies.datamodels": "1.0.4",
-        "com.genies.featureflags": "1.0.3",
+        "com.genies.featureflags": "1.0.4",
         "com.genies.servicemanagement": "1.0.1",
         "com.genies.thirdparty.vcontainer": "1.0.0",
-        "com.genies.utilities": "1.0.2",
+        "com.genies.utilities": "1.2.0",
         "com.unity.addressables": "1.19.19"
       },
       "url": "https://npm.genies.com"
@@ -62,7 +62,7 @@
       "url": "https://npm.genies.com"
     },
     "com.genies.avatars": {
-      "version": "1.0.3",
+      "version": "1.1.1",
       "depth": 2,
       "source": "registry",
       "dependencies": {
@@ -75,114 +75,115 @@
         "com.unity.nuget.newtonsoft-json": "3.0.2",
         "com.genies.assets.services": "1.0.0",
         "com.genies.crashreporting": "1.0.0",
-        "com.genies.featureflags": "1.0.3",
+        "com.genies.featureflags": "1.0.4",
         "com.genies.performancemonitoring": "1.0.0",
         "com.genies.refs": "1.0.0",
         "com.genies.shaders": "1.3.0",
-        "com.genies.utilities": "1.0.2",
+        "com.genies.utilities": "1.2.0",
         "com.genies.thirdparty.unitygltf": "1.0.0",
         "com.genies.servicemanagement": "1.0.0",
         "com.genies.shaderlesstools": "1.0.0",
-        "com.genies.datamodels": "1.0.4"
+        "com.genies.datamodels": "1.0.4",
+        "com.genies.thirdparty.jsonconverters": "1.1.0"
       },
       "url": "https://npm.genies.com"
     },
     "com.genies.avatars.behaviors": {
-      "version": "1.0.3",
+      "version": "1.0.5",
       "depth": 3,
       "source": "registry",
       "dependencies": {
         "com.genies.packages.bootstrap": "1.0.0",
-        "com.genies.avatars": "1.0.3",
+        "com.genies.avatars": "1.1.1",
         "com.genies.camerasystem": "1.0.3",
         "com.genies.performancemonitoring": "1.0.0",
         "com.genies.thirdparty.unitask": "1.0.0",
         "com.genies.servicemanagement": "1.0.0",
-        "com.genies.utilities": "1.0.2",
-        "com.genies.uiframework": "1.0.3"
+        "com.genies.utilities": "1.2.0",
+        "com.genies.uiframework": "1.1.1"
       },
       "url": "https://npm.genies.com"
     },
     "com.genies.avatars.context": {
-      "version": "1.0.7",
+      "version": "1.0.9",
       "depth": 2,
       "source": "registry",
       "dependencies": {
         "com.genies.packages.bootstrap": "1.0.0",
         "com.genies.thirdparty.unitask": "1.0.0",
-        "com.genies.addressables": "1.0.6",
+        "com.genies.addressables": "1.0.8",
         "com.genies.assets.services": "1.0.0",
-        "com.genies.avatars": "1.0.3",
-        "com.genies.avatars.services": "1.0.4",
-        "com.genies.closet": "1.0.0",
-        "com.genies.cloudsave": "1.0.0",
+        "com.genies.avatars": "1.1.1",
+        "com.genies.avatars.services": "1.0.5",
+        "com.genies.closet": "1.0.1",
+        "com.genies.cloudsave": "1.0.1",
         "com.genies.crashreporting": "1.0.0",
         "com.genies.datamodels": "1.0.4",
         "com.genies.datarepositoryframework": "1.0.0",
         "com.genies.diskcaching": "1.0.0",
-        "com.genies.featureflags": "1.0.3",
+        "com.genies.featureflags": "1.0.4",
         "com.genies.login": "1.0.0",
         "com.genies.login.native": "1.1.1",
         "com.genies.refs": "1.0.0",
         "com.genies.shaderlesstools": "1.0.1",
         "com.genies.shaders": "1.3.0",
-        "com.genies.services": "1.0.0",
+        "com.genies.services": "1.1.0",
         "com.genies.thirdparty.editor-toolbox": "1.0.0",
-        "com.genies.utilities": "1.0.2",
-        "com.genies.s3service": "1.0.0",
+        "com.genies.utilities": "1.2.0",
+        "com.genies.s3service": "1.0.1",
         "com.genies.servicemanagement": "1.0.0",
         "com.genies.thirdparty.vcontainer": "1.0.0",
-        "com.genies.ugc": "1.0.3",
-        "com.genies.wearable": "1.0.3",
+        "com.genies.ugc": "1.0.4",
+        "com.genies.wearable": "1.0.4",
         "com.unity.addressables": "1.19.19",
         "com.unity.nuget.newtonsoft-json": "3.0.2"
       },
       "url": "https://npm.genies.com"
     },
     "com.genies.avatars.sdk": {
-      "version": "1.0.7",
+      "version": "1.0.9",
       "depth": 1,
       "source": "registry",
       "dependencies": {
         "com.genies.packages.bootstrap": "1.0.0",
         "com.genies.thirdparty.unitask": "1.0.0",
-        "com.genies.avatars": "1.0.3",
-        "com.genies.avatars.services": "1.0.4",
+        "com.genies.avatars": "1.1.1",
+        "com.genies.avatars.services": "1.0.5",
         "com.genies.servicemanagement": "1.0.0",
-        "com.genies.utilities": "1.0.2",
-        "com.genies.looks": "1.0.3",
+        "com.genies.utilities": "1.2.0",
+        "com.genies.looks": "1.0.5",
         "com.genies.login": "1.0.0",
         "com.genies.login.native": "1.1.1",
-        "com.genies.services": "1.0.0",
+        "com.genies.services": "1.1.0",
         "com.genies.crashreporting": "1.0.0",
-        "com.genies.avatars.context": "1.0.7"
+        "com.genies.avatars.context": "1.0.9"
       },
       "url": "https://npm.genies.com"
     },
     "com.genies.avatars.services": {
-      "version": "1.0.4",
+      "version": "1.0.5",
       "depth": 2,
       "source": "registry",
       "dependencies": {
         "com.genies.packages.bootstrap": "1.0.0",
         "com.genies.thirdparty.unitask": "1.0.0",
-        "com.genies.avatars": "1.0.3",
-        "com.genies.cloudsave": "1.0.0",
+        "com.genies.avatars": "1.1.1",
+        "com.genies.cloudsave": "1.0.1",
         "com.genies.crashreporting": "1.0.0",
         "com.genies.datarepositoryframework": "1.0.0",
         "com.genies.events": "1.0.0",
         "com.genies.login": "1.0.0",
         "com.genies.servicemanagement": "1.0.0",
-        "com.genies.services": "1.0.0",
+        "com.genies.services": "1.1.0",
         "com.genies.thirdparty.vcontainer": "1.0.0",
         "com.genies.thirdparty.nsubstitute": "1.0.0",
-        "com.genies.utilities": "1.0.2"
+        "com.genies.utilities": "1.2.0"
       },
       "url": "https://npm.genies.com"
     },
     "com.genies.camerasystem": {
-      "version": "1.0.3",
-      "depth": 3,
+      "version": "1.0.4",
+      "depth": 4,
       "source": "registry",
       "dependencies": {
         "com.genies.packages.bootstrap": "1.0.0",
@@ -194,7 +195,7 @@
       "url": "https://npm.genies.com"
     },
     "com.genies.closet": {
-      "version": "1.0.0",
+      "version": "1.0.1",
       "depth": 3,
       "source": "registry",
       "dependencies": {
@@ -202,14 +203,14 @@
         "com.genies.thirdparty.unitask": "1.0.0",
         "com.genies.login": "1.0.0",
         "com.genies.servicemanagement": "1.0.0",
-        "com.genies.services": "1.0.0",
+        "com.genies.services": "1.1.0",
         "com.genies.thirdparty.vcontainer": "1.0.0",
         "com.genies.login.native": "1.0.0"
       },
       "url": "https://npm.genies.com"
     },
     "com.genies.cloudsave": {
-      "version": "1.0.0",
+      "version": "1.0.1",
       "depth": 3,
       "source": "registry",
       "dependencies": {
@@ -219,8 +220,8 @@
         "com.genies.datarepositoryframework": "1.0.0",
         "com.genies.login": "1.0.0",
         "com.genies.login.native": "1.0.0",
-        "com.genies.services": "1.0.0",
-        "com.genies.utilities": "1.0.0"
+        "com.genies.services": "1.1.0",
+        "com.genies.utilities": "1.2.0"
       },
       "url": "https://npm.genies.com"
     },
@@ -278,7 +279,7 @@
       "url": "https://npm.genies.com"
     },
     "com.genies.experience.bootstrapping": {
-      "version": "1.3.0",
+      "version": "1.4.2",
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -286,33 +287,33 @@
         "com.unity.addressables": "1.19.19",
         "com.genies.crashreporting": "1.0.0",
         "com.genies.experience.manifest": "1.0.0",
-        "com.genies.experience.shared": "1.1.0",
-        "com.genies.graphqlclient": "1.0.1",
+        "com.genies.experience.shared": "1.1.1",
+        "com.genies.graphqlclient": "1.0.3",
         "com.genies.login.native": "1.1.1",
         "com.genies.sdktools": "1.0.0",
-        "com.genies.services": "1.0.0",
-        "com.genies.traits": "1.0.0",
+        "com.genies.services": "1.1.0",
+        "com.genies.traits": "1.0.1",
         "com.genies.thirdparty.editor-toolbox": "1.0.0",
         "com.genies.qrcode": "1.0.0",
-        "com.genies.utilities": "1.0.2"
+        "com.genies.utilities": "1.2.0"
       },
       "url": "https://npm.genies.com"
     },
     "com.genies.experience.cloudsave": {
-      "version": "1.0.1",
+      "version": "1.0.3",
       "depth": 1,
       "source": "registry",
       "dependencies": {
         "com.genies.packages.bootstrap": "1.0.0",
         "com.genies.crashreporting": "1.0.0",
         "com.genies.experience.manifest": "1.0.0",
-        "com.genies.graphqlclient": "1.0.0",
+        "com.genies.graphqlclient": "1.0.3",
         "com.genies.login.native": "1.0.0",
-        "com.genies.scripting.shared": "1.0.0",
+        "com.genies.scripting.shared": "1.1.1",
         "com.genies.servicemanagement": "1.0.0",
-        "com.genies.services": "1.0.0",
+        "com.genies.services": "1.1.0",
         "com.genies.thirdparty.unitask": "1.0.0",
-        "com.genies.utilities": "1.0.0"
+        "com.genies.utilities": "1.2.0"
       },
       "url": "https://npm.genies.com"
     },
@@ -324,47 +325,50 @@
       "url": "https://npm.genies.com"
     },
     "com.genies.experience.sdk": {
-      "version": "1.2.11",
+      "version": "1.3.14",
       "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.genies.avatars.sdk": "1.0.7",
-        "com.genies.experience.shared": "1.1.0",
-        "com.genies.experience.bootstrapping": "1.3.0",
-        "com.genies.experience.cloudsave": "1.0.1",
+        "com.genies.avatars.sdk": "1.0.9",
+        "com.genies.experience.shared": "1.1.1",
+        "com.genies.experience.bootstrapping": "1.4.2",
+        "com.genies.experience.cloudsave": "1.0.3",
         "com.genies.experience.manifest": "1.0.0",
-        "com.genies.graphqlclient": "1.0.1",
-        "com.genies.login.native": "1.1.1",
-        "com.genies.multiplayer": "1.1.6",
-        "com.genies.scripting": "1.6.0",
-        "com.genies.services": "1.0.0",
+        "com.genies.utilities": "1.2.0",
+        "com.genies.leaderboard": "2.0.0",
+        "com.genies.graphqlclient": "1.0.3",
+        "com.genies.login.native": "1.1.3",
+        "com.genies.multiplayer": "1.1.9",
+        "com.genies.scripting": "1.11.0",
+        "com.genies.services": "1.1.0",
         "com.genies.thirdparty.charactercontrollers": "1.1.2",
         "com.genies.thirdparty.unitask": "1.0.0",
-        "com.genies.traits": "1.0.0",
+        "com.genies.traits": "1.0.1",
         "com.unity.render-pipelines.universal": "14.0.11",
         "com.unity.textmeshpro": "3.0.8",
         "com.genies.thirdparty.dotween": "1.0.0",
-        "com.genies.thirdparty.leantouch": "1.0.0"
+        "com.genies.thirdparty.leantouch": "1.0.0",
+        "com.genies.profiles.sdk": "1.0.1"
       },
       "url": "https://npm.genies.com"
     },
     "com.genies.experience.shared": {
-      "version": "1.1.0",
+      "version": "1.1.1",
       "depth": 1,
       "source": "registry",
       "dependencies": {
         "com.genies.packages.bootstrap": "1.0.0",
         "com.genies.thirdparty.unitask": "1.0.0",
         "com.genies.crashreporting": "1.0.0",
-        "com.genies.graphqlclient": "1.0.1",
+        "com.genies.graphqlclient": "1.0.3",
         "com.genies.experience.manifest": "1.0.0",
         "com.genies.servicemanagement": "1.0.1",
-        "com.genies.services": "1.0.0"
+        "com.genies.services": "1.1.0"
       },
       "url": "https://npm.genies.com"
     },
     "com.genies.featureflags": {
-      "version": "1.0.3",
+      "version": "1.0.4",
       "depth": 3,
       "source": "registry",
       "dependencies": {
@@ -381,14 +385,14 @@
       "url": "https://npm.genies.com"
     },
     "com.genies.graphqlclient": {
-      "version": "1.0.1",
+      "version": "1.0.3",
       "depth": 1,
       "source": "registry",
       "dependencies": {
         "com.genies.packages.bootstrap": "1.0.0",
         "com.genies.thirdparty.unitask": "1.0.0",
         "com.genies.crashreporting": "1.0.0",
-        "com.genies.services": "1.0.0",
+        "com.genies.services": "1.1.0",
         "com.unity.nuget.newtonsoft-json": "3.0.2",
         "com.genies.login.native": "1.0.0",
         "com.genies.graphqlimporter": "1.0.0"
@@ -405,6 +409,24 @@
       },
       "url": "https://npm.genies.com"
     },
+    "com.genies.leaderboard": {
+      "version": "2.0.0",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.genies.login.native": "1.1.1",
+        "com.genies.refs": "1.0.0",
+        "com.genies.servicemanagement": "1.0.0",
+        "com.genies.services": "1.1.0",
+        "com.genies.thirdparty.dotween": "1.0.0",
+        "com.genies.uiframework": "1.1.0",
+        "com.genies.thirdparty.roundedcorners": "1.1.0",
+        "com.genies.utilities": "1.2.0",
+        "com.unity.textmeshpro": "3.0.8",
+        "com.genies.profiles.sdk": "1.0.1"
+      },
+      "url": "https://npm.genies.com"
+    },
     "com.genies.login": {
       "version": "1.0.1",
       "depth": 2,
@@ -417,7 +439,7 @@
       "url": "https://npm.genies.com"
     },
     "com.genies.login.native": {
-      "version": "1.1.1",
+      "version": "1.1.3",
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -426,47 +448,48 @@
         "com.genies.login": "1.0.1",
         "com.genies.servicemanagement": "1.0.0",
         "com.unity.textmeshpro": "3.0.8",
-        "com.genies.crashreporting": "1.0.0"
+        "com.genies.crashreporting": "1.0.0",
+        "com.unity.nuget.newtonsoft-json": "3.2.1"
       },
       "url": "https://npm.genies.com"
     },
     "com.genies.looks": {
-      "version": "1.0.3",
+      "version": "1.0.5",
       "depth": 2,
       "source": "registry",
       "dependencies": {
         "com.genies.packages.bootstrap": "1.0.0",
         "com.genies.thirdparty.unitask": "1.0.0",
         "com.genies.animations": "1.0.3",
-        "com.genies.avatars.behaviors": "1.0.3",
-        "com.genies.avatars": "1.0.3",
+        "com.genies.avatars.behaviors": "1.0.5",
+        "com.genies.avatars": "1.1.1",
         "com.genies.camerasystem": "1.0.3",
         "com.genies.datarepositoryframework": "1.0.0",
         "com.genies.crashreporting": "1.0.0",
         "com.genies.login": "1.0.0",
         "com.genies.login.native": "1.1.1",
-        "com.genies.services": "1.0.0",
-        "com.genies.s3service": "1.0.0",
+        "com.genies.services": "1.1.0",
+        "com.genies.s3service": "1.0.1",
         "com.genies.servicemanagement": "1.0.0",
         "com.genies.thirdparty.vcontainer": "1.0.0",
-        "com.genies.uiframework": "1.0.3"
+        "com.genies.uiframework": "1.1.1"
       },
       "url": "https://npm.genies.com"
     },
     "com.genies.multiplayer": {
-      "version": "1.1.6",
+      "version": "1.1.9",
       "depth": 1,
       "source": "registry",
       "dependencies": {
         "com.genies.packages.bootstrap": "1.0.0",
-        "com.genies.avatars": "1.0.3",
-        "com.genies.avatars.sdk": "1.0.6",
+        "com.genies.avatars": "1.1.1",
+        "com.genies.avatars.sdk": "1.0.8",
         "com.genies.login.native": "1.1.1",
         "com.genies.experience.manifest": "1.0.0",
-        "com.genies.scripting.shared": "1.0.0",
-        "com.genies.services": "1.0.0",
-        "com.genies.utilities": "1.0.2",
-        "com.genies.experience.shared": "1.1.0"
+        "com.genies.scripting.shared": "1.1.1",
+        "com.genies.services": "1.1.0",
+        "com.genies.utilities": "1.2.0",
+        "com.genies.experience.shared": "1.1.1"
       },
       "url": "https://npm.genies.com"
     },
@@ -491,6 +514,19 @@
       },
       "url": "https://npm.genies.com"
     },
+    "com.genies.profiles.sdk": {
+      "version": "1.0.1",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.genies.services": "1.1.0",
+        "com.genies.servicemanagement": "1.0.0",
+        "com.genies.thirdparty.unitask": "1.0.0",
+        "com.genies.refs": "1.0.0",
+        "com.genies.utilities": "1.2.0"
+      },
+      "url": "https://npm.genies.com"
+    },
     "com.genies.qrcode": {
       "version": "1.0.0",
       "depth": 2,
@@ -503,7 +539,7 @@
     },
     "com.genies.refs": {
       "version": "1.0.0",
-      "depth": 3,
+      "depth": 2,
       "source": "registry",
       "dependencies": {
         "com.genies.packages.bootstrap": "1.0.0",
@@ -514,7 +550,7 @@
       "url": "https://npm.genies.com"
     },
     "com.genies.s3service": {
-      "version": "1.0.0",
+      "version": "1.0.1",
       "depth": 3,
       "source": "registry",
       "dependencies": {
@@ -522,30 +558,30 @@
         "com.genies.thirdparty.unitask": "1.0.0",
         "com.genies.crashreporting": "1.0.0",
         "com.genies.diskcaching": "1.0.0",
-        "com.genies.services": "1.0.0"
+        "com.genies.services": "1.1.0"
       },
       "url": "https://npm.genies.com"
     },
     "com.genies.scripting": {
-      "version": "1.6.0",
+      "version": "1.11.0",
       "depth": 1,
       "source": "registry",
       "dependencies": {
         "com.genies.servicemanagement": "1.0.0",
-        "com.genies.utilities": "1.0.2",
+        "com.genies.utilities": "1.2.0",
         "com.genies.experience.manifest": "1.0.0",
-        "com.genies.experience.shared": "1.1.0",
+        "com.genies.experience.shared": "1.1.1",
         "com.genies.thirdparty.unitask": "1.0.0",
-        "com.genies.scripting.shared": "1.0.0"
+        "com.genies.scripting.shared": "1.1.1"
       },
       "url": "https://npm.genies.com"
     },
     "com.genies.scripting.shared": {
-      "version": "1.0.0",
+      "version": "1.1.1",
       "depth": 2,
       "source": "registry",
       "dependencies": {
-        "com.genies.utilities": "1.0.0"
+        "com.genies.utilities": "1.2.0"
       },
       "url": "https://npm.genies.com"
     },
@@ -572,7 +608,7 @@
       "url": "https://npm.genies.com"
     },
     "com.genies.services": {
-      "version": "1.0.0",
+      "version": "1.1.0",
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -580,6 +616,7 @@
         "com.genies.thirdparty.unitask": "1.0.0",
         "com.genies.abtesting": "1.0.0",
         "com.genies.login.native": "1.0.0",
+        "com.genies.utilities": "1.2.0",
         "com.genies.servicemanagement": "1.0.0"
       },
       "url": "https://npm.genies.com"
@@ -653,6 +690,13 @@
       "dependencies": {},
       "url": "https://npm.genies.com"
     },
+    "com.genies.thirdparty.jsonconverters": {
+      "version": "1.1.0",
+      "depth": 3,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://npm.genies.com"
+    },
     "com.genies.thirdparty.leantouch": {
       "version": "1.0.0",
       "depth": 1,
@@ -678,6 +722,13 @@
       },
       "url": "https://npm.genies.com"
     },
+    "com.genies.thirdparty.roundedcorners": {
+      "version": "1.1.0",
+      "depth": 2,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://npm.genies.com"
+    },
     "com.genies.thirdparty.unitask": {
       "version": "1.0.0",
       "depth": 1,
@@ -699,7 +750,7 @@
     },
     "com.genies.thirdparty.vcontainer": {
       "version": "1.0.0",
-      "depth": 3,
+      "depth": 2,
       "source": "registry",
       "dependencies": {
         "com.genies.packages.bootstrap": "1.0.0",
@@ -716,25 +767,25 @@
       "url": "https://npm.genies.com"
     },
     "com.genies.traits": {
-      "version": "1.0.0",
+      "version": "1.0.1",
       "depth": 1,
       "source": "registry",
       "dependencies": {
         "com.genies.packages.bootstrap": "1.0.0",
         "com.genies.thirdparty.unitask": "1.0.0",
-        "com.genies.graphqlclient": "1.0.0",
+        "com.genies.graphqlclient": "1.0.3",
         "com.genies.experience.manifest": "1.0.0",
         "com.genies.login.native": "1.0.0",
         "com.genies.servicemanagement": "1.0.0",
-        "com.genies.services": "1.0.0",
+        "com.genies.services": "1.1.0",
         "com.genies.thirdparty.dotween": "1.0.0",
         "com.genies.thirdparty.nsubstitute": "1.0.0",
-        "com.genies.utilities": "1.0.0"
+        "com.genies.utilities": "1.2.0"
       },
       "url": "https://npm.genies.com"
     },
     "com.genies.ugc": {
-      "version": "1.0.3",
+      "version": "1.0.4",
       "depth": 3,
       "source": "registry",
       "dependencies": {
@@ -742,39 +793,39 @@
         "com.genies.thirdparty.fluentassertions": "1.0.0",
         "com.genies.thirdparty.unitask": "1.0.0",
         "com.genies.assets.services": "1.0.0",
-        "com.genies.avatars": "1.0.3",
-        "com.genies.cloudsave": "1.0.0",
+        "com.genies.avatars": "1.1.1",
+        "com.genies.cloudsave": "1.0.1",
         "com.genies.crashreporting": "1.0.0",
         "com.genies.datamodels": "1.0.4",
         "com.genies.datarepositoryframework": "1.0.0",
-        "com.genies.featureflags": "1.0.3",
+        "com.genies.featureflags": "1.0.4",
         "com.genies.login.native": "1.1.1",
         "com.genies.refs": "1.0.0",
-        "com.genies.s3service": "1.0.0",
+        "com.genies.s3service": "1.0.1",
         "com.genies.servicemanagement": "1.0.0",
-        "com.genies.services": "1.0.0",
+        "com.genies.services": "1.1.0",
         "com.genies.shaders": "1.3.0",
         "com.genies.thirdparty.editor-toolbox": "1.0.0",
         "com.genies.thirdparty.vcontainer": "1.0.0",
-        "com.genies.utilities": "1.0.2"
+        "com.genies.utilities": "1.2.0"
       },
       "url": "https://npm.genies.com"
     },
     "com.genies.uiframework": {
-      "version": "1.0.3",
+      "version": "1.1.1",
       "depth": 3,
       "source": "registry",
       "dependencies": {
         "com.genies.packages.bootstrap": "1.0.0",
-        "com.genies.camerasystem": "1.0.3",
+        "com.genies.camerasystem": "1.0.4",
         "com.genies.servicemanagement": "1.0.0",
         "com.genies.thirdparty.dotween": "1.0.0"
       },
       "url": "https://npm.genies.com"
     },
     "com.genies.utilities": {
-      "version": "1.0.2",
-      "depth": 2,
+      "version": "1.2.0",
+      "depth": 1,
       "source": "registry",
       "dependencies": {
         "com.genies.packages.bootstrap": "1.0.0",
@@ -790,23 +841,29 @@
       "url": "https://npm.genies.com"
     },
     "com.genies.wearable": {
-      "version": "1.0.3",
+      "version": "1.0.4",
       "depth": 3,
       "source": "registry",
       "dependencies": {
         "com.genies.packages.bootstrap": "1.0.0",
         "com.genies.thirdparty.unitask": "1.0.0",
-        "com.genies.closet": "1.0.0",
+        "com.genies.closet": "1.0.1",
         "com.genies.datarepositoryframework": "1.0.0",
         "com.genies.login.native": "1.1.1",
-        "com.genies.s3service": "1.0.0",
+        "com.genies.s3service": "1.0.1",
         "com.genies.servicemanagement": "1.0.0",
-        "com.genies.services": "1.0.0",
+        "com.genies.services": "1.1.0",
         "com.genies.thirdparty.vcontainer": "1.0.0",
-        "com.genies.ugc": "1.0.3",
-        "com.genies.utilities": "1.0.2"
+        "com.genies.ugc": "1.0.4",
+        "com.genies.utilities": "1.2.0"
       },
       "url": "https://npm.genies.com"
+    },
+    "com.unity.2d.sprite": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {}
     },
     "com.unity.addressables": {
       "version": "1.21.21",
@@ -931,7 +988,7 @@
     },
     "com.unity.nuget.mono-cecil": {
       "version": "1.11.4",
-      "depth": 4,
+      "depth": 3,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
