@@ -24,17 +24,18 @@ MonoBehaviour:
           ClientId: 4jP/sqT+75wHWITzHtUR5Q==
           ClientSecret: m+fnSjR3HSGFIWAJZZl2mCIbaeEIXgW+mh91or1Umlg=
         mainScene:
-          sceneReference: {fileID: 0}
+          sceneReference: {fileID: 102900000, guid: 6d7907ce07927cf48883b626d4d61390,
+            type: 3}
           sceneName: 
           scenePath: 
           buildIndex: -1
         ExperienceImages:
-          Thumbnail: {fileID: 0}
-          GameIcon: {fileID: 0}
+          Thumbnail: {fileID: 2800000, guid: c69edb295240a4c7a8e5eb1149733ff6, type: 3}
+          GameIcon: {fileID: 2800000, guid: c69edb295240a4c7a8e5eb1149733ff6, type: 3}
           GameBackground: {fileID: 0}
         experienceQualityLevel: 0
         platformToggleConfig:
-          iOS: 1
+          iOS: 0
           Android: 1
           StandaloneOSX: 1
           StandaloneWindows64: 1
