@@ -137,13 +137,6 @@ MonoBehaviour:
     m_SerializedLabels:
     - 6e3d16550516511e3e653d69e5f56afab38dcd599399aaa390ab17ba09e4a3e4
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 6f78c0504668222489fb02bc9c966bac
-    m_Address: 6e3d16550516511e3e653d69e5f56afab38dcd599399aaa390ab17ba09e4a3e4\Assets/Experience/Sprites/Normal
-      Map Background
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - 6e3d16550516511e3e653d69e5f56afab38dcd599399aaa390ab17ba09e4a3e4
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 51e086d5a2ce53945b2cdd2e437b4db4
     m_Address: 6e3d16550516511e3e653d69e5f56afab38dcd599399aaa390ab17ba09e4a3e4\Assets/Experience/Animation/Clips/Dancing
       Idle
@@ -238,20 +231,8 @@ MonoBehaviour:
     m_SerializedLabels:
     - 6e3d16550516511e3e653d69e5f56afab38dcd599399aaa390ab17ba09e4a3e4
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 00e887b95ee4e584e8c6b615f5c945db
-    m_Address: 6e3d16550516511e3e653d69e5f56afab38dcd599399aaa390ab17ba09e4a3e4\Assets/Experience/Sprites/Materials/base
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - 6e3d16550516511e3e653d69e5f56afab38dcd599399aaa390ab17ba09e4a3e4
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 6df47d14a7619044fbbf549e3b0f0fd8
     m_Address: 6e3d16550516511e3e653d69e5f56afab38dcd599399aaa390ab17ba09e4a3e4\Assets/Experience/Sprites/Materials/columna
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - 6e3d16550516511e3e653d69e5f56afab38dcd599399aaa390ab17ba09e4a3e4
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 98699450cfa3fa641b366b292d51f14b
-    m_Address: 6e3d16550516511e3e653d69e5f56afab38dcd599399aaa390ab17ba09e4a3e4\Assets/Experience/Sprites/Materials/columna2
     m_ReadOnly: 0
     m_SerializedLabels:
     - 6e3d16550516511e3e653d69e5f56afab38dcd599399aaa390ab17ba09e4a3e4
