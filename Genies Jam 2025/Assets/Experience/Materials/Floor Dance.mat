@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: base
-  m_Shader: {fileID: -6465566751694194690, guid: 299c1b7e67d3b104d91b1bd77932db9a,
+  m_Name: Floor Dance
+  m_Shader: {fileID: -6465566751694194690, guid: 3f1680bb22bf14825a03ef86f71bd9d5,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -18,15 +18,14 @@ Material:
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
-  stringTagMap:
-    RenderType: Opaque
+  stringTagMap: {}
   disabledShaderPasses: []
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: e8c83113fce2f0f43886c9d08c7c02a9, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -46,6 +45,14 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
+        m_Texture: {fileID: 2800000, guid: e8c83113fce2f0f43886c9d08c7c02a9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EnvCubemap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _LineTexture:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -62,6 +69,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RGBTexture:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -84,7 +95,11 @@ Material:
     m_Ints: []
     m_Floats:
     - _AlphaClip: 0
-    - _AlphaGamma: 1.32
+    - _AlphaGamma: 0.01
+    - _AlphaLineAlbedoInfluence: 0
+    - _AlphaLineAmount: 0
+    - _AlphaLineRotation: 35
+    - _AlphaLineThickness: 4
     - _AlphaToMask: 0
     - _BackFaceAmbientOcclusion: 0.6
     - _BackFaceMetallicOffset: 0
@@ -92,11 +107,13 @@ Material:
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
     - _BumpScale: 1
-    - _CastShadows: 1
+    - _CartoonShadingAmount: 0
+    - _CastShadows: 0
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
     - _Cull: 2
     - _Cutoff: 0.5
+    - _DarkenBackSide: 0
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
@@ -104,62 +121,144 @@ Material:
     - _ENABLE_BACKFACECTRL: 0
     - _ENABLE_COLORCORRECTION: 0
     - _ENABLE_LIGHTA: 1
-    - _ENABLE_LIGHTB: 0
+    - _ENABLE_LIGHTB: 1
     - _ENABLE_LIGHTC: 0
+    - _EmissionClamp: 0
+    - _EnvGain: 0
+    - _EnvLODRoughness: 0.45
+    - _EnvMetallicAlbedoGain: 1
+    - _EnvMetallicOffset: 0
+    - _EnvironmentMult: 1
     - _EnvironmentReflections: 1
-    - _Flatness: 0.98
+    - _Flatness: 0
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
-    - _Hue: 28
-    - _LightAAlbedoInfluence: 0.598
+    - _GroundOcclusionColorInfluence: 0.75
+    - _GroundOcclusionPosition: 0
+    - _GroundOcclusionSpread: 0.75
+    - _HighlightAlbedoInfluence: 0.4
+    - _HighlightPosition: 0.9
+    - _HighlightShadow: 1
+    - _HighlightSpread: 0.2
+    - _Hue: -20
+    - _KeyLightMult: 1.76
+    - _KeyLightPosition: 0.25
+    - _KeyLightSpread: 0.6
+    - _LightAAlbedoInfluence: 0.614
     - _LightACoverage: 0.65
     - _LightAEquatorAngle: 294
     - _LightAPolarHeight: -37
+    - _LightAPosition: 0.8
     - _LightAPower: 2
+    - _LightAShadow: 1
     - _LightASoftness: 0.55
-    - _LightBAlbedoInfluence: 0.8
+    - _LightASpread: 0.65
+    - _LightAWorldView: 0
+    - _LightBAlbedoInfluence: 0.809
     - _LightBCoverage: 0.65
-    - _LightBEquatorAngle: 45
-    - _LightBPolarHeight: 45
+    - _LightBEquatorAngle: 98
+    - _LightBPolarHeight: 47
+    - _LightBPosition: 0.8
     - _LightBPower: 2
+    - _LightBShadow: 1
     - _LightBSoftness: 0.55
+    - _LightBSpread: 0.65
+    - _LightBWorldView: 0
     - _LightCAlbedoInfluence: 1
     - _LightCCoverage: 0.85
-    - _LightCEquatorAngle: 180
+    - _LightCEquatorAngle: 208
     - _LightCPolarHeight: 45
-    - _LightCPower: 2
+    - _LightCPosition: 0.8
+    - _LightCPower: 5.45
+    - _LightCShadow: 1
     - _LightCSoftness: 0.65
+    - _LightCSpread: 0.65
+    - _LightCWorldView: 0
+    - _LightMidPosition: 0.75
+    - _LightMidSpread: 0.2
+    - _LightTextureObjectScreen: 0
+    - _LightTextureTiling: 1
+    - _LineAcuteDepthThreshold: 0.25
+    - _LineAcuteStartDot: 0.25
+    - _LineAlbedoInfluence: 0
+    - _LineAmount: 0
+    - _LineDepthOpacity: 1
+    - _LineDepthStrength: 1.9
+    - _LineDepthThickness: 0.8
+    - _LineDepthThreshold: 0.1
+    - _LineDepthTightening: 0.275
+    - _LineFarNormalEndDepth: 4.6
+    - _LineFarNormalStartDepth: 0.15
+    - _LineFarNormalThreshold: 15
+    - _LineNormalOpacity: 1
+    - _LineNormalStrength: 1
+    - _LineNormalThickness: 0.4
+    - _LineNormalThreshold: 4
+    - _LineNormalTightening: 1
+    - _LineTextureBrightness: 0
+    - _LineTextureContrast: 0
+    - _LineTextureTiling: 1
     - _Metallic: 0
-    - _MetallicOffset: -0.02
-    - _NormalStrength: 1
+    - _MetallicOffset: 1
+    - _MidShadowPosition: 0.475
+    - _MidShadowSpread: 0.45
+    - _MidTextureObjectScreen: 0
+    - _MidTextureTiling: 1
+    - _NormalBlur: 0.6
+    - _NormalStrength: 2
     - _OcclusionStrength: 1
     - _Parallax: 0.005
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Saturation: 0.98
+    - _Saturation: 0
+    - _ShadowDensity: 1
+    - _ShadowFadeFar: 150
+    - _ShadowFadeNear: 135
+    - _ShadowPosition: 0.56
+    - _ShadowSpread: 0.7
+    - _ShadowTextureObjectScreen: 0
+    - _ShadowTextureTiling: 1
     - _Smoothness: 0.5
-    - _SmoothnessOffset: 0.02
+    - _SmoothnessOffset: 1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
     - _Surface: 0
-    - _ValueGamma: 1
-    - _WorkflowMode: 1
+    - _UNLIT_LIT: 1
+    - _Value: 0
+    - _ValueGamma: 0.01
+    - _WorkflowMode: 0
     - _ZTest: 4
     - _ZWrite: 1
-    - _ZWriteControl: 1
+    - _ZWriteControl: 0
+    - s: 0
     m_Colors:
+    - _AlbedoColorMult: {r: 1, g: 1, b: 1, a: 0}
+    - _AlphaLineColor: {r: 1, g: 1, b: 1, a: 1}
     - _BackSideColorMult: {r: 1, g: 1, b: 1, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionAdditiveColor: {r: 0, g: 0, b: 0, a: 0}
+    - _EmissionAdditiveColor: {r: 0.79622644, g: 0.54533994, b: 0.54533994, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _LightAColorAlpha: {r: 0.94716984, g: 0.17692411, b: 0.6245106, a: 0.5019608}
-    - _LightBColorAlpha: {r: 1, g: 1, b: 1, a: 0.5019608}
+    - _EmissiveColorMult: {r: 1, g: 1, b: 1, a: 0}
+    - _EnvColorMult: {r: 1, g: 1, b: 1, a: 0}
+    - _EquatorColor: {r: 0.5529412, g: 0.8313726, b: 1, a: 1}
+    - _GroundColor: {r: 0.5529412, g: 0.8313726, b: 1, a: 1}
+    - _GroundOcclusionColor: {r: 0.1811643, g: 0.07618539, b: 0.01680738, a: 1}
+    - _HighlightColorAlpha: {r: 1, g: 1, b: 1, a: 1}
+    - _KeyLightColorAlpha: {r: 1, g: 0.35283017, b: 0.5730035, a: 0}
+    - _LightAColorAlpha: {r: 1, g: 0.7150943, b: 0.8799636, a: 1}
+    - _LightBColorAlpha: {r: 0.12452829, g: 0.040177993, b: 0.09804828, a: 0.5019608}
     - _LightCColorAlpha: {r: 1, g: 1, b: 1, a: 0.5019608}
+    - _LightColor: {r: 0.6, g: 0.6, b: 0.6, a: 1}
+    - _LineLightColorAlpha: {r: 0, g: 0, b: 0, a: 1}
+    - _LineShadowColorAlpha: {r: 0, g: 0, b: 0, a: 1}
+    - _MidColor: {r: 0.4, g: 0.4, b: 0.4, a: 1}
+    - _ShadowColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+    - _SkyColor: {r: 0.5529412, g: 0.8313726, b: 1, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &24181306796408133

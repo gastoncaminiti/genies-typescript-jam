@@ -92,13 +92,6 @@ MonoBehaviour:
     - JS_ASSETS
     - 6e3d16550516511e3e653d69e5f56afab38dcd599399aaa390ab17ba09e4a3e4
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: c73eb947241d76e4c9c942775d91410d
-    m_Address: 6e3d16550516511e3e653d69e5f56afab38dcd599399aaa390ab17ba09e4a3e4\Assets/Experience/Materials/Background
-      Material
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - 6e3d16550516511e3e653d69e5f56afab38dcd599399aaa390ab17ba09e4a3e4
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 54cd4c9363289d341944c88b278e2810
     m_Address: 6e3d16550516511e3e653d69e5f56afab38dcd599399aaa390ab17ba09e4a3e4\Assets/Experience/Materials/Cube
       Material
