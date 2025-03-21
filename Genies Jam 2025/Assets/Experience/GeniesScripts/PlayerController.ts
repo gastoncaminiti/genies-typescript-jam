@@ -53,6 +53,9 @@ export default class PlayerController extends MonoBehaviour {
             case GameState.GAME_OVER:
                 this.OnGameOver();
                 break;
+            case GameState.GAME_WIN:
+                this.OnGameWin();
+                break;
         }
     }
 
@@ -110,6 +113,10 @@ export default class PlayerController extends MonoBehaviour {
     }
     
     private OnGameOver(): void{
+        this.canMove = false;
+    }
+
+    private OnGameWin() {
         this.canMove = false;
     }
 

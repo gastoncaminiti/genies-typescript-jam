@@ -46,6 +46,9 @@ export default class EnemySpawner extends MonoBehaviour {
             case GameState.GAME_OVER:
                 this.OnGameOver();
                 break;
+            case GameState.GAME_WIN:
+                this.OnGameOver();
+                break;
         }
     }
 
