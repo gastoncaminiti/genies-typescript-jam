@@ -1,8 +1,9 @@
 
-import { MonoBehaviour,GameObject, WaitForSeconds  } from "UnityEngine";
+import { MonoBehaviour,GameObject } from "UnityEngine";
 import GameManager, { GameState } from "./GameManager";
 import { TMP_Text } from "TMPro";
-import TimeManager from "@assets/Experience/GeniesScripts/TimeManager";
+import TimeManager from "./TimeManager";
+import DanceUpManager from "./DanceUpManager";
 export default class CanvasController extends MonoBehaviour {
     
     //Called when script instance is loaded
@@ -12,6 +13,8 @@ export default class CanvasController extends MonoBehaviour {
     @SerializeField private hudPanel: GameObject;
 
     @SerializeField private timeText: TMP_Text;
+    @SerializeField private distanceText: TMP_Text;
+    @SerializeField private multiplierText: TMP_Text;
 
     private gameManager: GameManager;
     private Start() : void {
@@ -36,14 +39,15 @@ export default class CanvasController extends MonoBehaviour {
     }
 
     private OnLoading() {
-        this.loadingPanel.SetActive(true);
-        this.hudPanel.SetActive(true);
+        this.hudPanel.SetActive(false);
         this.gameOverPanel.SetActive(false);
+        this.loadingPanel.SetActive(true);
     }
 
     private OnGamePlay() {
         this.gameOverPanel.SetActive(false);
         this.loadingPanel.SetActive(false);
+        this.hudPanel.SetActive(true);
     }
 
     private OnGameOver() {
@@ -54,6 +58,8 @@ export default class CanvasController extends MonoBehaviour {
     private Update() : void {
         
         this.timeText.text = TimeManager.Instance.GetRemainingTimeText();
+        this.multiplierText.text = DanceUpManager.Instance.GetDanceMultiplierText();
+        this.distanceText.text = DanceUpManager.Instance.GetTowerDistanceText();
         
     }
 }

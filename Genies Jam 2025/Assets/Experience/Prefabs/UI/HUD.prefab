@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 6392052866289478188}
   - component: {fileID: 6875259534203222818}
   m_Layer: 5
-  m_Name: Kilometers Panel
+  m_Name: Distance Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -508,7 +508,7 @@ GameObject:
   - component: {fileID: 2829407792526340261}
   - component: {fileID: 8164243028351539679}
   m_Layer: 5
-  m_Name: Kilometers  Text
+  m_Name: Distance  Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -461,262 +461,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &344830515
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 344830516}
-  - component: {fileID: 344830517}
-  m_Layer: 0
-  m_Name: MoveUpManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &344830516
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 344830515}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &344830517
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 344830515}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 858dc640ae684bacb8622d5d44eb4ff1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _serializedProperties:
-  - IntValue: 0
-    LongValue: 0
-    DoubleValue: 0
-    FloatValue: 0
-    BoolValue: 0
-    StringValue: 
-    ColorValue: {r: 0, g: 0, b: 0, a: 0}
-    UnityObjectReference: {fileID: 660438916}
-    LayerMaskValue:
-      serializedVersion: 2
-      m_Bits: 0
-    Vector2Value: {x: 0, y: 0}
-    Vector3Value: {x: 0, y: 0, z: 0}
-    Vector4Value: {x: 0, y: 0, z: 0, w: 0}
-    RectValue:
-      serializedVersion: 2
-      x: 0
-      y: 0
-      width: 0
-      height: 0
-    AnimationCurveValue:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    BoundsValue:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0, y: 0, z: 0}
-    QuaternionValue: {x: 0, y: 0, z: 0, w: 0}
-    Vector2IntValue: {x: 0, y: 0}
-    Vector3IntValue: {x: 0, y: 0, z: 0}
-    RectIntValue:
-      x: 0
-      y: 0
-      width: 0
-      height: 0
-    BoundsIntValue:
-      m_Position: {x: 0, y: 0, z: 0}
-      m_Size: {x: 0, y: 0, z: 0}
-    GeniesBehaviourReference: {fileID: 0}
-    GeniesSOReference: {fileID: 0}
-    SerializedCsObjectValue: 
-    CsObjectReferences: []
-    TypeName: UnityEngine.Transform
-    ArrayLength: 0
-    IsArray: 0
-    ArrayDimension: -1
-    IsPrefabOverride: 0
-    PropType: 4
-    PropKey: player
-    BasePath: player
-  - IntValue: 0
-    LongValue: 0
-    DoubleValue: 0
-    FloatValue: 0
-    BoolValue: 0
-    StringValue: 
-    ColorValue: {r: 0, g: 0, b: 0, a: 0}
-    UnityObjectReference: {fileID: 765507799}
-    LayerMaskValue:
-      serializedVersion: 2
-      m_Bits: 0
-    Vector2Value: {x: 0, y: 0}
-    Vector3Value: {x: 0, y: 0, z: 0}
-    Vector4Value: {x: 0, y: 0, z: 0, w: 0}
-    RectValue:
-      serializedVersion: 2
-      x: 0
-      y: 0
-      width: 0
-      height: 0
-    AnimationCurveValue:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    BoundsValue:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0, y: 0, z: 0}
-    QuaternionValue: {x: 0, y: 0, z: 0, w: 0}
-    Vector2IntValue: {x: 0, y: 0}
-    Vector3IntValue: {x: 0, y: 0, z: 0}
-    RectIntValue:
-      x: 0
-      y: 0
-      width: 0
-      height: 0
-    BoundsIntValue:
-      m_Position: {x: 0, y: 0, z: 0}
-      m_Size: {x: 0, y: 0, z: 0}
-    GeniesBehaviourReference: {fileID: 0}
-    GeniesSOReference: {fileID: 0}
-    SerializedCsObjectValue: 
-    CsObjectReferences: []
-    TypeName: UnityEngine.Transform
-    ArrayLength: 0
-    IsArray: 0
-    ArrayDimension: -1
-    IsPrefabOverride: 0
-    PropType: 4
-    PropKey: tower
-    BasePath: tower
-  - IntValue: 0
-    LongValue: 0
-    DoubleValue: 0
-    FloatValue: 0.25
-    BoolValue: 0
-    StringValue: 
-    ColorValue: {r: 0, g: 0, b: 0, a: 0}
-    UnityObjectReference: {fileID: 0}
-    LayerMaskValue:
-      serializedVersion: 2
-      m_Bits: 0
-    Vector2Value: {x: 0, y: 0}
-    Vector3Value: {x: 0, y: 0, z: 0}
-    Vector4Value: {x: 0, y: 0, z: 0, w: 0}
-    RectValue:
-      serializedVersion: 2
-      x: 0
-      y: 0
-      width: 0
-      height: 0
-    AnimationCurveValue:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    BoundsValue:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0, y: 0, z: 0}
-    QuaternionValue: {x: 0, y: 0, z: 0, w: 0}
-    Vector2IntValue: {x: 0, y: 0}
-    Vector3IntValue: {x: 0, y: 0, z: 0}
-    RectIntValue:
-      x: 0
-      y: 0
-      width: 0
-      height: 0
-    BoundsIntValue:
-      m_Position: {x: 0, y: 0, z: 0}
-      m_Size: {x: 0, y: 0, z: 0}
-    GeniesBehaviourReference: {fileID: 0}
-    GeniesSOReference: {fileID: 0}
-    SerializedCsObjectValue: 
-    CsObjectReferences: []
-    TypeName: System.Single
-    ArrayLength: 0
-    IsArray: 0
-    ArrayDimension: -1
-    IsPrefabOverride: 0
-    PropType: 7
-    PropKey: upValue
-    BasePath: upValue
-  - IntValue: 0
-    LongValue: 0
-    DoubleValue: 0
-    FloatValue: 10
-    BoolValue: 0
-    StringValue: 
-    ColorValue: {r: 0, g: 0, b: 0, a: 0}
-    UnityObjectReference: {fileID: 0}
-    LayerMaskValue:
-      serializedVersion: 2
-      m_Bits: 0
-    Vector2Value: {x: 0, y: 0}
-    Vector3Value: {x: 0, y: 0, z: 0}
-    Vector4Value: {x: 0, y: 0, z: 0, w: 0}
-    RectValue:
-      serializedVersion: 2
-      x: 0
-      y: 0
-      width: 0
-      height: 0
-    AnimationCurveValue:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    BoundsValue:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0, y: 0, z: 0}
-    QuaternionValue: {x: 0, y: 0, z: 0, w: 0}
-    Vector2IntValue: {x: 0, y: 0}
-    Vector3IntValue: {x: 0, y: 0, z: 0}
-    RectIntValue:
-      x: 0
-      y: 0
-      width: 0
-      height: 0
-    BoundsIntValue:
-      m_Position: {x: 0, y: 0, z: 0}
-      m_Size: {x: 0, y: 0, z: 0}
-    GeniesBehaviourReference: {fileID: 0}
-    GeniesSOReference: {fileID: 0}
-    SerializedCsObjectValue: 
-    CsObjectReferences: []
-    TypeName: System.Single
-    ArrayLength: 0
-    IsArray: 0
-    ArrayDimension: -1
-    IsPrefabOverride: 0
-    PropType: 7
-    PropKey: upDelay
-    BasePath: upDelay
-  _script: {fileID: 4458252877524076426, guid: 72ef5de7df0b3f940a3944a2ee504bd1, type: 3}
-  _scriptAssetHash: 072a88e3be440a380613d376e375a30b
-  UiEventForwarders: []
 --- !u!1 &452550152
 GameObject:
   m_ObjectHideFlags: 0
@@ -1149,8 +893,112 @@ MonoBehaviour:
     PropType: 4
     PropKey: timeText
     BasePath: timeText
+  - IntValue: 0
+    LongValue: 0
+    DoubleValue: 0
+    FloatValue: 0
+    BoolValue: 0
+    StringValue: 
+    ColorValue: {r: 0, g: 0, b: 0, a: 0}
+    UnityObjectReference: {fileID: 963091645}
+    LayerMaskValue:
+      serializedVersion: 2
+      m_Bits: 0
+    Vector2Value: {x: 0, y: 0}
+    Vector3Value: {x: 0, y: 0, z: 0}
+    Vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    RectValue:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    AnimationCurveValue:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    BoundsValue:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0, y: 0, z: 0}
+    QuaternionValue: {x: 0, y: 0, z: 0, w: 0}
+    Vector2IntValue: {x: 0, y: 0}
+    Vector3IntValue: {x: 0, y: 0, z: 0}
+    RectIntValue:
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    BoundsIntValue:
+      m_Position: {x: 0, y: 0, z: 0}
+      m_Size: {x: 0, y: 0, z: 0}
+    GeniesBehaviourReference: {fileID: 0}
+    GeniesSOReference: {fileID: 0}
+    SerializedCsObjectValue: 
+    CsObjectReferences: []
+    TypeName: TMPro.TMP_Text
+    ArrayLength: 0
+    IsArray: 0
+    ArrayDimension: -1
+    IsPrefabOverride: 0
+    PropType: 4
+    PropKey: distanceText
+    BasePath: distanceText
+  - IntValue: 0
+    LongValue: 0
+    DoubleValue: 0
+    FloatValue: 0
+    BoolValue: 0
+    StringValue: 
+    ColorValue: {r: 0, g: 0, b: 0, a: 0}
+    UnityObjectReference: {fileID: 1019020618}
+    LayerMaskValue:
+      serializedVersion: 2
+      m_Bits: 0
+    Vector2Value: {x: 0, y: 0}
+    Vector3Value: {x: 0, y: 0, z: 0}
+    Vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    RectValue:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    AnimationCurveValue:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    BoundsValue:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0, y: 0, z: 0}
+    QuaternionValue: {x: 0, y: 0, z: 0, w: 0}
+    Vector2IntValue: {x: 0, y: 0}
+    Vector3IntValue: {x: 0, y: 0, z: 0}
+    RectIntValue:
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    BoundsIntValue:
+      m_Position: {x: 0, y: 0, z: 0}
+      m_Size: {x: 0, y: 0, z: 0}
+    GeniesBehaviourReference: {fileID: 0}
+    GeniesSOReference: {fileID: 0}
+    SerializedCsObjectValue: 
+    CsObjectReferences: []
+    TypeName: TMPro.TMP_Text
+    ArrayLength: 0
+    IsArray: 0
+    ArrayDimension: -1
+    IsPrefabOverride: 0
+    PropType: 4
+    PropKey: multiplierText
+    BasePath: multiplierText
   _script: {fileID: 4458252877524076426, guid: 0d8f09f3711dd9d45a474c728dace9b8, type: 3}
-  _scriptAssetHash: c5eb54f02772a1e48091c0aa68b062a0
+  _scriptAssetHash: 90a004c3b42f22affcd64bba83ff4a4b
   UiEventForwarders: []
 --- !u!1 &660438912
 GameObject:
@@ -1694,7 +1542,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961739749}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.25796676, y: 0.000039279912, z: -0.000010487886, w: 0.9661538}
+  m_LocalRotation: {x: 0.25796676, y: 0.00004855581, z: -0.000012964585, w: 0.9661538}
   m_LocalPosition: {x: 0, y: 6, z: -8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1736,6 +1584,30 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &963091645 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8164243028351539679, guid: 33934683da8d0f24ab5553e36c1fb193,
+    type: 3}
+  m_PrefabInstance: {fileID: 2322579905197787142}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1019020618 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2950881921199806178, guid: 33934683da8d0f24ab5553e36c1fb193,
+    type: 3}
+  m_PrefabInstance: {fileID: 2322579905197787142}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1229218809 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3151608306062014901, guid: 6055a943462f3bb409d5adf494fce734,
@@ -2510,7 +2382,7 @@ MonoBehaviour:
     PropKey: towerManager
     BasePath: towerManager
   _script: {fileID: 4458252877524076426, guid: 409fee7ed8c54894490c33f3f86f34ca, type: 3}
-  _scriptAssetHash: 059abdcdad10dd3c8e94d024a8eae726
+  _scriptAssetHash: 83ffcdfc48ee345925b3e9d0ddb452fe
   UiEventForwarders: []
 --- !u!1 &1835909010
 GameObject:
@@ -2537,7 +2409,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1835909010}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.000000005464244, z: -0.0000000031423042, w: 1}
+  m_LocalRotation: {x: -0, y: 0.000000007072231, z: -0.0000000040636223, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3078,7 +2950,7 @@ PrefabInstance:
     - target: {fileID: 6090610708189156862, guid: 33934683da8d0f24ab5553e36c1fb193,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3201,7 +3073,7 @@ PrefabInstance:
     - target: {fileID: 8040319083902532447, guid: e59c37152aa26e146bbc72d8ffd45518,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3321,11 +3193,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Loading Panel
       objectReference: {fileID: 0}
-    - target: {fileID: 3151608306062014901, guid: 6055a943462f3bb409d5adf494fce734,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3339,6 +3206,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 747636442002729297, guid: 3b2767272a5ca9c4ea376ec63595b337,
+        type: 3}
+      propertyPath: _serializedProperties.Array.data[0].IntValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 747636442002729297, guid: 3b2767272a5ca9c4ea376ec63595b337,
+        type: 3}
+      propertyPath: _serializedProperties.Array.data[0].IsPrefabOverride
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7910296894753604018, guid: 3b2767272a5ca9c4ea376ec63595b337,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3413,7 +3290,6 @@ SceneRoots:
   - {fileID: 960535485}
   - {fileID: 1723147714}
   - {fileID: 2026821585}
-  - {fileID: 344830516}
   - {fileID: 777641325}
   - {fileID: 1934259505}
   - {fileID: 19182912}

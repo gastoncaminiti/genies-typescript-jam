@@ -1,0 +1,33 @@
+fileFormatVersion: 2
+guid: 7dba72f6091ee42438346fc0dab5d89b
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 22604dd76f55453daccee3ed9e7b94b5, type: 3}
+  SerializedAsset: '{"IsCompiled":true,"CompilerVersion":"2.0.63","ReferencedSpecifiers":["@assets/Experience/GeniesScripts/GameManager"],"Source":"\"use
+    strict\";\nObject.defineProperty(exports, \"__esModule\", { value: true });\nconst
+    UnityEngine_1 = require(\"UnityEngine\");\nconst GameManager_1 = require(\"@assets/Experience/GeniesScripts/GameManager\");\nclass
+    DanceUpManager extends UnityEngine_1.MonoBehaviour {\n    constructor() {\n       
+    super(...arguments);\n        this.danceMultiplierGoal = 8;\n    }\n    Awake()
+    {\n        //Establishes the GameManager singleton instance\n        if (DanceUpManager.Instance
+    == null) {\n            DanceUpManager.Instance = this;\n        }\n        else
+    {\n            DanceUpManager.Destroy(this.gameObject);\n        }\n    }\n   
+    Start() {\n        this.gameManager = GameManager_1.default.Instance;\n       
+    this.gameManager.OnGameStateChange.addListener(this.CheckGameState, //@ts-ignore\n       
+    this);\n        console.log(\"LOAD CANVAS\");\n    }\n    CheckGameState(newState)
+    {\n        switch (newState) {\n            case GameManager_1.GameState.LOADING:\n               
+    this.OnLoading();\n                break;\n            case GameManager_1.GameState.GAME_PLAY:\n               
+    break;\n            case GameManager_1.GameState.GAME_OVER:\n               
+    break;\n        }\n    }\n    OnLoading() {\n        this.ResetDanceMultiplier();\n       
+    this.towerDistance = 0;\n    }\n    IncreaseDanceMultiplier() {\n        this.danceMultiplier++;\n       
+    if (this.danceMultiplier == this.danceMultiplierGoal) {\n            this.ResetDanceMultiplier();\n           
+    this.towerDistance++;\n        }\n    }\n    ResetDanceMultiplier() {\n       
+    this.danceMultiplier = 0;\n    }\n    GetTowerDistanceText() {\n        return
+    this.towerDistance + \" Mi\";\n    }\n    GetDanceMultiplierText() {\n       
+    return \"x\" + this.danceMultiplier;\n    }\n}\nexports.default = DanceUpManager;\n//#
+    sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRGFuY2VVcE1hbmFnZXIuanMiLCJtYXBwaW5ncyI6Ijs7QUFDQSw2Q0FBMkM7QUFDM0MsOEVBQW1GO0FBQ25GLE1BQXFCLGNBQWUsU0FBUSwyQkFBYTtJQUF6RDs7UUFFNEIsd0JBQW1CLEdBQVEsQ0FBQyxDQUV0QztJQTBEbEI7SUFuRFksS0FBSztRQUNULGdEQUErQztRQUMvQyxJQUFHLGNBQWMsQ0FBQyxRQUFRLElBQUksSUFBSSxFQUFFO1lBQ2hDLGNBQWMsQ0FBQyxRQUFRLEdBQUcsSUFBSTtRQUNsQyxDQUFDO2FBQUk7WUFDRCxjQUFjLENBQUMsT0FBTyxDQUFDLElBQUksQ0FBQyxVQUFVLENBQUM7UUFDM0M7SUFDSjtJQUVRLEtBQUs7UUFDVCxJQUFJLENBQUMsV0FBVyxHQUFHLHFCQUFXLENBQUMsUUFBUTtRQUN2QyxJQUFJLENBQUMsV0FBVyxDQUFDLGlCQUFpQixDQUFDLFdBQVcsQ0FBQyxJQUFJLENBQUMsY0FBYTtZQUFDLENBQUM7UUFDbkUsT0FBTyxDQUFDLEdBQUcsQ0FBQyxhQUFhLENBQUM7SUFDOUI7SUFFUSxjQUFjLENBQUMsUUFBbUI7UUFDdEMsUUFBTyxRQUFRLEVBQUU7WUFDYixLQUFLLHVCQUFTLENBQUMsT0FBTztnQkFDbEIsSUFBSSxDQUFDLFNBQVMsRUFBRTtnQkFDaEIsTUFBSztZQUNULEtBQUssdUJBQVMsQ0FBQyxTQUFTO2dCQUNwQixNQUFLO1lBQ1QsS0FBSyx1QkFBUyxDQUFDLFNBQVM7Z0JBQ3BCLE1BQUs7UUFDYjtJQUNKO0lBRVEsU0FBUztRQUNiLElBQUksQ0FBQyxvQkFBb0IsRUFBRTtRQUMzQixJQUFJLENBQUMsYUFBYSxHQUFHLENBQUM7SUFDMUI7SUFFTyx1QkFBdUI7UUFDMUIsSUFBSSxDQUFDLGVBQWUsRUFBRTtRQUN0QixJQUFHLElBQUksQ0FBQyxlQUFlLElBQUksSUFBSSxDQUFDLG1CQUFtQixFQUFDO1lBQ2hELElBQUksQ0FBQyxvQkFBb0IsRUFBRTtZQUMzQixJQUFJLENBQUMsYUFBYSxFQUFFO1FBQ3hCO0lBQ0o7SUFFTyxvQkFBb0I7UUFDdkIsSUFBSSxDQUFDLGVBQWUsR0FBRyxDQUFDO0lBQzVCO0lBRU8sb0JBQW9CO1FBQ3ZCLE9BQU8sSUFBSSxDQUFDLGFBQWEsR0FBQyxLQUFLO0lBQ25DO0lBRU8sc0JBQXNCO1FBQ3pCLE9BQU8sR0FBRyxHQUFDLElBQUksQ0FBQyxlQUFlO0lBQ25DO0NBQ0o7QUE5REEsaUNBOERBIiwibmFtZXMiOltdLCJpZ25vcmVMaXN0IjpbXSwic291cmNlcyI6WyJEYW5jZVVwTWFuYWdlci50cyJdLCJzb3VyY2VzQ29udGVudCI6W251bGxdfQ==","ScriptHash":"9e5868a234b5b19f1c9d11e424569a5c","Specifier":"@assets/Experience/GeniesScripts/DanceUpManager","DefaultTypeName":"@assets/Experience/GeniesScripts/DanceUpManager.DanceUpManager","IsMonobehaviour":true,"IsScriptableObj":false,"InheritanceChain":["@assets/Experience/GeniesScripts/DanceUpManager.DanceUpManager","UnityEngine.MonoBehaviour","UnityEngine.Behaviour","UnityEngine.Component","UnityEngine.Object","@com.genies.scripting@1.11.0\\Runtime\\Typing\\index.d.System.Object"],"Properties":[{"Path":"danceMultiplierGoal","Name":"danceMultiplierGoal","TypeName":"System.Int32","AssemblyName":null,"EnumKeys":[],"EnumValues":[],"IsGeniesBehaviourRef":false,"IsGeniesScriptableObjectRef":false,"Decorators":[{"Type":"SerializeField","Args":[]}],"Initializers":["8"],"ArrayDimension":-1,"IsArray":false,"IsEnum":false,"ArrayElementInitializer":null,"ChildProperties":[],"PrettyName":"Dance
+    Multiplier Goal","_arrayElementInitializerJson":null,"_childPropertiesJson":"[]","_prettyName":null}],"SupportedUiEvents":"None","DisplayName":"DanceUpManager","name":"DanceUpManager","hideFlags":"NotEditable"}'

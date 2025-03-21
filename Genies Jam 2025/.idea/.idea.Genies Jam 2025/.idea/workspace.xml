@@ -9,10 +9,12 @@
       <change beforePath="$PROJECT_DIR$/Assets/Experience/GeniesJamPrototype.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/GeniesJamPrototype.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/CanvasController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/CanvasController.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/CanvasController.ts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/CanvasController.ts.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/GameManager.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/GameManager.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/GameManager.ts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/GameManager.ts.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/MusicManager.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/MusicManager.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/MusicManager.ts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/MusicManager.ts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/EnemySpawner.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/EnemySpawner.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/EnemySpawner.ts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/EnemySpawner.ts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/TowerManager.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/TowerManager.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Experience/Prefabs/Tower.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/Prefabs/Tower.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Experience/Prefabs/UI/HUD.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/Prefabs/UI/HUD.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Experience/Prefabs/UI/Loading Panel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/Prefabs/UI/Loading Panel.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +111,7 @@
       <workItem from="1742402080962" duration="4734000" />
       <workItem from="1742573578110" duration="755000" />
       <workItem from="1742574589352" duration="44000" />
-      <workItem from="1742574731661" duration="3627000" />
+      <workItem from="1742574731661" duration="6495000" />
     </task>
     <servers />
   </component>

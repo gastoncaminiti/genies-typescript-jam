@@ -6,6 +6,7 @@ import {EnemyState} from "./Enums/EnemyState";
 import PlayerController from "./PlayerController";
 import TowerManager from "./TowerManager";
 import EffectManager from "./EffectManager";
+import DanceUpManager from "./DanceUpManager";
 
 
 export default class EnemySpawner extends MonoBehaviour {
@@ -75,6 +76,7 @@ export default class EnemySpawner extends MonoBehaviour {
             
             this.ReturnToPool(dequeuedEnemy);
             console.log("EL ESTADO COINCIDE HAY QUE MATARLO");
+            DanceUpManager.Instance.IncreaseDanceMultiplier();
         }
     }
 
