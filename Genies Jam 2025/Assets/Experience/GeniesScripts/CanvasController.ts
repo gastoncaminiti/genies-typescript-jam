@@ -51,6 +51,7 @@ export default class CanvasController extends MonoBehaviour {
     }
 
     private OnGameOver() {
+        this.timeText.text = this.GetTimeTextPlaceholder();
         this.gameOverPanel.SetActive(true);
         this.loadingPanel.SetActive(false);
     }
@@ -61,5 +62,9 @@ export default class CanvasController extends MonoBehaviour {
         this.multiplierText.text = DanceUpManager.Instance.GetDanceMultiplierText();
         this.distanceText.text = DanceUpManager.Instance.GetTowerDistanceText();
         
+    }
+    
+    private GetTimeTextPlaceholder():string{
+        return "00:00";
     }
 }

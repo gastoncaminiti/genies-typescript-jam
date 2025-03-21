@@ -43,12 +43,20 @@ export default class EnemySpawner extends MonoBehaviour {
             case GameState.GAME_PLAY:
                 this.OnGamePlay();
                 break;
+            case GameState.GAME_OVER:
+                this.OnGameOver();
+                break;
         }
     }
 
     /** This will manage the enemies once the game starts. */
     private OnGamePlay() {
         this.coroutine = this.StartCoroutine(this.SpawnEnemies());
+    }
+
+    private OnGameOver() {
+        this.coroutine = null;
+        this.StopAllCoroutines();
     }
 
     private *SpawnEnemies() {

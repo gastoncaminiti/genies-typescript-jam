@@ -50,6 +50,9 @@ export default class PlayerController extends MonoBehaviour {
             case GameState.GAME_PLAY:
                 this.OnGamePlay();
                 break;
+            case GameState.GAME_OVER:
+                this.OnGameOver();
+                break;
         }
     }
 
@@ -104,6 +107,10 @@ export default class PlayerController extends MonoBehaviour {
         this.targetLaneX = 0;
         this.targetLaneY = 0;
         console.log("LOAD AVATAR");
+    }
+    
+    private OnGameOver(): void{
+        this.canMove = false;
     }
 
 }

@@ -2,13 +2,15 @@
 import {Collider, MonoBehaviour} from "UnityEngine";
 import GameManager, { GameState } from './GameManager';
 import EnemyManager from "./EnemyManager";
-import {EnemyState} from "@assets/Experience/GeniesScripts/Enums/EnemyState";
-import DanceUpManager from "@assets/Experience/GeniesScripts/DanceUpManager";
+import DanceUpManager from "./DanceUpManager";
 export default class TowerManager extends MonoBehaviour {
 
     @NonSerialized public OnHitTower: GeniesEvent<[EnemyManager]> = new GeniesEvent<[EnemyManager]>();
+
+    @SerializeField private towerHP: int = 4;
     
     private gameManager: GameManager;
+    private currenteTowerHP: int;
     //Called when script instance is loaded
     private Start() : void {
         this.gameManager = GameManager.Instance;
@@ -24,7 +26,7 @@ export default class TowerManager extends MonoBehaviour {
         }
     }
     private OnGamePlay(): void {
-        //PLAY BEHAVIOR
+        this.currenteTowerHP = this.towerHP;
     }
     
     private OnTriggerEnter(coll:Collider): void
@@ -35,6 +37,10 @@ export default class TowerManager extends MonoBehaviour {
             let enemy = coll.gameObject.GetComponent<EnemyManager>();
             this.OnHitTower.trigger(enemy);
             DanceUpManager.Instance.ResetDanceMultiplier();
+            this.currenteTowerHP--;
+            if(this.currenteTowerHP == 0){
+                this.gameManager.ChangeGameState(GameState.GAME_OVER);
+            }
         }
     }
 }
