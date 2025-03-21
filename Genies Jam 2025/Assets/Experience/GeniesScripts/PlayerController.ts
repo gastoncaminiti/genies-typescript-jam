@@ -1,4 +1,4 @@
-import { MonoBehaviour, Input, Vector3, Mathf, Time, Animator, Collider, RuntimeAnimatorController } from 'UnityEngine';
+import { MonoBehaviour, Input, Vector3, Mathf, Time, RuntimeAnimatorController } from 'UnityEngine';
 
 import { GeniesAvatar, GeniesAvatarsSdk } from 'Genies.Avatars.Sdk';
 import GameManager, { GameState } from './GameManager';
