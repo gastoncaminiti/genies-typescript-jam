@@ -4,6 +4,7 @@ import GameManager, { GameState } from "./GameManager";
 import { TMP_Text } from "TMPro";
 import TimeManager from "./TimeManager";
 import DanceUpManager from "./DanceUpManager";
+import { Button } from "UnityEngine.UI";
 export default class CanvasController extends MonoBehaviour {
     
     //Called when script instance is loaded
@@ -56,6 +57,7 @@ export default class CanvasController extends MonoBehaviour {
     }
 
     private OnGamePlay() {
+        this.canUpdateUI = true;
         this.notificationPanel.SetActive(false);
         this.loadingPanel.SetActive(false);
         this.hudPanel.SetActive(true);
@@ -71,7 +73,6 @@ export default class CanvasController extends MonoBehaviour {
     private OnGameWin() {
         this.canUpdateUI = false;
         this.notificationText.text = "LEVEL COMPLETE";
-        this.timeText.text = this.GetTimeTextPlaceholder();
         this.notificationPanel.SetActive(true);
         this.loadingPanel.SetActive(false);
     }
@@ -89,7 +90,5 @@ export default class CanvasController extends MonoBehaviour {
         }
     }
     
-    private GetTimeTextPlaceholder():string{
-        return "00:00";
-    }
+  
 }

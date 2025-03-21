@@ -60,6 +60,7 @@ export default class EnemySpawner extends MonoBehaviour {
     private OnGameOver() {
         this.coroutine = null;
         this.StopAllCoroutines();
+        this.ResetEnemies();
     }
 
     private *SpawnEnemies() {
@@ -138,5 +139,19 @@ export default class EnemySpawner extends MonoBehaviour {
         enemy.gameObject.SetActive(false);
         EffectManager.Instance.HitEffect(enemy.transform.position);
         this.enemyPool.push(enemy);
+    }
+    private ResetEnemies() {
+        console.log("RESET ALL ENEMIES"); 
+        this.enemyPool.forEach ((enemy) => {
+            enemy.gameObject.SetActive(false);
+        });
+
+        this.enemyQueue.forEach ((enemy) => {
+            enemy.gameObject.SetActive(false);
+        });
+        
+        while(this.enemyQueue.length != 0){
+            this.enemyQueue.shift();
+        }
     }
 }

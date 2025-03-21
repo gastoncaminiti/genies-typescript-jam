@@ -324,6 +324,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
+--- !u!114 &187810120 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1035209493711882677, guid: e59c37152aa26e146bbc72d8ffd45518,
+    type: 3}
+  m_PrefabInstance: {fileID: 3280425021552046723}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &203844586
 GameObject:
   m_ObjectHideFlags: 0
@@ -964,7 +976,7 @@ MonoBehaviour:
     BoolValue: 0
     StringValue: 
     ColorValue: {r: 0, g: 0, b: 0, a: 0}
-    UnityObjectReference: {fileID: 0}
+    UnityObjectReference: {fileID: 1982733140}
     LayerMaskValue:
       serializedVersion: 2
       m_Bits: 0
@@ -1061,8 +1073,60 @@ MonoBehaviour:
     PropType: 4
     PropKey: notificationText
     BasePath: notificationText
+  - IntValue: 0
+    LongValue: 0
+    DoubleValue: 0
+    FloatValue: 0
+    BoolValue: 0
+    StringValue: 
+    ColorValue: {r: 0, g: 0, b: 0, a: 0}
+    UnityObjectReference: {fileID: 187810120}
+    LayerMaskValue:
+      serializedVersion: 2
+      m_Bits: 0
+    Vector2Value: {x: 0, y: 0}
+    Vector3Value: {x: 0, y: 0, z: 0}
+    Vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    RectValue:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    AnimationCurveValue:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    BoundsValue:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0, y: 0, z: 0}
+    QuaternionValue: {x: 0, y: 0, z: 0, w: 0}
+    Vector2IntValue: {x: 0, y: 0}
+    Vector3IntValue: {x: 0, y: 0, z: 0}
+    RectIntValue:
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    BoundsIntValue:
+      m_Position: {x: 0, y: 0, z: 0}
+      m_Size: {x: 0, y: 0, z: 0}
+    GeniesBehaviourReference: {fileID: 0}
+    GeniesSOReference: {fileID: 0}
+    SerializedCsObjectValue: 
+    CsObjectReferences: []
+    TypeName: UnityEngine.UI.Button
+    ArrayLength: 0
+    IsArray: 0
+    ArrayDimension: -1
+    IsPrefabOverride: 0
+    PropType: 4
+    PropKey: replayButton
+    BasePath: replayButton
   _script: {fileID: 4458252877524076426, guid: 0d8f09f3711dd9d45a474c728dace9b8, type: 3}
-  _scriptAssetHash: 29bc7f89d4f32ca2e52bf7bd190f9419
+  _scriptAssetHash: 253eb235ad6d1b6904df73b8da5f5f35
   UiEventForwarders: []
 --- !u!1 &660438912
 GameObject:
@@ -1606,7 +1670,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961739749}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.25796676, y: -0.000000040003865, z: 0.000000010681185, w: 0.9661538}
+  m_LocalRotation: {x: 0.25796676, y: -0.000000047096375, z: 0.000000012574912, w: 0.9661538}
   m_LocalPosition: {x: 0, y: 6, z: -8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1810,7 +1874,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _serializedProperties: []
   _script: {fileID: 4458252877524076426, guid: 95daf531d8b51ff43baa76c185c99d19, type: 3}
-  _scriptAssetHash: a41bcb5f1c60d187f58a690f0f18481d
+  _scriptAssetHash: 0800bebb9d0712242cde037a501aaa5d
   UiEventForwarders: []
 --- !u!114 &1801569421 stripped
 MonoBehaviour:
@@ -2474,7 +2538,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1835909010}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -2.742695e-11, z: 1.5770496e-11, w: 1}
+  m_LocalRotation: {x: -0, y: -2.7910119e-11, z: 1.604672e-11, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2606,6 +2670,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1982733140 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8040319083902532447, guid: e59c37152aa26e146bbc72d8ffd45518,
+    type: 3}
+  m_PrefabInstance: {fileID: 3280425021552046723}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1982733141 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7069590292132127104, guid: e59c37152aa26e146bbc72d8ffd45518,

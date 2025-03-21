@@ -11,8 +11,8 @@
       <change beforePath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/CanvasController.ts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/CanvasController.ts.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/EnemySpawner.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/EnemySpawner.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/EnemySpawner.ts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/EnemySpawner.ts.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/PlayerController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/PlayerController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/PlayerController.ts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/PlayerController.ts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/TimeManager.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/TimeManager.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/TimeManager.ts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/TimeManager.ts.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +109,7 @@
       <workItem from="1742402080962" duration="4734000" />
       <workItem from="1742573578110" duration="755000" />
       <workItem from="1742574589352" duration="44000" />
-      <workItem from="1742574731661" duration="11208000" />
+      <workItem from="1742574731661" duration="13682000" />
     </task>
     <servers />
   </component>
