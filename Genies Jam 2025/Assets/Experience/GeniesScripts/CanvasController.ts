@@ -1,6 +1,8 @@
 
 import { MonoBehaviour,GameObject, WaitForSeconds  } from "UnityEngine";
 import GameManager, { GameState } from "./GameManager";
+import { TMP_Text } from "TMPro";
+import TimeManager from "@assets/Experience/GeniesScripts/TimeManager";
 export default class CanvasController extends MonoBehaviour {
     
     //Called when script instance is loaded
@@ -8,6 +10,8 @@ export default class CanvasController extends MonoBehaviour {
     @SerializeField private gameOverPanel: GameObject;
     @SerializeField private loadingPanel: GameObject;
     @SerializeField private hudPanel: GameObject;
+
+    @SerializeField private timeText: TMP_Text;
 
     private gameManager: GameManager;
     private Start() : void {
@@ -45,5 +49,11 @@ export default class CanvasController extends MonoBehaviour {
     private OnGameOver() {
         this.gameOverPanel.SetActive(true);
         this.loadingPanel.SetActive(false);
+    }
+
+    private Update() : void {
+        
+        this.timeText.text = TimeManager.Instance.GetRemainingTimeText();
+        
     }
 }

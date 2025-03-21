@@ -1,6 +1,7 @@
 
 import {MonoBehaviour, AudioSource} from "UnityEngine";
 import GameManager, { GameState } from './GameManager';
+import TimeManager from "@assets/Experience/GeniesScripts/TimeManager";
 export default class MusicManager extends MonoBehaviour {
 
     @SerializeField private myAudio: AudioSource;
@@ -22,6 +23,7 @@ export default class MusicManager extends MonoBehaviour {
     }
     private OnGamePlay(): void {
         this.myAudio.Play();
+        TimeManager.Instance.SetSongDuration(this.myAudio.clip.length)
     }
     
 }

@@ -901,7 +901,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 1
-  m_AdditionalShaderChannelsFlag: 7
+  m_AdditionalShaderChannelsFlag: 31
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -1097,8 +1097,60 @@ MonoBehaviour:
     PropType: 4
     PropKey: hudPanel
     BasePath: hudPanel
+  - IntValue: 0
+    LongValue: 0
+    DoubleValue: 0
+    FloatValue: 0
+    BoolValue: 0
+    StringValue: 
+    ColorValue: {r: 0, g: 0, b: 0, a: 0}
+    UnityObjectReference: {fileID: 2019966447}
+    LayerMaskValue:
+      serializedVersion: 2
+      m_Bits: 0
+    Vector2Value: {x: 0, y: 0}
+    Vector3Value: {x: 0, y: 0, z: 0}
+    Vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    RectValue:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    AnimationCurveValue:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    BoundsValue:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0, y: 0, z: 0}
+    QuaternionValue: {x: 0, y: 0, z: 0, w: 0}
+    Vector2IntValue: {x: 0, y: 0}
+    Vector3IntValue: {x: 0, y: 0, z: 0}
+    RectIntValue:
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    BoundsIntValue:
+      m_Position: {x: 0, y: 0, z: 0}
+      m_Size: {x: 0, y: 0, z: 0}
+    GeniesBehaviourReference: {fileID: 0}
+    GeniesSOReference: {fileID: 0}
+    SerializedCsObjectValue: 
+    CsObjectReferences: []
+    TypeName: TMPro.TMP_Text
+    ArrayLength: 0
+    IsArray: 0
+    ArrayDimension: -1
+    IsPrefabOverride: 0
+    PropType: 4
+    PropKey: timeText
+    BasePath: timeText
   _script: {fileID: 4458252877524076426, guid: 0d8f09f3711dd9d45a474c728dace9b8, type: 3}
-  _scriptAssetHash: 786e6767dde904d821812955c1da9008
+  _scriptAssetHash: c5eb54f02772a1e48091c0aa68b062a0
   UiEventForwarders: []
 --- !u!1 &660438912
 GameObject:
@@ -1494,7 +1546,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _serializedProperties: []
   _script: {fileID: 4458252877524076426, guid: 9803ed9074a908c4a81252c9b7f3c17c, type: 3}
-  _scriptAssetHash: 3148fbc819babe91860671dfbbd922c8
+  _scriptAssetHash: eb74776f71395ca9c9d357b44cd98061
   UiEventForwarders: []
 --- !u!4 &960535485
 Transform:
@@ -1642,7 +1694,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961739749}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.25796676, y: 0.00003698588, z: -0.000009875372, w: 0.9661538}
+  m_LocalRotation: {x: 0.25796676, y: 0.000039279912, z: -0.000010487886, w: 0.9661538}
   m_LocalPosition: {x: 0, y: 6, z: -8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1776,6 +1828,54 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1723147713
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1723147714}
+  - component: {fileID: 1723147715}
+  m_Layer: 0
+  m_Name: TimeManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1723147714
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723147713}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1362.2864, y: 1999.5966, z: -56.41251}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1723147715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723147713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 858dc640ae684bacb8622d5d44eb4ff1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serializedProperties: []
+  _script: {fileID: 4458252877524076426, guid: 95daf531d8b51ff43baa76c185c99d19, type: 3}
+  _scriptAssetHash: a41bcb5f1c60d187f58a690f0f18481d
+  UiEventForwarders: []
 --- !u!114 &1801569421 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2133610914889905881, guid: 3b2767272a5ca9c4ea376ec63595b337,
@@ -2437,7 +2537,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1835909010}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.000000005304173, z: -0.0000000030495357, w: 1}
+  m_LocalRotation: {x: -0, y: 0.000000005464244, z: -0.0000000031423042, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2558,6 +2658,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 3280425021552046723}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2019966447 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1714151111277292542, guid: 33934683da8d0f24ab5553e36c1fb193,
+    type: 3}
+  m_PrefabInstance: {fileID: 2322579905197787142}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2026821584
 GameObject:
   m_ObjectHideFlags: 0
@@ -2605,7 +2717,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -2753,7 +2865,7 @@ MonoBehaviour:
     PropKey: myAudio
     BasePath: myAudio
   _script: {fileID: 4458252877524076426, guid: 113a9c5aaa3e4d44ebaf3edc17a5c541, type: 3}
-  _scriptAssetHash: b82c6683e97cf69362e2d2b48a7f0cd3
+  _scriptAssetHash: 20f32ac7f8979e98edc2705eea78a437
   UiEventForwarders: []
 --- !u!1 &2048694418
 GameObject:
@@ -3299,6 +3411,7 @@ SceneRoots:
   - {fileID: 1805332554}
   - {fileID: 1968284980}
   - {fileID: 960535485}
+  - {fileID: 1723147714}
   - {fileID: 2026821585}
   - {fileID: 344830516}
   - {fileID: 777641325}
