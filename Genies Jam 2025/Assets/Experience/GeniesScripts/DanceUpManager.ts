@@ -1,9 +1,11 @@
 
-import { MonoBehaviour } from "UnityEngine";
-import GameManager, {GameState} from "@assets/Experience/GeniesScripts/GameManager";
+import { MonoBehaviour} from "UnityEngine";
+import {CinemachineImpulseSource}  from "Cinemachine";
+import GameManager, {GameState} from "./GameManager";
 export default class DanceUpManager extends MonoBehaviour {
 
     @SerializeField private danceMultiplierGoal: int = 8;
+    @SerializeField private impulseSource: CinemachineImpulseSource;
     
     @NonSerialized public static Instance: DanceUpManager;
         
@@ -49,6 +51,7 @@ export default class DanceUpManager extends MonoBehaviour {
         if(this.danceMultiplier == this.danceMultiplierGoal){
             this.ResetDanceMultiplier();
             this.towerDistance++;
+            this.impulseSource.GenerateImpulse();
         }
     }
 

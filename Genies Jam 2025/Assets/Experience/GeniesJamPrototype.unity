@@ -306,7 +306,7 @@ Transform:
   m_GameObject: {fileID: 174706073}
   serializedVersion: 2
   m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
-  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalPosition: {x: 0, y: 0, z: 2.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1493,7 +1493,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.07704137, g: 0, b: 0.13962269, a: 1}
+  m_BackGroundColor: {r: 0.8431373, g: 0.28627452, b: 0.7803922, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1542,7 +1542,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961739749}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.25796676, y: 0.00004855581, z: -0.000012964585, w: 0.9661538}
+  m_LocalRotation: {x: 0.25796676, y: -0.000000027053359, z: 0.000000007223351, w: 0.9661538}
   m_LocalPosition: {x: 0, y: 6, z: -8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2382,7 +2382,7 @@ MonoBehaviour:
     PropKey: towerManager
     BasePath: towerManager
   _script: {fileID: 4458252877524076426, guid: 409fee7ed8c54894490c33f3f86f34ca, type: 3}
-  _scriptAssetHash: 83ffcdfc48ee345925b3e9d0ddb452fe
+  _scriptAssetHash: 682d7f4af5302dd8ccea82b6bccb5519
   UiEventForwarders: []
 --- !u!1 &1835909010
 GameObject:
@@ -2394,6 +2394,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1835909011}
   - component: {fileID: 1835909012}
+  - component: {fileID: 1835909013}
   m_Layer: 0
   m_Name: Virtual Camera
   m_TagString: Untagged
@@ -2409,7 +2410,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1835909010}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.000000007072231, z: -0.0000000040636223, w: 1}
+  m_LocalRotation: {x: -0, y: -2.7082336e-11, z: 1.5572432e-11, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2456,6 +2457,29 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 2048694419}
+--- !u!114 &1835909013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835909010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00b2d199b96b516448144ab30fb26aed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ApplyAfter: 2
+  m_ChannelMask: 1
+  m_Gain: 1
+  m_Use2DDistance: 0
+  m_UseCameraSpace: 1
+  m_ReactionSettings:
+    m_SecondaryNoise: {fileID: 0}
+    m_AmplitudeGain: 1
+    m_FrequencyGain: 1
+    m_Duration: 1
+    m_NoiseOffsets: {x: 0, y: 0, z: 0}
 --- !u!1 &1934259504
 GameObject:
   m_ObjectHideFlags: 0
@@ -3206,16 +3230,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 747636442002729297, guid: 3b2767272a5ca9c4ea376ec63595b337,
-        type: 3}
-      propertyPath: _serializedProperties.Array.data[0].IntValue
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 747636442002729297, guid: 3b2767272a5ca9c4ea376ec63595b337,
-        type: 3}
-      propertyPath: _serializedProperties.Array.data[0].IsPrefabOverride
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7910296894753604018, guid: 3b2767272a5ca9c4ea376ec63595b337,
         type: 3}
       propertyPath: m_LocalPosition.x
