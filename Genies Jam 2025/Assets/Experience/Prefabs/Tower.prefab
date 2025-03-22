@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3274422607963054657
+--- !u!1 &121668765887344115
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,23 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5817514338090885407}
-  - component: {fileID: 7512839423616530309}
+  - component: {fileID: 1927606805670099448}
+  - component: {fileID: 4984430057790761945}
+  - component: {fileID: 134982562832084118}
   m_Layer: 0
-  m_Name: Floor Base
+  m_Name: Floor Dance
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5817514338090885407
+--- !u!4 &1927606805670099448
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3274422607963054657}
+  m_GameObject: {fileID: 121668765887344115}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -32,13 +33,13 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7910296894753604018}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!212 &7512839423616530309
+--- !u!212 &4984430057790761945
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3274422607963054657}
+  m_GameObject: {fileID: 121668765887344115}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -73,17 +74,38 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e8c83113fce2f0f43886c9d08c7c02a9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a2bf934760cf43445a7076f7528e829c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.857143, y: 2.857143}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &134982562832084118
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121668765887344115}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d9980b8a2271ad4f87090f76b3659cf, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &3348951668426652430
 GameObject:
   m_ObjectHideFlags: 0
@@ -416,7 +438,7 @@ Transform:
   - {fileID: 1030538649810876506}
   - {fileID: 5611871506285829513}
   - {fileID: 4070721315226174722}
-  - {fileID: 5817514338090885407}
+  - {fileID: 1927606805670099448}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &161375697332625885
@@ -533,7 +555,7 @@ MonoBehaviour:
     PropKey: towerHP
     BasePath: towerHP
   _script: {fileID: 4458252877524076426, guid: b19f16a91887da149816133368394b8f, type: 3}
-  _scriptAssetHash: 501437d4260f18a5d3fe8a580e675814
+  _scriptAssetHash: 5cbffb25c7974039ce19c33676cf4f7c
   UiEventForwarders: []
 --- !u!114 &747636442002729297
 MonoBehaviour:
@@ -653,7 +675,7 @@ MonoBehaviour:
     PropKey: impulseSource
     BasePath: impulseSource
   _script: {fileID: 4458252877524076426, guid: 7dba72f6091ee42438346fc0dab5d89b, type: 3}
-  _scriptAssetHash: 11b306ac43ea3afc732346b603d9454a
+  _scriptAssetHash: 13492a5a3359a918d4939a0505853c02
   UiEventForwarders: []
 --- !u!114 &873554257991324236
 MonoBehaviour:

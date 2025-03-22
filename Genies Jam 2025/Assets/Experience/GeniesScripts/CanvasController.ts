@@ -77,7 +77,7 @@ export default class CanvasController extends MonoBehaviour {
     private OnGameWin() {
         this.canUpdateUI = false;
         this.timeText.text = TimeManager.Instance.GetRemainingTimeText();
-        this.notificationText.text = "LEVEL COMPLETE";
+        this.notificationText.text = "WELL DONE";
         this.notificationPanel.SetActive(true);
         this.loadingEffect.SetActive(false);
         this.loadingPanel.SetActive(false);

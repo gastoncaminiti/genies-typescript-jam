@@ -137,7 +137,6 @@ export default class EnemySpawner extends MonoBehaviour {
     // 🔹 Devuelve un enemigo al pool en lugar de destruirlo
     private ReturnToPool(enemy: EnemyManager): void {
         enemy.gameObject.SetActive(false);
-        EffectManager.Instance.HitEffect(enemy.transform.position);
         this.enemyPool.push(enemy);
     }
     private ResetEnemies() {

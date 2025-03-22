@@ -3,6 +3,7 @@ import {Collider, MonoBehaviour} from "UnityEngine";
 import GameManager, { GameState } from './GameManager';
 import EnemyManager from "./EnemyManager";
 import DanceUpManager from "./DanceUpManager";
+import EffectManager from "./EffectManager";
 export default class TowerManager extends MonoBehaviour {
 
     @NonSerialized public OnHitTower: GeniesEvent<[EnemyManager]> = new GeniesEvent<[EnemyManager]>();
@@ -36,8 +37,10 @@ export default class TowerManager extends MonoBehaviour {
             console.log("ENEMY HIT TRIGGER");
             let enemy = coll.gameObject.GetComponent<EnemyManager>();
             this.OnHitTower.trigger(enemy);
+            EffectManager.Instance.HitEffect(enemy.transform.position);
             DanceUpManager.Instance.ResetDanceMultiplier();
             this.currenteTowerHP--;
+            
             if(this.currenteTowerHP == 0){
                 this.gameManager.ChangeGameState(GameState.GAME_OVER);
             }

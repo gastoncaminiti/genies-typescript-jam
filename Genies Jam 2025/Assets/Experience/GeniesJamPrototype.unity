@@ -1200,7 +1200,7 @@ MonoBehaviour:
     PropKey: loadingEffect
     BasePath: loadingEffect
   _script: {fileID: 4458252877524076426, guid: 0d8f09f3711dd9d45a474c728dace9b8, type: 3}
-  _scriptAssetHash: 9400134f190b6d3af26f38c6cc147d31
+  _scriptAssetHash: c983aca802679eebdc963b57ff4f2d37
   UiEventForwarders: []
 --- !u!1 &660438912
 GameObject:
@@ -1227,13 +1227,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 660438912}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalRotation: {x: 0, y: 0.9961947, z: -0.08715578, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 10, y: 180, z: 0}
 --- !u!114 &660438917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1355,7 +1355,7 @@ MonoBehaviour:
   - IntValue: 0
     LongValue: 0
     DoubleValue: 0
-    FloatValue: 1
+    FloatValue: 0.75
     BoolValue: 0
     StringValue: 
     ColorValue: {r: 0, g: 0, b: 0, a: 0}
@@ -1562,8 +1562,60 @@ MonoBehaviour:
     PropType: 4
     PropKey: destroyEffectObject
     BasePath: destroyEffectObject
+  - IntValue: 0
+    LongValue: 0
+    DoubleValue: 0
+    FloatValue: 0
+    BoolValue: 0
+    StringValue: 
+    ColorValue: {r: 0, g: 0, b: 0, a: 0}
+    UnityObjectReference: {fileID: 1590615782}
+    LayerMaskValue:
+      serializedVersion: 2
+      m_Bits: 0
+    Vector2Value: {x: 0, y: 0}
+    Vector3Value: {x: 0, y: 0, z: 0}
+    Vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    RectValue:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    AnimationCurveValue:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    BoundsValue:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0, y: 0, z: 0}
+    QuaternionValue: {x: 0, y: 0, z: 0, w: 0}
+    Vector2IntValue: {x: 0, y: 0}
+    Vector3IntValue: {x: 0, y: 0, z: 0}
+    RectIntValue:
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    BoundsIntValue:
+      m_Position: {x: 0, y: 0, z: 0}
+      m_Size: {x: 0, y: 0, z: 0}
+    GeniesBehaviourReference: {fileID: 0}
+    GeniesSOReference: {fileID: 0}
+    SerializedCsObjectValue: 
+    CsObjectReferences: []
+    TypeName: UnityEngine.Animator
+    ArrayLength: 0
+    IsArray: 0
+    ArrayDimension: -1
+    IsPrefabOverride: 0
+    PropType: 4
+    PropKey: towerAnimator
+    BasePath: towerAnimator
   _script: {fileID: 4458252877524076426, guid: 6832e5d9a6aeba0438808de8a5a231be, type: 3}
-  _scriptAssetHash: 68e40b7a6ff559abe5d7daaa4a1b4595
+  _scriptAssetHash: fa8355c828658572397534fc6b61e2ed
   UiEventForwarders: []
 --- !u!1 &960535483
 GameObject:
@@ -1744,7 +1796,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961739749}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.25796676, y: -0.0000043333625, z: 0.0000011570244, w: 0.9661538}
+  m_LocalRotation: {x: 0.25796676, y: -0.000014929889, z: 0.0000039863376, w: 0.9661538}
   m_LocalPosition: {x: 0, y: 6, z: -8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1902,6 +1954,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1590615782 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 134982562832084118, guid: 3b2767272a5ca9c4ea376ec63595b337,
+    type: 3}
+  m_PrefabInstance: {fileID: 9201625661562453601}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1723147713
 GameObject:
   m_ObjectHideFlags: 0
@@ -2584,7 +2642,7 @@ MonoBehaviour:
     PropKey: enemyPrefabs.[3]
     BasePath: enemyPrefabs_D1
   _script: {fileID: 4458252877524076426, guid: 409fee7ed8c54894490c33f3f86f34ca, type: 3}
-  _scriptAssetHash: 139ad1662ab0fdfe8166fd8a7f8c4ae5
+  _scriptAssetHash: f8200e728ce5366b357a613097461ec3
   UiEventForwarders: []
 --- !u!1 &1835909010
 GameObject:
@@ -2612,7 +2670,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1835909010}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -5.7207217e-10, z: 3.2889602e-10, w: 1}
+  m_LocalRotation: {x: -0, y: -0.0000000018362698, z: 0.0000000010554686, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3441,6 +3499,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 630538268}
     m_Modifications:
+    - target: {fileID: 1226191419325716268, guid: e59c37152aa26e146bbc72d8ffd45518,
+        type: 3}
+      propertyPath: m_text
+      value: WELL DONE
+      objectReference: {fileID: 0}
     - target: {fileID: 1226191419325716268, guid: e59c37152aa26e146bbc72d8ffd45518,
         type: 3}
       propertyPath: m_fontAsset

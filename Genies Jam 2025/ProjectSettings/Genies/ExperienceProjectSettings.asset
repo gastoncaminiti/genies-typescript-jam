@@ -30,8 +30,8 @@ MonoBehaviour:
           scenePath: 
           buildIndex: -1
         ExperienceImages:
-          Thumbnail: {fileID: 2800000, guid: c69edb295240a4c7a8e5eb1149733ff6, type: 3}
-          GameIcon: {fileID: 2800000, guid: c69edb295240a4c7a8e5eb1149733ff6, type: 3}
+          Thumbnail: {fileID: 0}
+          GameIcon: {fileID: 0}
           GameBackground: {fileID: 0}
         experienceQualityLevel: 0
         platformToggleConfig:
