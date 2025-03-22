@@ -23,6 +23,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Left
       objectReference: {fileID: 0}
+    - target: {fileID: 5684567583088634363, guid: f6f61a4b0e8aad847b65e75484737fd6,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9bd4b30e3872d1842a835787c53e31e0, type: 2}
+    - target: {fileID: 7162424051374330683, guid: f6f61a4b0e8aad847b65e75484737fd6,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 823f93903abdab54a86cd0cb7ba09085,
+        type: 3}
     - target: {fileID: 8290634574440511670, guid: f6f61a4b0e8aad847b65e75484737fd6,
         type: 3}
       propertyPath: m_LocalPosition.x

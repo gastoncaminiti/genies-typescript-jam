@@ -23,6 +23,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Up
       objectReference: {fileID: 0}
+    - target: {fileID: 5684567583088634363, guid: f6f61a4b0e8aad847b65e75484737fd6,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e51247c0865625f4baf73bbabbda2e31, type: 2}
+    - target: {fileID: 7162424051374330683, guid: f6f61a4b0e8aad847b65e75484737fd6,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: dd0e4b58bd78c6642b2c8de1a2a5c6e8,
+        type: 3}
     - target: {fileID: 8290634574440511670, guid: f6f61a4b0e8aad847b65e75484737fd6,
         type: 3}
       propertyPath: m_LocalPosition.x
