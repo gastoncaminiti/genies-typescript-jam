@@ -71,7 +71,7 @@ Material:
     - _ENABLE_LIGHTA: 0
     - _ENABLE_LIGHTB: 0
     - _ENABLE_LIGHTC: 0
-    - _Flatness: 0
+    - _Flatness: 0.5
     - _Hue: 0
     - _LightAAlbedoInfluence: 0.8
     - _LightACoverage: 0.65
