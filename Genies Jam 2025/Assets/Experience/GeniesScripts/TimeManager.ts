@@ -43,7 +43,6 @@ export default class TimeManager extends MonoBehaviour {
 
         if (this.remainingTime <= 0) {
             this.isCounting = false;
-            this.remainingTimeText = this.GetTimeTextPlaceholder();
             this.gameManager.ChangeGameState(GameState.GAME_WIN);
             this.StopAllCoroutines();
         }
@@ -53,6 +52,10 @@ export default class TimeManager extends MonoBehaviour {
         let minutes = Math.floor(this.remainingTime / 60);
         let seconds = Math.floor(this.remainingTime % 60);
         this.remainingTimeText = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+        
+        if(minutes < 0){
+            this.remainingTimeText = this.GetTimeTextPlaceholder();
+        }
     }
     
     public GetRemainingTimeText(): string{
@@ -60,6 +63,6 @@ export default class TimeManager extends MonoBehaviour {
     }
 
     private GetTimeTextPlaceholder():string{
-        return "00:00";
+        return "0:00";
     }
 }
