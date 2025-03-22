@@ -12,6 +12,7 @@ export default class CanvasController extends MonoBehaviour {
     @SerializeField private notificationPanel: GameObject;
     @SerializeField private loadingPanel: GameObject;
     @SerializeField private hudPanel: GameObject;
+    @SerializeField private loadingEffect: GameObject;
 
     @SerializeField private timeText: TMP_Text;
     @SerializeField private distanceText: TMP_Text;
@@ -54,20 +55,23 @@ export default class CanvasController extends MonoBehaviour {
         this.hudPanel.SetActive(false);
         this.notificationPanel.SetActive(false);
         this.loadingPanel.SetActive(true);
+        this.loadingEffect.SetActive(true);
     }
 
     private OnGamePlay() {
         this.canUpdateUI = true;
         this.notificationPanel.SetActive(false);
         this.loadingPanel.SetActive(false);
+        this.loadingEffect.SetActive(false);
         this.hudPanel.SetActive(true);
     }
 
     private OnGameOver() {
         this.canUpdateUI = false;
         this.notificationText.text = "GAME OVER";
-        this.notificationPanel.SetActive(true);
         this.loadingPanel.SetActive(false);
+        this.loadingEffect.SetActive(false);
+        this.notificationPanel.SetActive(true);
     }
 
     private OnGameWin() {
@@ -75,6 +79,7 @@ export default class CanvasController extends MonoBehaviour {
         this.timeText.text = TimeManager.Instance.GetRemainingTimeText();
         this.notificationText.text = "LEVEL COMPLETE";
         this.notificationPanel.SetActive(true);
+        this.loadingEffect.SetActive(false);
         this.loadingPanel.SetActive(false);
     }
 
