@@ -1,0 +1,34 @@
+fileFormatVersion: 2
+guid: 95daf531d8b51ff43baa76c185c99d19
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 22604dd76f55453daccee3ed9e7b94b5, type: 3}
+  SerializedAsset: '{"IsCompiled":true,"CompilerVersion":"2.0.63","ReferencedSpecifiers":["@assets/Experience/GeniesScripts/GameManager"],"Source":"\"use
+    strict\";\nObject.defineProperty(exports, \"__esModule\", { value: true });\nconst
+    UnityEngine_1 = require(\"UnityEngine\");\nconst GameManager_1 = require(\"@assets/Experience/GeniesScripts/GameManager\");\nclass
+    TimeManager extends UnityEngine_1.MonoBehaviour {\n    constructor() {\n       
+    super(...arguments);\n        this.isCounting = false;\n    }\n    Awake() {\n       
+    //Establishes the GameManager singleton instance\n        if (TimeManager.Instance
+    == null) {\n            TimeManager.Instance = this;\n        }\n        else
+    {\n            TimeManager.Destroy(this.gameObject);\n        }\n    }\n    Start()
+    {\n        //Get GameManager singleton and add a listener to OnGameStateChange
+    event\n        this.gameManager = GameManager_1.default.Instance;\n    }\n   
+    SetSongDuration(seconds) {\n        this.songDuration = seconds;\n        this.remainingTime
+    = this.songDuration;\n        this.isCounting = true;\n        this.UpdateTimeText();\n       
+    this.StartCoroutine(this.UpdateTimer());\n    }\n    *UpdateTimer() {\n       
+    while (this.isCounting && this.remainingTime > 0) {\n            this.remainingTime
+    -= 1;\n            this.UpdateTimeText();\n            yield new UnityEngine_1.WaitForSeconds(1);\n       
+    }\n        if (this.remainingTime <= 0) {\n            this.isCounting = false;\n           
+    this.gameManager.ChangeGameState(GameManager_1.GameState.GAME_WIN);\n           
+    this.StopAllCoroutines();\n        }\n    }\n    UpdateTimeText() {\n       
+    let minutes = Math.floor(this.remainingTime / 60);\n        let seconds = Math.floor(this.remainingTime
+    % 60);\n        this.remainingTimeText = `${minutes}:${seconds.toString().padStart(2,
+    ''0'')}`;\n        if (minutes < 0) {\n            this.remainingTimeText = this.GetTimeTextPlaceholder();\n       
+    }\n    }\n    GetRemainingTimeText() {\n        return this.remainingTimeText;\n   
+    }\n    GetTimeTextPlaceholder() {\n        return \"0:00\";\n    }\n}\nexports.default
+    = TimeManager;\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVGltZU1hbmFnZXIuanMiLCJtYXBwaW5ncyI6Ijs7QUFBQSw2Q0FBeUQ7QUFDekQsOEVBQXNEO0FBQ3RELE1BQXFCLFdBQVksU0FBUSwyQkFBYTtJQUF0RDs7UUFVWSxlQUFVLEdBQVksS0FBSztJQXVEdkM7SUFyRFksS0FBSztRQUNULGdEQUErQztRQUMvQyxJQUFHLFdBQVcsQ0FBQyxRQUFRLElBQUksSUFBSSxFQUFFO1lBQzdCLFdBQVcsQ0FBQyxRQUFRLEdBQUcsSUFBSTtRQUMvQixDQUFDO2FBQUk7WUFDRCxXQUFXLENBQUMsT0FBTyxDQUFDLElBQUksQ0FBQyxVQUFVLENBQUM7UUFDeEM7SUFDSjtJQUVRLEtBQUs7UUFDVCx5RUFBd0U7UUFDeEUsSUFBSSxDQUFDLFdBQVcsR0FBRyxxQkFBVyxDQUFDLFFBQVE7SUFDM0M7SUFFTyxlQUFlLENBQUMsT0FBYztRQUNqQyxJQUFJLENBQUMsWUFBWSxHQUFHLE9BQU87UUFDM0IsSUFBSSxDQUFDLGFBQWEsR0FBRyxJQUFJLENBQUMsWUFBWTtRQUN0QyxJQUFJLENBQUMsVUFBVSxHQUFHLElBQUk7UUFDdEIsSUFBSSxDQUFDLGNBQWMsRUFBRTtRQUNyQixJQUFJLENBQUMsY0FBYyxDQUFDLElBQUksQ0FBQyxXQUFXLEVBQUUsQ0FBQztJQUMzQztJQUVRLENBQUMsV0FBVztRQUNoQixPQUFPLElBQUksQ0FBQyxVQUFVLElBQUksSUFBSSxDQUFDLGFBQWEsR0FBRyxDQUFDLEVBQUU7WUFDOUMsSUFBSSxDQUFDLGFBQWEsSUFBSSxDQUFDO1lBQ3ZCLElBQUksQ0FBQyxjQUFjLEVBQUU7WUFDckIsTUFBTSxJQUFJLDRCQUFjLENBQUMsQ0FBQyxDQUFDO1FBQy9CO1FBRUEsSUFBSSxJQUFJLENBQUMsYUFBYSxJQUFJLENBQUMsRUFBRTtZQUN6QixJQUFJLENBQUMsVUFBVSxHQUFHLEtBQUs7WUFDdkIsSUFBSSxDQUFDLFdBQVcsQ0FBQyxlQUFlLENBQUMsdUJBQVMsQ0FBQyxRQUFRLENBQUM7WUFDcEQsSUFBSSxDQUFDLGlCQUFpQixFQUFFO1FBQzVCO0lBQ0o7SUFFUSxjQUFjO1FBQ2xCLElBQUksT0FBTyxHQUFHLElBQUksQ0FBQyxLQUFLLENBQUMsSUFBSSxDQUFDLGFBQWEsR0FBRyxFQUFFLENBQUM7UUFDakQsSUFBSSxPQUFPLEdBQUcsSUFBSSxDQUFDLEtBQUssQ0FBQyxJQUFJLENBQUMsYUFBYSxHQUFHLEVBQUUsQ0FBQztRQUNqRCxJQUFJLENBQUMsaUJBQWlCLEdBQUcsR0FBRyxPQUFPLElBQUksT0FBTyxDQUFDLFFBQVEsRUFBRSxDQUFDLFFBQVEsQ0FBQyxDQUFDLEVBQUUsR0FBRyxDQUFDLEVBQUU7UUFFNUUsSUFBRyxPQUFPLEdBQUcsQ0FBQyxFQUFDO1lBQ1gsSUFBSSxDQUFDLGlCQUFpQixHQUFHLElBQUksQ0FBQyxzQkFBc0IsRUFBRTtRQUMxRDtJQUNKO0lBRU8sb0JBQW9CO1FBQ3ZCLE9BQU8sSUFBSSxDQUFDLGlCQUFpQjtJQUNqQztJQUVRLHNCQUFzQjtRQUMxQixPQUFPLE1BQU07SUFDakI7Q0FDSjtBQWpFQSw4QkFpRUEiLCJuYW1lcyI6W10sImlnbm9yZUxpc3QiOltdLCJzb3VyY2VzIjpbIlRpbWVNYW5hZ2VyLnRzIl0sInNvdXJjZXNDb250ZW50IjpbbnVsbF19","ScriptHash":"0bd0d42a03f836b8811b16938e5e9b6c","Specifier":"@assets/Experience/GeniesScripts/TimeManager","DefaultTypeName":"@assets/Experience/GeniesScripts/TimeManager.TimeManager","IsMonobehaviour":true,"IsScriptableObj":false,"InheritanceChain":["@assets/Experience/GeniesScripts/TimeManager.TimeManager","UnityEngine.MonoBehaviour","UnityEngine.Behaviour","UnityEngine.Component","UnityEngine.Object","@com.genies.scripting@1.11.0\\Runtime\\Typing\\index.d.System.Object"],"Properties":[],"SupportedUiEvents":"None","DisplayName":"TimeManager","name":"TimeManager","hideFlags":"NotEditable"}'

@@ -6,7 +6,8 @@ export enum GameState {
     INITIAL,
     LOADING,
     GAME_PLAY,
-    GAME_OVER
+    GAME_OVER,
+    GAME_WIN
 }
 
 export default class GameManager extends MonoBehaviour {
@@ -17,6 +18,9 @@ export default class GameManager extends MonoBehaviour {
     @NonSerialized public static Instance: GameManager;
     /** The game's current GameState value. */
     private gameState: GameState;
+    
+
+    
     private Awake() : void {
         //Establishes the GameManager singleton instance
         if(GameManager.Instance == null) {

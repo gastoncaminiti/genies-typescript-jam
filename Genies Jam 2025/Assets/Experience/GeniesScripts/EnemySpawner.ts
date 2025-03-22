@@ -6,6 +6,7 @@ import {EnemyState} from "./Enums/EnemyState";
 import PlayerController from "./PlayerController";
 import TowerManager from "./TowerManager";
 import EffectManager from "./EffectManager";
+import DanceUpManager from "./DanceUpManager";
 
 
 export default class EnemySpawner extends MonoBehaviour {
@@ -42,12 +43,24 @@ export default class EnemySpawner extends MonoBehaviour {
             case GameState.GAME_PLAY:
                 this.OnGamePlay();
                 break;
+            case GameState.GAME_OVER:
+                this.OnGameOver();
+                break;
+            case GameState.GAME_WIN:
+                this.OnGameOver();
+                break;
         }
     }
 
     /** This will manage the enemies once the game starts. */
     private OnGamePlay() {
         this.coroutine = this.StartCoroutine(this.SpawnEnemies());
+    }
+
+    private OnGameOver() {
+        this.coroutine = null;
+        this.StopAllCoroutines();
+        this.ResetEnemies();
     }
 
     private *SpawnEnemies() {
@@ -75,6 +88,7 @@ export default class EnemySpawner extends MonoBehaviour {
             
             this.ReturnToPool(dequeuedEnemy);
             console.log("EL ESTADO COINCIDE HAY QUE MATARLO");
+            DanceUpManager.Instance.IncreaseDanceMultiplier();
         }
     }
 
@@ -125,5 +139,19 @@ export default class EnemySpawner extends MonoBehaviour {
         enemy.gameObject.SetActive(false);
         EffectManager.Instance.HitEffect(enemy.transform.position);
         this.enemyPool.push(enemy);
+    }
+    private ResetEnemies() {
+        console.log("RESET ALL ENEMIES"); 
+        this.enemyPool.forEach ((enemy) => {
+            enemy.gameObject.SetActive(false);
+        });
+
+        this.enemyQueue.forEach ((enemy) => {
+            enemy.gameObject.SetActive(false);
+        });
+        
+        while(this.enemyQueue.length != 0){
+            this.enemyQueue.shift();
+        }
     }
 }

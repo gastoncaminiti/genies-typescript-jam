@@ -1,4 +1,4 @@
-import { MonoBehaviour, Input, Vector3, Mathf, Time, Animator, Collider, RuntimeAnimatorController } from 'UnityEngine';
+import { MonoBehaviour, Input, Vector3, Mathf, Time, RuntimeAnimatorController } from 'UnityEngine';
 
 import { GeniesAvatar, GeniesAvatarsSdk } from 'Genies.Avatars.Sdk';
 import GameManager, { GameState } from './GameManager';
@@ -49,6 +49,12 @@ export default class PlayerController extends MonoBehaviour {
         switch(newState) {
             case GameState.GAME_PLAY:
                 this.OnGamePlay();
+                break;
+            case GameState.GAME_OVER:
+                this.OnGameOver();
+                break;
+            case GameState.GAME_WIN:
+                this.OnGameWin();
                 break;
         }
     }
@@ -104,6 +110,14 @@ export default class PlayerController extends MonoBehaviour {
         this.targetLaneX = 0;
         this.targetLaneY = 0;
         console.log("LOAD AVATAR");
+    }
+    
+    private OnGameOver(): void{
+        this.canMove = false;
+    }
+
+    private OnGameWin() {
+        this.canMove = false;
     }
 
 }
