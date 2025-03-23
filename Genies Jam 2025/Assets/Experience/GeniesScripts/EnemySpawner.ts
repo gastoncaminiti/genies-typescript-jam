@@ -17,10 +17,11 @@ export default class EnemySpawner extends MonoBehaviour {
     @Header("Enemies Spawner Settings")
     @SerializeField private enemyPrefabs: GameObject[];
     @SerializeField private globalSpeed: float = 20;
-    @SerializeField private globalSpeedIncreaseByLevel: float = 2;
+    @SerializeField private globalSpeedIncreaseByLevel: float = 0.2;
     @SerializeField private xRange: float = 3;
     @SerializeField private enemySpawnDelay: float = 1;
     @SerializeField private poolSize: int = 10;
+    @SerializeField private level: int = 0;
     
     private gameManager: GameManager;
     
@@ -49,13 +50,16 @@ export default class EnemySpawner extends MonoBehaviour {
                 break;
             case GameState.GAME_WIN:
                 this.OnGameOver();
-                this.globalSpeed = this.globalSpeed + this.globalSpeedIncreaseByLevel;
+                this.globalSpeed = this.globalSpeed + this.globalSpeedIncreaseByLevel
+                this.enemySpawnDelay = this.enemySpawnDelay - (this.globalSpeedIncreaseByLevel/2); 
+                this.level++;
                 break;
         }
     }
 
     /** This will manage the enemies once the game starts. */
     private OnGamePlay() {
+        this.ShufflePool();
         this.coroutine = this.StartCoroutine(this.SpawnEnemies());
     }
 
@@ -114,8 +118,7 @@ export default class EnemySpawner extends MonoBehaviour {
             }
         }
         
-        // Mezcla el pool para evitar que siempre salgan en el mismo orden
-        this.ShufflePool();
+        
     }
 
     // 🔹 Mezcla el pool para una mejor distribución aleatoria
