@@ -17,6 +17,7 @@ export default class EnemySpawner extends MonoBehaviour {
     @Header("Enemies Spawner Settings")
     @SerializeField private enemyPrefabs: GameObject[];
     @SerializeField private globalSpeed: float = 20;
+    @SerializeField private globalSpeedIncreaseByLevel: float = 2;
     @SerializeField private xRange: float = 3;
     @SerializeField private enemySpawnDelay: float = 1;
     @SerializeField private poolSize: int = 10;
@@ -48,6 +49,7 @@ export default class EnemySpawner extends MonoBehaviour {
                 break;
             case GameState.GAME_WIN:
                 this.OnGameOver();
+                this.globalSpeed = this.globalSpeed + this.globalSpeedIncreaseByLevel;
                 break;
         }
     }
