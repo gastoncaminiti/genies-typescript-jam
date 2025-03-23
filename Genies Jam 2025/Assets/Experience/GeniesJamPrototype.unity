@@ -613,6 +613,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &516714734 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 895436370108986243, guid: 6055a943462f3bb409d5adf494fce734,
+    type: 3}
+  m_PrefabInstance: {fileID: 7791514131622464933}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &630538264
 GameObject:
   m_ObjectHideFlags: 0
@@ -1199,8 +1211,112 @@ MonoBehaviour:
     PropType: 4
     PropKey: loadingEffect
     BasePath: loadingEffect
+  - IntValue: 0
+    LongValue: 0
+    DoubleValue: 0
+    FloatValue: 0
+    BoolValue: 0
+    StringValue: 
+    ColorValue: {r: 0, g: 0, b: 0, a: 0}
+    UnityObjectReference: {fileID: 886748780}
+    LayerMaskValue:
+      serializedVersion: 2
+      m_Bits: 0
+    Vector2Value: {x: 0, y: 0}
+    Vector3Value: {x: 0, y: 0, z: 0}
+    Vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    RectValue:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    AnimationCurveValue:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    BoundsValue:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0, y: 0, z: 0}
+    QuaternionValue: {x: 0, y: 0, z: 0, w: 0}
+    Vector2IntValue: {x: 0, y: 0}
+    Vector3IntValue: {x: 0, y: 0, z: 0}
+    RectIntValue:
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    BoundsIntValue:
+      m_Position: {x: 0, y: 0, z: 0}
+      m_Size: {x: 0, y: 0, z: 0}
+    GeniesBehaviourReference: {fileID: 0}
+    GeniesSOReference: {fileID: 0}
+    SerializedCsObjectValue: 
+    CsObjectReferences: []
+    TypeName: TMPro.TMP_Text
+    ArrayLength: 0
+    IsArray: 0
+    ArrayDimension: -1
+    IsPrefabOverride: 0
+    PropType: 4
+    PropKey: notificationButtonText
+    BasePath: notificationButtonText
+  - IntValue: 0
+    LongValue: 0
+    DoubleValue: 0
+    FloatValue: 0
+    BoolValue: 0
+    StringValue: 
+    ColorValue: {r: 0, g: 0, b: 0, a: 0}
+    UnityObjectReference: {fileID: 516714734}
+    LayerMaskValue:
+      serializedVersion: 2
+      m_Bits: 0
+    Vector2Value: {x: 0, y: 0}
+    Vector3Value: {x: 0, y: 0, z: 0}
+    Vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    RectValue:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    AnimationCurveValue:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    BoundsValue:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0, y: 0, z: 0}
+    QuaternionValue: {x: 0, y: 0, z: 0, w: 0}
+    Vector2IntValue: {x: 0, y: 0}
+    Vector3IntValue: {x: 0, y: 0, z: 0}
+    RectIntValue:
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    BoundsIntValue:
+      m_Position: {x: 0, y: 0, z: 0}
+      m_Size: {x: 0, y: 0, z: 0}
+    GeniesBehaviourReference: {fileID: 0}
+    GeniesSOReference: {fileID: 0}
+    SerializedCsObjectValue: 
+    CsObjectReferences: []
+    TypeName: TMPro.TMP_Text
+    ArrayLength: 0
+    IsArray: 0
+    ArrayDimension: -1
+    IsPrefabOverride: 0
+    PropType: 4
+    PropKey: personalHighScoreText
+    BasePath: personalHighScoreText
   _script: {fileID: 4458252877524076426, guid: 0d8f09f3711dd9d45a474c728dace9b8, type: 3}
-  _scriptAssetHash: c983aca802679eebdc963b57ff4f2d37
+  _scriptAssetHash: 3991a2330966e6e19a57b280b931c016
   UiEventForwarders: []
 --- !u!1 &660438912
 GameObject:
@@ -1617,6 +1733,18 @@ MonoBehaviour:
   _script: {fileID: 4458252877524076426, guid: 6832e5d9a6aeba0438808de8a5a231be, type: 3}
   _scriptAssetHash: fa8355c828658572397534fc6b61e2ed
   UiEventForwarders: []
+--- !u!114 &886748780 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6460403512691439146, guid: e59c37152aa26e146bbc72d8ffd45518,
+    type: 3}
+  m_PrefabInstance: {fileID: 3280425021552046723}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &960535483
 GameObject:
   m_ObjectHideFlags: 0
@@ -1796,7 +1924,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961739749}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.31614602, y: 0.000004580657, z: -0.0000015264471, w: 0.94871056}
+  m_LocalRotation: {x: 0.31614602, y: 0.00000467595, z: -0.0000015582025, w: 0.94871056}
   m_LocalPosition: {x: 0, y: 8, z: -8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2745,8 +2873,60 @@ MonoBehaviour:
     PropType: 5
     PropKey: level
     BasePath: level
+  - IntValue: 0
+    LongValue: 0
+    DoubleValue: 0
+    FloatValue: 2
+    BoolValue: 0
+    StringValue: 
+    ColorValue: {r: 0, g: 0, b: 0, a: 0}
+    UnityObjectReference: {fileID: 0}
+    LayerMaskValue:
+      serializedVersion: 2
+      m_Bits: 0
+    Vector2Value: {x: 0, y: 0}
+    Vector3Value: {x: 0, y: 0, z: 0}
+    Vector4Value: {x: 0, y: 0, z: 0, w: 0}
+    RectValue:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    AnimationCurveValue:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    BoundsValue:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0, y: 0, z: 0}
+    QuaternionValue: {x: 0, y: 0, z: 0, w: 0}
+    Vector2IntValue: {x: 0, y: 0}
+    Vector3IntValue: {x: 0, y: 0, z: 0}
+    RectIntValue:
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    BoundsIntValue:
+      m_Position: {x: 0, y: 0, z: 0}
+      m_Size: {x: 0, y: 0, z: 0}
+    GeniesBehaviourReference: {fileID: 0}
+    GeniesSOReference: {fileID: 0}
+    SerializedCsObjectValue: 
+    CsObjectReferences: []
+    TypeName: System.Single
+    ArrayLength: 0
+    IsArray: 0
+    ArrayDimension: -1
+    IsPrefabOverride: 0
+    PropType: 7
+    PropKey: enemySpawnDelayDecreaseByLevel
+    BasePath: enemySpawnDelayDecreaseByLevel
   _script: {fileID: 4458252877524076426, guid: 409fee7ed8c54894490c33f3f86f34ca, type: 3}
-  _scriptAssetHash: b9490fff7a17a742208b0c09815975f7
+  _scriptAssetHash: a158bf8e27c09c9f573f7e4dc9f5b8c8
   UiEventForwarders: []
 --- !u!1 &1835909010
 GameObject:
@@ -2774,7 +2954,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1835909010}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.00008621811, y: 0.000003862848, z: -0.0000028966165, w: 1}
+  m_LocalRotation: {x: -0.00008621811, y: 0.0000039432107, z: -0.0000029568776, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3495,7 +3675,7 @@ MonoBehaviour:
     PropKey: audioClips.[3]
     BasePath: audioClips_D1
   _script: {fileID: 4458252877524076426, guid: 113a9c5aaa3e4d44ebaf3edc17a5c541, type: 3}
-  _scriptAssetHash: 52dd144076232fa172e302f83ded5615
+  _scriptAssetHash: 6ada493a2ad6cb1cf61320dcc5f4b083
   UiEventForwarders: []
 --- !u!1 &2048694418
 GameObject:
@@ -3836,6 +4016,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 630538268}
     m_Modifications:
+    - target: {fileID: 895436370108986243, guid: 6055a943462f3bb409d5adf494fce734,
+        type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 895436370108986243, guid: 6055a943462f3bb409d5adf494fce734,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 36
+      objectReference: {fileID: 0}
     - target: {fileID: 1557300767246722559, guid: 6055a943462f3bb409d5adf494fce734,
         type: 3}
       propertyPath: m_Pivot.x

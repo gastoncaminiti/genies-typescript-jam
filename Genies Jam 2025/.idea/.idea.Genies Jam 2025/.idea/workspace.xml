@@ -6,10 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="a0706285-cb97-40a5-82b7-1ca1b8199693" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Genies Jam 2025/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Genies Jam 2025/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/EnemyManager.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/EnemyManager.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/EnemyManager.ts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/EnemyManager.ts.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/EnemySpawner.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/EnemySpawner.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/EnemySpawner.ts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/EnemySpawner.ts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Experience/GeniesJamPrototype.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/GeniesJamPrototype.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/CanvasController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/CanvasController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/CanvasController.ts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/CanvasController.ts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/DanceUpManager.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/DanceUpManager.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/DanceUpManager.ts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/DanceUpManager.ts.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +109,7 @@
       <workItem from="1742574589352" duration="44000" />
       <workItem from="1742574731661" duration="15308000" />
       <workItem from="1742672664864" duration="3249000" />
-      <workItem from="1742738034056" duration="10564000" />
+      <workItem from="1742738034056" duration="12769000" />
     </task>
     <servers />
   </component>

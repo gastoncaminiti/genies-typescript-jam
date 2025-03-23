@@ -64,8 +64,12 @@ export default class DanceUpManager extends MonoBehaviour {
         this.towerDistance = 0;
     }
     
+    public GetTowerDistance(): int {
+        return this.towerDistance;
+    }
+    
     public GetTowerDistanceText(): string{
-        return this.towerDistance.toString()+" Mi";
+        return this.towerDistance.toString()+" mi";
     }
 
     public GetDanceMultiplierText(): string{
