@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0706285-cb97-40a5-82b7-1ca1b8199693" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Genies Jam 2025/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Genies Jam 2025/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/CanvasController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/CanvasController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/CanvasController.ts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/CanvasController.ts.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/TimeManager.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/TimeManager.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/TimeManager.ts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/TimeManager.ts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/7094e769bb855618aad203d3e4b5512a0e8140278c9aa9e8683d17d36f987de4.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/7094e769bb855618aad203d3e4b5512a0e8140278c9aa9e8683d17d36f987de4.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Experience/GeniesJamPrototype.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/GeniesJamPrototype.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Experience/Sprites/Floor Dance.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Experience/Sprites/Floor Dance.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Experience/Sprites/Tower/Floor Dance.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/Sprites/Tower/Floor Dance.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Experience/Sprites/Tower/Floor Hit Anim.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/Sprites/Tower/Floor Hit Anim.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Experience/Sprites/Tower/Floor Up Anim.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/Sprites/Tower/Floor Up Anim.png.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +36,7 @@
   &quot;keyToString&quot;: {
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;prototype-3&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;prototype-4&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -107,6 +109,7 @@
       <workItem from="1742573578110" duration="755000" />
       <workItem from="1742574589352" duration="44000" />
       <workItem from="1742574731661" duration="15308000" />
+      <workItem from="1742672664864" duration="3249000" />
     </task>
     <servers />
   </component>

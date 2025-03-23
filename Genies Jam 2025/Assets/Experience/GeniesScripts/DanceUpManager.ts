@@ -2,6 +2,7 @@
 import { MonoBehaviour} from "UnityEngine";
 import {CinemachineImpulseSource}  from "Cinemachine";
 import GameManager, {GameState} from "./GameManager";
+import EffectManager from "./EffectManager";
 export default class DanceUpManager extends MonoBehaviour {
 
     @SerializeField private danceMultiplierGoal: int = 8;
@@ -52,6 +53,7 @@ export default class DanceUpManager extends MonoBehaviour {
             this.ResetDanceMultiplier();
             this.towerDistance++;
             this.impulseSource.GenerateImpulse();
+            EffectManager.Instance.UpEffect();
         }
     }
 

@@ -9,6 +9,8 @@ export default class EffectManager extends MonoBehaviour {
 
     @Header("Destroy Effect Settings")
     @SerializeField private destroyEffectObject: GameObject;
+
+    @SerializeField private towerAnimator: Animator;
     private Awake() : void {
         //Establishes the GameManager singleton instance
         if(EffectManager.Instance == null) {
@@ -22,13 +24,17 @@ export default class EffectManager extends MonoBehaviour {
         this.destroyEffectObject.transform.position = newPosition;
         this.destroyEffectObject.SetActive(true);
         this.StartCoroutine(this.DisableAfterAnimation(this.destroyEffectObject));
-        
     }
 
     public HitEffect(newPosition: Vector3): void{
+        this.towerAnimator.SetTrigger("isHit");
         this.hitEffectObject.transform.position = newPosition;
         this.hitEffectObject.SetActive(true);
         this.StartCoroutine(this.DisableAfterAnimation(this.hitEffectObject));
+    }
+    
+    public UpEffect(){
+        this.towerAnimator.SetTrigger("isUp");
     }
 
     // 🔹 Corrutina para desactivar el efecto luego de la animación
