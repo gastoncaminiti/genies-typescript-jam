@@ -115,7 +115,7 @@ export default class EnemySpawner extends MonoBehaviour {
         let peekFirstEnemy:EnemyManager = this.enemyQueue[0];
         console.log("ESTADO ACTIVADO "+ newState);
         
-        if(peekFirstEnemy.IsState(newState)){
+        if(peekFirstEnemy?.IsState(newState)){
             let dequeuedEnemy = this.enemyQueue.shift();
             EffectManager.Instance.DestroyEffect(dequeuedEnemy.transform.position);
             

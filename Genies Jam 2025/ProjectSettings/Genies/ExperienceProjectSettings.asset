@@ -41,7 +41,7 @@ MonoBehaviour:
           StandaloneWindows64: 1
         _traitsListString: '[]'
         Archetypes: []
-        GradientColorStart: {r: 0, g: 0, b: 0, a: 0}
+        GradientColorStart: {r: 0.050980393, g: 0.12941177, b: 0.2784314, a: 0}
         GradientColorEnd: {r: 0, g: 0, b: 0, a: 0}
       ManualSkuOverride: 0
       Sku: 
