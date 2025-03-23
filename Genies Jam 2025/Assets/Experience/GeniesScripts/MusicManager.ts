@@ -23,12 +23,33 @@ export default class MusicManager extends MonoBehaviour {
             case GameState.GAME_PLAY:
                 this.OnGamePlay();
                 break;
+            case GameState.GAME_OVER:
+                this.ResetSongList();
+                break;
+            case GameState.GAME_WIN:
+                this.NextSong();
+                break;
         }
     }
     private OnGamePlay(): void {
         this.myAudio.clip = this.audioClips[this.clipIndex];
         this.myAudio.Play();
         TimeManager.Instance.SetSongDuration(this.myAudio.clip.length)
+    }
+
+    private NextSong(): void {
+        
+        this.clipIndex++;
+        
+        if(this.clipIndex == this.audioClips.length){
+            this.ResetSongList();
+        }
+        
+        console.log("NEXT SONG INDEX "+this.clipIndex.toString())
+    }
+    
+    private ResetSongList():void{
+        this.clipIndex = 0;
     }
     
 }
