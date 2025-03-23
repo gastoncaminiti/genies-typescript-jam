@@ -29,4 +29,8 @@ export default class EnemyManager extends MonoBehaviour {
     public IsState(moveState:EnemyState): bool{
         return  this.enemyState == moveState; 
     }
+
+    public GetState(): EnemyState{
+        return this.enemyState;
+    }
 }
