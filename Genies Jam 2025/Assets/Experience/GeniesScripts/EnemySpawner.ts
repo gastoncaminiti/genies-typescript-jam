@@ -17,9 +17,12 @@ export default class EnemySpawner extends MonoBehaviour {
     @Header("Enemies Spawner Settings")
     @SerializeField private enemyPrefabs: GameObject[];
     @SerializeField private globalSpeed: float = 20;
+    @SerializeField private globalSpeedIncreaseByLevel: float = 0.2;
     @SerializeField private xRange: float = 3;
     @SerializeField private enemySpawnDelay: float = 1;
+    @SerializeField private enemySpawnDelayDecreaseByLevel: float = 0.2;
     @SerializeField private poolSize: int = 10;
+    @SerializeField private level: int = 0;
     
     private gameManager: GameManager;
     
@@ -27,6 +30,13 @@ export default class EnemySpawner extends MonoBehaviour {
 
     private enemyQueue: EnemyManager[] = [];
     private enemyPool: EnemyManager[] = [];
+    
+    private speed:float;
+    private delay: float;
+    private minDelay: float;
+    private maxSpeed: float;
+
+    private lastSpawnedState: EnemyState = null;
     private Start() : void {
         //Get GameManager singleton and add a listener to OnGameStateChange event
         this.gameManager = GameManager.Instance;
@@ -34,6 +44,11 @@ export default class EnemySpawner extends MonoBehaviour {
         this.playerController.OnMoveStateChange.addListener(this.CheckMoveState);
         this.towerManager.OnHitTower.addListener(this.ReturnToPool);
   
+        this.minDelay = this.enemySpawnDelay / 2;
+        this.maxSpeed = this.globalSpeed * 2;
+        
+        this.ResetSpawnerConfig();
+        
         this.InitializePool();  // Inicializa el Object Pool
     }
 
@@ -45,15 +60,17 @@ export default class EnemySpawner extends MonoBehaviour {
                 break;
             case GameState.GAME_OVER:
                 this.OnGameOver();
+                this.ResetSpawnerConfig();
                 break;
             case GameState.GAME_WIN:
-                this.OnGameOver();
+                this.OnGameWin();
                 break;
         }
     }
 
     /** This will manage the enemies once the game starts. */
     private OnGamePlay() {
+        this.ShufflePool();
         this.coroutine = this.StartCoroutine(this.SpawnEnemies());
     }
 
@@ -63,15 +80,31 @@ export default class EnemySpawner extends MonoBehaviour {
         this.ResetEnemies();
     }
 
+    private OnGameWin() {
+        this.OnGameOver();
+        
+        this.speed =  this.speed + this.globalSpeedIncreaseByLevel;
+        this.delay =  this.delay - this.enemySpawnDelayDecreaseByLevel;
+        this.level++;
+        
+        if(this.speed > this.maxSpeed){
+            this.speed = this.maxSpeed
+        }
+
+        if(this.delay < this.minDelay){
+            this.delay = this.minDelay
+        }
+    }
+
     private *SpawnEnemies() {
         while(true) {
-            yield new WaitForSeconds(this.enemySpawnDelay);
+            yield new WaitForSeconds(this.delay);
          
             let enemy: EnemyManager = this.GetPooledEnemy();
+            
             if (enemy) {
-                
                 let x = Mathf.Floor(Random.Range(-this.xRange, this.xRange));
-                enemy.InitialConfigEnemy(this.globalSpeed, x, this.transform.position.y);
+                enemy.InitialConfigEnemy(this.speed, x, this.transform.position.y);
                 this.enemyQueue.push(enemy);
             }
         }
@@ -82,7 +115,7 @@ export default class EnemySpawner extends MonoBehaviour {
         let peekFirstEnemy:EnemyManager = this.enemyQueue[0];
         console.log("ESTADO ACTIVADO "+ newState);
         
-        if(peekFirstEnemy.IsState(newState)){
+        if(peekFirstEnemy?.IsState(newState)){
             let dequeuedEnemy = this.enemyQueue.shift();
             EffectManager.Instance.DestroyEffect(dequeuedEnemy.transform.position);
             
@@ -112,8 +145,7 @@ export default class EnemySpawner extends MonoBehaviour {
             }
         }
         
-        // Mezcla el pool para evitar que siempre salgan en el mismo orden
-        this.ShufflePool();
+        
     }
 
     // 🔹 Mezcla el pool para una mejor distribución aleatoria
@@ -126,12 +158,31 @@ export default class EnemySpawner extends MonoBehaviour {
 
     // 🔹 Obtiene un enemigo del pool (si hay disponibles) o retorna null si el pool está vacío
     private GetPooledEnemy(): EnemyManager {
-        if (this.enemyPool.length > 0) {
-            let enemy = this.enemyPool.pop();
-            enemy.gameObject.SetActive(true);
-            return enemy;
+        if (this.enemyPool.length === 0) {
+            return null;
         }
-        return null;
+
+        // Filtra los enemigos que NO tienen el mismo estado que el último generado
+        let possibleEnemies = this.enemyPool.filter(e => e.GetState() !== this.lastSpawnedState);
+
+        let selectedEnemy: EnemyManager;
+
+        if (possibleEnemies.length > 0) {
+            // Si hay enemigos con un estado diferente, elige uno aleatorio de ellos
+            selectedEnemy = possibleEnemies[Mathf.Floor(Random.Range(0, possibleEnemies.length))];
+        } else {
+            // Si todos los enemigos tienen el mismo estado, elige cualquiera (caso extremo)
+            selectedEnemy = this.enemyPool[Mathf.Floor(Random.Range(0, this.enemyPool.length))];
+        }
+
+        // Remover de la pool y activarlo
+        this.enemyPool.splice(this.enemyPool.indexOf(selectedEnemy), 1);
+        selectedEnemy.gameObject.SetActive(true);
+
+        // Guardar el estado del enemigo seleccionado
+        this.lastSpawnedState = selectedEnemy.GetState();
+
+        return selectedEnemy;
     }
     
     // 🔹 Devuelve un enemigo al pool en lugar de destruirlo
@@ -152,5 +203,11 @@ export default class EnemySpawner extends MonoBehaviour {
         while(this.enemyQueue.length != 0){
             this.enemyQueue.shift();
         }
+    }
+    
+    private ResetSpawnerConfig(){
+        this.speed = this.globalSpeed;
+        this.delay = this.enemySpawnDelay;
+        this.level = 0;
     }
 }

@@ -173,7 +173,7 @@ MonoBehaviour:
     PropKey: enemyState
     BasePath: enemyState
   _script: {fileID: 4458252877524076426, guid: eb797c5a41f9cde4da79c2d25412754c, type: 3}
-  _scriptAssetHash: 71af6c345c4d7006255d671bb69b7738
+  _scriptAssetHash: 9faebb82e030aa36f55c3a2963877eb2
   UiEventForwarders: []
 --- !u!1 &6318967050214342924
 GameObject:

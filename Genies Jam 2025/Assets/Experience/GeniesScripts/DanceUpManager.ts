@@ -27,24 +27,22 @@ export default class DanceUpManager extends MonoBehaviour {
     private Start() : void {
         this.gameManager = GameManager.Instance;
         this.gameManager.OnGameStateChange.addListener(this.CheckGameState);
-        console.log("LOAD CANVAS");
+        this.ResetProgress();
     }
 
     private CheckGameState(newState: GameState) {
         switch(newState) {
-            case GameState.LOADING:
-                this.OnLoading();
-                break;
             case GameState.GAME_PLAY:
+                this.ResetDanceMultiplier();
                 break;
             case GameState.GAME_OVER:
+                this.ResetProgress();
+                break;
+            case GameState.GAME_WIN:
+                this.ResetDanceMultiplier();
+                //SAVE DATA
                 break;
         }
-    }
-
-    private OnLoading() {
-        this.ResetDanceMultiplier();
-        this.towerDistance = 0;
     }
     
     public IncreaseDanceMultiplier(): void{
@@ -61,11 +59,20 @@ export default class DanceUpManager extends MonoBehaviour {
         this.danceMultiplier = 0;
     }
     
+    private ResetProgress():void{
+        this.danceMultiplier = 0;
+        this.towerDistance = 0;
+    }
+    
+    public GetTowerDistance(): int {
+        return this.towerDistance;
+    }
+    
     public GetTowerDistanceText(): string{
-        return this.towerDistance+" Mi";
+        return this.towerDistance.toString()+" mi";
     }
 
     public GetDanceMultiplierText(): string{
-        return "x"+this.danceMultiplier;
+        return "x"+this.danceMultiplier.toString();
     }
 }

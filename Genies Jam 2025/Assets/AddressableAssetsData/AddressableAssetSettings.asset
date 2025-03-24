@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 468a46d0ae32c3544b7d98094e6448a9, type: 3}
   m_Name: AddressableAssetSettings
   m_EditorClassIdentifier: 
-  m_DefaultGroup: f8ead3c3adc6a5743b1004710b744012
+  m_DefaultGroup: be73decd5d601ab4fb29485f33e29cb2
   m_currentHash:
     serializedVersion: 2
     Hash: 00000000000000000000000000000000
@@ -30,10 +30,10 @@ MonoBehaviour:
   m_StripUnityVersionFromBundleBuild: 0
   m_DisableVisibleSubAssetRepresentations: 0
   m_ShaderBundleNaming: 2
-  m_ShaderBundleCustomNaming: 071a9a067a1059e5cd2297c54eb1d8bf58f1db8b27c439a6815dfea3b82c71f5
+  m_ShaderBundleCustomNaming: b0ec629d3a1c1bbdae68ba310591b84ac81c14f0f772663e1b238a4a976c5a5c
   m_MonoScriptBundleNaming: 3
   m_CheckForContentUpdateRestrictionsOption: 0
-  m_MonoScriptBundleCustomNaming: 071a9a067a1059e5cd2297c54eb1d8bf58f1db8b27c439a6815dfea3b82c71f5
+  m_MonoScriptBundleCustomNaming: b0ec629d3a1c1bbdae68ba310591b84ac81c14f0f772663e1b238a4a976c5a5c
   m_RemoteCatalogBuildPath:
     m_Id: 146d773b29a6243499a9358f8bfdb054
   m_RemoteCatalogLoadPath:
@@ -44,7 +44,7 @@ MonoBehaviour:
   m_BuildAddressablesWithPlayerBuild: 2
   m_overridePlayerVersion: genies
   m_GroupAssets:
-  - {fileID: 11400000, guid: edd9f51e0b5657d4a867bd40ea294e47, type: 2}
+  - {fileID: 11400000, guid: 85b42e4c2adcd794694880a317beceac, type: 2}
   m_BuildSettings:
     m_CompileScriptsInVirtualMode: 0
     m_CleanupStreamingAssetsAfterBuilds: 1
@@ -99,7 +99,7 @@ MonoBehaviour:
     m_ProfileVersion: 1
   m_LabelTable:
     m_LabelNames:
-    - 071a9a067a1059e5cd2297c54eb1d8bf58f1db8b27c439a6815dfea3b82c71f5
+    - b0ec629d3a1c1bbdae68ba310591b84ac81c14f0f772663e1b238a4a976c5a5c
     - JS_ASSETS
   m_SchemaTemplates: []
   m_GroupTemplateObjects:

@@ -5,13 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0706285-cb97-40a5-82b7-1ca1b8199693" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/7094e769bb855618aad203d3e4b5512a0e8140278c9aa9e8683d17d36f987de4.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/7094e769bb855618aad203d3e4b5512a0e8140278c9aa9e8683d17d36f987de4.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Genies Jam 2025/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Genies Jam 2025/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/071a9a067a1059e5cd2297c54eb1d8bf58f1db8b27c439a6815dfea3b82c71f5.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/071a9a067a1059e5cd2297c54eb1d8bf58f1db8b27c439a6815dfea3b82c71f5.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Schemas/071a9a067a1059e5cd2297c54eb1d8bf58f1db8b27c439a6815dfea3b82c71f5_BundledAssetGroupSchema.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Schemas/071a9a067a1059e5cd2297c54eb1d8bf58f1db8b27c439a6815dfea3b82c71f5_BundledAssetGroupSchema.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Schemas/071a9a067a1059e5cd2297c54eb1d8bf58f1db8b27c439a6815dfea3b82c71f5_ContentUpdateGroupSchema.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Schemas/071a9a067a1059e5cd2297c54eb1d8bf58f1db8b27c439a6815dfea3b82c71f5_ContentUpdateGroupSchema.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Experience/GeniesJamPrototype.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/GeniesJamPrototype.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Experience/Sprites/Floor Dance.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Experience/Sprites/Floor Dance.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Experience/Sprites/Tower/Floor Dance.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/Sprites/Tower/Floor Dance.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Experience/Sprites/Tower/Floor Hit Anim.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/Sprites/Tower/Floor Hit Anim.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Experience/Sprites/Tower/Floor Up Anim.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/Sprites/Tower/Floor Up Anim.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/EnemyManager.ts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/EnemyManager.ts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/EnemySpawner.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/EnemySpawner.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/EnemySpawner.ts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/GeniesScripts/EnemySpawner.ts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Experience/Prefabs/Enemies/Enemy Base Right.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/Prefabs/Enemies/Enemy Base Right.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Experience/Prefabs/Enemies/Enemy Down.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/Prefabs/Enemies/Enemy Down.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Experience/Prefabs/Enemies/Enemy Left.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/Prefabs/Enemies/Enemy Left.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Experience/Prefabs/Enemies/Enemy Up.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/Prefabs/Enemies/Enemy Up.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Experience/Prefabs/Tower.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/Prefabs/Tower.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Experience/Prefabs/UI/HUD.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Experience/Prefabs/UI/HUD.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExperienceBuildArchives/46b57f81-6292-4604-96eb-2b3aa03bf9ed/build.genies" beforeDir="false" afterPath="$PROJECT_DIR$/ExperienceBuildArchives/46b57f81-6292-4604-96eb-2b3aa03bf9ed/build.genies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExperienceBuilds/46b57f81-6292-4604-96eb-2b3aa03bf9ed/Android/071a9a067a1059e5cd2297c54eb1d8bf58f1db8b27c439a6815dfea3b82c71f5_assets_all_21e0ab3ae4818a852d1265d266acdaa2.bundle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExperienceBuilds/46b57f81-6292-4604-96eb-2b3aa03bf9ed/Android/071a9a067a1059e5cd2297c54eb1d8bf58f1db8b27c439a6815dfea3b82c71f5_monoscripts_37af77f894d3a3f8da2305ded896d9bf.bundle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExperienceBuilds/46b57f81-6292-4604-96eb-2b3aa03bf9ed/Android/071a9a067a1059e5cd2297c54eb1d8bf58f1db8b27c439a6815dfea3b82c71f5_scenes_all_d6d981c738c27bb13af3562054f77e7e.bundle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExperienceBuilds/46b57f81-6292-4604-96eb-2b3aa03bf9ed/Android/071a9a067a1059e5cd2297c54eb1d8bf58f1db8b27c439a6815dfea3b82c71f5_unitybuiltinshaders_c67cefa3bea0502e02711781f82729a4.bundle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExperienceBuilds/46b57f81-6292-4604-96eb-2b3aa03bf9ed/Android/catalog_genies.hash" beforeDir="false" afterPath="$PROJECT_DIR$/ExperienceBuilds/46b57f81-6292-4604-96eb-2b3aa03bf9ed/Android/catalog_genies.hash" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExperienceBuilds/46b57f81-6292-4604-96eb-2b3aa03bf9ed/Android/catalog_genies.json" beforeDir="false" afterPath="$PROJECT_DIR$/ExperienceBuilds/46b57f81-6292-4604-96eb-2b3aa03bf9ed/Android/catalog_genies.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExperienceBuilds/46b57f81-6292-4604-96eb-2b3aa03bf9ed/ExperienceBuildLog.json" beforeDir="false" afterPath="$PROJECT_DIR$/ExperienceBuilds/46b57f81-6292-4604-96eb-2b3aa03bf9ed/ExperienceBuildLog.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExperienceBuilds/46b57f81-6292-4604-96eb-2b3aa03bf9ed/ExperienceBuildManifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/ExperienceBuilds/46b57f81-6292-4604-96eb-2b3aa03bf9ed/ExperienceBuildManifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Genies/ExperienceProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Genies/ExperienceProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +44,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.genies.scripting@1.11.0/Runtime/Core/Script/IGeniesScript.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@14.0.11/Shaders/Lit.shader" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
@@ -32,27 +55,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;prototype-4&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\gasto\\Desktop\\genies-typescript-jam\\Genies Jam 2025\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "prototype-5",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Users\\gasto\\Desktop\\genies-typescript-jam\\Genies Jam 2025\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\gasto\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\gasto\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\gasto\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\gasto\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\gasto\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\gasto\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Node.js/Chrome.Genies Local Script Debugger">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.32f1\Editor\Unity.exe" />
@@ -110,6 +133,7 @@
       <workItem from="1742574589352" duration="44000" />
       <workItem from="1742574731661" duration="15308000" />
       <workItem from="1742672664864" duration="3249000" />
+      <workItem from="1742738034056" duration="14272000" />
     </task>
     <servers />
   </component>

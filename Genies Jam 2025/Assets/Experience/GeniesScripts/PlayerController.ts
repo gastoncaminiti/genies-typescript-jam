@@ -84,12 +84,12 @@ export default class PlayerController extends MonoBehaviour {
             }else{
                 if (direction.y > 0 && this.targetLaneY < 1) {
                     this.targetLaneY = this.targetLaneY + this.playerStep;
-                    //this.userAvatar.Animator.SetTrigger("isUp");
+                    this.userAvatar.Animator.SetTrigger("isUp");
                     this.OnMoveStateChange.trigger(EnemyState.UP);
                 }
                 if (direction.y < 0 && this.targetLaneY > -1) {
                     this.targetLaneY = this.targetLaneY - this.playerStep;
-                    //this.userAvatar.Animator.SetTrigger("isDown");
+                    this.userAvatar.Animator.SetTrigger("isDown");
                     this.OnMoveStateChange.trigger(EnemyState.DOWN);
                 }
             }
@@ -109,15 +109,17 @@ export default class PlayerController extends MonoBehaviour {
         //this.transform.position = Vector3.zero;
         this.targetLaneX = 0;
         this.targetLaneY = 0;
-        console.log("LOAD AVATAR");
+        this.userAvatar.Animator.SetTrigger("isIdle");
     }
     
     private OnGameOver(): void{
         this.canMove = false;
+        this.userAvatar.Animator.SetTrigger("isLose");
     }
 
     private OnGameWin() {
         this.canMove = false;
+        this.userAvatar.Animator.SetTrigger("isWin");
     }
 
 }
