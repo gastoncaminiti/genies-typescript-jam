@@ -35,7 +35,7 @@ MonoBehaviour:
           GameBackground: {fileID: 0}
         experienceQualityLevel: 0
         platformToggleConfig:
-          iOS: 0
+          iOS: 1
           Android: 1
           StandaloneOSX: 1
           StandaloneWindows64: 1
